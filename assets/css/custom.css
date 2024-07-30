@@ -14,19 +14,27 @@
   background-size: contain;
 }
 
+.sticky-header {
+  position: fixed;
+  top: 0px;
+  z-index: 1000;
+  background-color: #0f1b1d;
+  width: 100%;
+}
+
 .menu-form {
   background-image: url("../images/menu.png");
   background-repeat: no-repeat;
   background-size: cover;
   width: 151px;
   height: 27px;
-  margin-top: 24px;
+  margin-top: 100px;
   left: 0px;
   top: 0px;
 }
 
 .search-form {
-  padding-left: calc(2em);
+  padding-left: 40px;
   height: 55px;
   border: 1px solid #253032;
   background-color: #0f1b1d;
@@ -53,7 +61,7 @@
   height: 55px;
   font-size: 18px;
   border: 1px solid #e5e7eb;
-  border-radius: 10px;
+  border-radius: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -62,17 +70,29 @@
 .fill-button-form {
   height: 55px;
   background-color: mediumpurple;
+  border: 1px solid mediumpurple;
   border: none;
-  border-radius: 16px;
+  border-radius: 20px;
   font-size: 20px;
+  box-sizing: border-box;
+}
+
+.fill-button-form:hover {
+  background-color: transparent;
 }
 
 .outline-button-form {
   height: 55px;
   background-color: transparent;
-  border: 1px solid #e5e7eb;
-  border-radius: 16px;
+  border: 1px solid mediumpurple;
+  border-radius: 20px;
   font-size: 20px;
+  box-sizing: border-box;
+}
+
+.outline-button-form:hover {
+  background-color: mediumpurple;
+  border: 1px solid mediumpurple;
 }
 
 .block-item {
@@ -303,4 +323,40 @@ select:focus {
   background-color: #e0efe3;
   left: 0;
   top: 27px;
+}
+
+.submenu {
+  width: 802px;
+  height: 461px;
+  border: 1px solid #253032;
+  background-color: #010f11;
+  border-radius: 40px;
+  color: white;
+  outline: none;
+  margin-left: -330px;
+  display: flex !important;
+}
+
+.submenu-drop {
+  width: 468px;
+  margin-left: 15px;
+}
+
+.submenu-drop-form {
+  width: 451px;
+  height: 141px;
+  background-color: #c7e9e6;
+  border-radius: 24px;
+  margin-top: 16px;
+}
+
+.submenu-image {
+  width: 301px;
+  height: 429px;
+  margin-right: 12px;
+  margin-top: 16px;
+  background-image: url("../images/profile.png");
+  object-fit: fill;
+  border-radius: 32px;
+  border-color: #253032;
 }
