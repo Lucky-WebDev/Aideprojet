@@ -1,0 +1,1103 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aideprojet | Profile</title>
+    <link
+      rel="shortcut icon"
+      href="assets/images/favicon.png"
+      type="image/x-icon"
+    />
+
+    <link rel="stylesheet" href="assets/css/custom.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="assets/css/animate.css" />
+    <link rel="stylesheet" href="assets/css/tailwind.css" />
+
+    <!-- ==== WOW JS ==== -->
+    <script src="assets/js/wow.min.js"></script>
+    <script>
+      new WOW().init();
+    </script>
+  </head>
+
+  <body>
+    <!-- ====== Navbar Section Start -->
+    <div class="relative" style="background-color: #020f11">
+      <div class="flex w-full items-center bg-transparent">
+        <div class="container">
+          <div class="relative -mx-4 flex items-center justify-between">
+            <div class="w-60 max-w-full px-4">
+              <a href="index.html" class="navbar-logo block w-full py-5">
+                <img
+                  src="assets/images/logo.png"
+                  alt="logo"
+                  class="header-logo w-full"
+                />
+              </a>
+            </div>
+
+            <div class="flex w-full items-center justify-between px-4">
+              <button
+                id="navbarToggler"
+                class="flex justify-center items-center absolute right-4 top-1/2 block -translate-y-1/2 rounded-lg px-3 py-[6px] lg:hidden"
+              >
+                <div>
+                  <span
+                    class="text-white text-[20px]"
+                    style="margin-right: 10px"
+                    >Menu</span
+                  >
+                </div>
+                <div>
+                  <svg
+                    class="h-10 w-10 text-white text-red-500"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M4 6h16M4 12h16m-7 6h7"
+                    />
+                  </svg>
+                </div>
+              </button>
+              <nav
+                id="navbarCollapse"
+                class="absolute right-4 top-full hidden w-full max-w-[250px] rounded-lg bg-white py-5 shadow-lg lg:static lg:block lg:w-full lg:max-w-full lg:bg-transparent lg:py-0 lg:shadow-none xl:px-6"
+              >
+                <ul class="lg:flex 2xl:ml-20 justify-between items-center">
+                  <li class="submenu-item group relative">
+                    <div class="relative">
+                      <input
+                        type="search"
+                        class="search-form"
+                        style="width: 250px"
+                        placeholder="Developer, Recruter..."
+                      />
+                      <svg
+                        class="icon-form"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      >
+                        <circle cx="11" cy="11" r="8" />
+                        <line x1="21" y1="21" x2="16.65" y2="16.65" />
+                      </svg>
+                    </div>
+                  </li>
+                  <div class="flex justify-between" style="width: 450px">
+                    <li class="submenu-item group relative">
+                      <a
+                        href="javascript:void(0)"
+                        class="relative mx-8 flex items-center justify-between py-2 text-base font-medium text-dark group-hover:text-primary dark:text-white lg:mr-0 lg:inline-flex lg:py-6 lg:pl-0 lg:text-white lg:group-hover:text-white lg:group-hover:opacity-70"
+                      >
+                        Services
+                        <svg
+                          class="ml-2 fill-current"
+                          width="16"
+                          height="20"
+                          viewBox="0 0 16 20"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M7.99999 14.9C7.84999 14.9 7.72499 14.85 7.59999 14.75L1.84999 9.10005C1.62499 8.87505 1.62499 8.52505 1.84999 8.30005C2.07499 8.07505 2.42499 8.07505 2.64999 8.30005L7.99999 13.525L13.35 8.25005C13.575 8.02505 13.925 8.02505 14.15 8.25005C14.375 8.47505 14.375 8.82505 14.15 9.05005L8.39999 14.7C8.27499 14.825 8.14999 14.9 7.99999 14.9Z"
+                          />
+                        </svg>
+                      </a>
+                      <div
+                        class="submenu relative left-0 top-full hidden w-[250px] rounded-sm bg-white p-4 transition-[top] duration-300 group-hover:opacity-100 dark:bg-dark-2 lg:invisible lg:absolute lg:top-[110%] lg:block lg:opacity-0 lg:shadow-lg lg:group-hover:visible lg:group-hover:top-full"
+                      >
+                        <a
+                          href="404.html"
+                          class="block rounded px-4 py-[10px] text-sm text-body-color hover:text-primary dark:text-dark-6 dark:hover:text-primary"
+                        >
+                          404 Page
+                        </a>
+                        <a
+                          href="404.html"
+                          class="block rounded px-4 py-[10px] text-sm text-body-color hover:text-primary dark:text-dark-6 dark:hover:text-primary"
+                        >
+                          404 Page
+                        </a>
+                      </div>
+                    </li>
+                    <li class="submenu-item group relative">
+                      <a
+                        href="javascript:void(0)"
+                        class="relative mx-8 flex items-center justify-between py-2 text-base font-medium text-dark group-hover:text-primary dark:text-white lg:mr-0 lg:inline-flex lg:py-6 lg:pl-0 lg:text-white lg:group-hover:text-white lg:group-hover:opacity-70"
+                      >
+                        Services
+                        <svg
+                          class="ml-2 fill-current"
+                          width="16"
+                          height="20"
+                          viewBox="0 0 16 20"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M7.99999 14.9C7.84999 14.9 7.72499 14.85 7.59999 14.75L1.84999 9.10005C1.62499 8.87505 1.62499 8.52505 1.84999 8.30005C2.07499 8.07505 2.42499 8.07505 2.64999 8.30005L7.99999 13.525L13.35 8.25005C13.575 8.02505 13.925 8.02505 14.15 8.25005C14.375 8.47505 14.375 8.82505 14.15 9.05005L8.39999 14.7C8.27499 14.825 8.14999 14.9 7.99999 14.9Z"
+                          />
+                        </svg>
+                      </a>
+                      <div
+                        class="submenu relative left-0 top-full hidden w-[250px] rounded-sm bg-white p-4 transition-[top] duration-300 group-hover:opacity-100 dark:bg-dark-2 lg:invisible lg:absolute lg:top-[110%] lg:block lg:opacity-0 lg:shadow-lg lg:group-hover:visible lg:group-hover:top-full"
+                      >
+                        <a
+                          href="404.html"
+                          class="block rounded px-4 py-[10px] text-sm text-body-color hover:text-primary dark:text-dark-6 dark:hover:text-primary"
+                        >
+                          404 Page
+                        </a>
+                        <a
+                          href="404.html"
+                          class="block rounded px-4 py-[10px] text-sm text-body-color hover:text-primary dark:text-dark-6 dark:hover:text-primary"
+                        >
+                          404 Page
+                        </a>
+                      </div>
+                    </li>
+                    <li class="submenu-item group relative">
+                      <a
+                        href="javascript:void(0)"
+                        class="relative mx-8 flex items-center justify-between py-2 text-base font-medium text-dark group-hover:text-primary dark:text-white lg:mr-0 lg:inline-flex lg:py-6 lg:pl-0 lg:text-white lg:group-hover:text-white lg:group-hover:opacity-70"
+                      >
+                        Services
+                        <svg
+                          class="ml-2 fill-current"
+                          width="16"
+                          height="20"
+                          viewBox="0 0 16 20"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M7.99999 14.9C7.84999 14.9 7.72499 14.85 7.59999 14.75L1.84999 9.10005C1.62499 8.87505 1.62499 8.52505 1.84999 8.30005C2.07499 8.07505 2.42499 8.07505 2.64999 8.30005L7.99999 13.525L13.35 8.25005C13.575 8.02505 13.925 8.02505 14.15 8.25005C14.375 8.47505 14.375 8.82505 14.15 9.05005L8.39999 14.7C8.27499 14.825 8.14999 14.9 7.99999 14.9Z"
+                          />
+                        </svg>
+                      </a>
+                      <div
+                        class="submenu relative left-0 top-full hidden w-[250px] rounded-sm bg-white p-4 transition-[top] duration-300 group-hover:opacity-100 dark:bg-dark-2 lg:invisible lg:absolute lg:top-[110%] lg:block lg:opacity-0 lg:shadow-lg lg:group-hover:visible lg:group-hover:top-full"
+                      >
+                        <a
+                          href="404.html"
+                          class="block rounded px-4 py-[10px] text-sm text-body-color hover:text-primary dark:text-dark-6 dark:hover:text-primary"
+                        >
+                          404 Page
+                        </a>
+                        <a
+                          href="404.html"
+                          class="block rounded px-4 py-[10px] text-sm text-body-color hover:text-primary dark:text-dark-6 dark:hover:text-primary"
+                        >
+                          404 Page
+                        </a>
+                      </div>
+                    </li>
+                  </div>
+                  <li class="submenu-item group relative">
+                    <div class="hidden sm:flex" style="margin-left: 20px">
+                      <a
+                        href="#"
+                        class="cart-form py-2 mr-3 text-base text-white hover:opacity-70"
+                      >
+                        <svg
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          stroke-width="2"
+                          stroke="currentColor"
+                          fill="none"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        >
+                          <path stroke="none" d="M0 0h24v24H0z" />
+                          <circle cx="9" cy="19" r="2" />
+                          <circle cx="17" cy="19" r="2" />
+                          <path
+                            d="M3 3h2l2 12a3 3 0 0 0 3 2h7a3 3 0 0 0 3 -2l1 -7h-15.2"
+                          />
+                        </svg>
+                      </a>
+                      <a
+                        href="#"
+                        class="fill-button-form w-[130px] px-6 mr-3 py-2 text-center font-medium text-white duration-300 ease-in-out hover:bg-opacity-100"
+                      >
+                        Developer
+                      </a>
+                      <a
+                        href="#"
+                        class="outline-button-form px-6 w-[110px] mr-3 py-2 text-center font-medium text-white hover:opacity-70"
+                      >
+                        Service
+                      </a>
+                    </div>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- ====== Navbar Section End -->
+
+      <div class="container">
+        <div class="menu-three-form mb-11"></div>
+      </div>
+
+      <div class="four-background lg:m-8 sm:m-1">
+        <div class="container relative" style="top: -130px">
+          <div
+            class="flex flex-wrap sm:px-2 sm:mt-10 lg:mt-0 lg:px-16 xl:px-24"
+          >
+            <div class="w-full lg:px-4 sm:w-2/2 lg:w-5/12">
+              <div
+                class="text-white py-[15px]"
+                style="
+                  border: 1px solid #253032;
+                  border-radius: 40px;
+                  background-color: #0f1b1d;
+                "
+              >
+                <img
+                  src="assets/images/profile.png"
+                  style="
+                    border-radius: 40px 40px 0 0;
+                    height: 500px;
+                    width: 100%;
+                  "
+                />
+                <div class="flex justify-between items-center sm:m-5">
+                  <h4 class="sm:text-base lg:text-lg">Antérieurement chez</h4>
+                  <img
+                    src="assets/images/logo-google.png"
+                    style="width: 112px"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="w-full lg:px-4 sm:mt-8 lg:mt-0 sm:w-2/2 lg:w-7/12">
+              <div
+                class="text-white rounded-xl sm:p-5 lg:p-8"
+                style="
+                  background-color: #0f1b1d;
+                  border: 1px solid #253032;
+                  border-radius: 40px;
+                "
+              >
+                <div class="flex justify-between items-center">
+                  <h1 class="sm:text-2xl lg:text-5xl">Romain Leonard</h1>
+                  <div class="flex justify-end items-center">
+                    <svg
+                      class="h-8 w-8 text-red-500 text-white px-2 py-2 rounded-md mr-3 sm:w-8 sm:h-8 lg:w-10 lg:h-10"
+                      style="background-color: #253032"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      stroke-width="2"
+                      stroke="currentColor"
+                      fill="none"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <path stroke="none" d="M0 0h24v24H0z" />
+                      <circle cx="6" cy="12" r="3" />
+                      <circle cx="18" cy="6" r="3" />
+                      <circle cx="18" cy="18" r="3" />
+                      <line x1="8.7" y1="10.7" x2="15.3" y2="7.3" />
+                      <line x1="8.7" y1="13.3" x2="15.3" y2="16.7" />
+                    </svg>
+                    <svg
+                      class="h-8 w-8 text-red-500 text-black px-2 py-2 rounded-md sm:w-8 sm:h-8 lg:w-10 lg:h-10"
+                      style="
+                        width: 40px;
+                        height: 40px;
+                        color: #020f11;
+                        background-color: #d9f777;
+                      "
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      stroke-width="2"
+                      stroke="currentColor"
+                      fill="none"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <path stroke="none" d="M0 0h24v24H0z" />
+                      <path
+                        d="M9 4h6a2 2 0 0 1 2 2v14l-5-3l-5 3v-14a2 2 0 0 1 2 -2"
+                      />
+                    </svg>
+                  </div>
+                </div>
+                <h2 class="sm:text-base lg:text-xl" style="opacity: 0.5">
+                  Analyste en cybersécurité
+                </h2>
+                <br />
+                <h3 class="sm:text-base lg:text-xl">
+                  Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+                  diam nonumy eirmod tempor invidunt ut labore et … Lire plus
+                </h3>
+                <br />
+                <button
+                  class="fill-button-form text-center text-lg text-white duration-300 ease-in-out sm:flex sm:justify-center lg:block"
+                  style="margin-bottom: 40px; height: 55px; width: 300px"
+                >
+                  Recruter Maintenant
+                </button>
+                <div class="border-t border-[#8890A4] border-opacity-40"></div>
+                <div class="flex flex-wrap sm:mx-2 lg:mx-3 xl:mx-8 mt-8">
+                  <div class="w-full sm:hidden lg:block lg:w-1/3">
+                    <h1 class="sm:text-base lg:text-xl">Experience</h1>
+                    <h1 class="sm:text-lg lg:text-2xl">+ 15 ans</h1>
+                  </div>
+                  <div class="w-full sm:hidden lg:block lg:w-1/3">
+                    <h1 class="sm:text-base lg:text-xl">Earning</h1>
+                    <h1 class="sm:text-lg lg:text-2xl">690USD</h1>
+                  </div>
+                  <div
+                    class="w-full sm:w-screen lg:block sm:flex sm:justify-center lg:w-1/3"
+                  >
+                    <div>
+                      <h1
+                        class="sm:text-center lg:text-left sm:text-base lg:text-xl"
+                      >
+                        Réseaux
+                      </h1>
+                      <div class="flex gap-1 mt-1" style="font-size: 30px">
+                        <img src="assets/images/instagram.png" class="mr-3" />
+                        <img src="assets/images/github.png" class="mr-3" />
+                        <img src="assets/images/world.png" />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="w-full lg:px-4 sm:w-2/2 lg:w-5/12 mt-8">
+              <div
+                class="text-white rounded-xl sm:p-5 lg:p-10"
+                style="
+                  background-color: #0f1b1d;
+                  border: 1px solid #253032;
+                  border-radius: 40px;
+                "
+              >
+                <div>
+                  <h1 class="mb-4 sm:text-2xl lg:text-4xl">Compétences</h1>
+                  <div class="flex flex-wrap mb-8">
+                    <div class="flex items-center mr-3">
+                      <svg
+                        class="h-8 w-8 text-purple-500"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        stroke-width="2"
+                        stroke="currentColor"
+                        fill="none"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      >
+                        <path stroke="none" d="M0 0h24v24H0z" />
+                        <path d="M5 12l5 5l10 -10" />
+                      </svg>
+                      <h2 class="sm:text-base lg:text-xl">Python</h2>
+                    </div>
+                    <div class="flex items-center mr-3">
+                      <svg
+                        class="h-8 w-8 text-purple-500"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        stroke-width="2"
+                        stroke="currentColor"
+                        fill="none"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      >
+                        <path stroke="none" d="M0 0h24v24H0z" />
+                        <path d="M5 12l5 5l10 -10" />
+                      </svg>
+                      <h2 class="sm:text-base lg:text-xl">Next.js</h2>
+                    </div>
+                    <div class="flex items-center mr-3">
+                      <svg
+                        class="h-8 w-8 text-purple-500"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        stroke-width="2"
+                        stroke="currentColor"
+                        fill="none"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      >
+                        <path stroke="none" d="M0 0h24v24H0z" />
+                        <path d="M5 12l5 5l10 -10" />
+                      </svg>
+                      <h2 class="sm:text-base lg:text-xl">Django</h2>
+                    </div>
+                    <div class="flex items-center mr-3">
+                      <svg
+                        class="h-8 w-8 text-purple-500"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        stroke-width="2"
+                        stroke="currentColor"
+                        fill="none"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      >
+                        <path stroke="none" d="M0 0h24v24H0z" />
+                        <path d="M5 12l5 5l10 -10" />
+                      </svg>
+                      <h2 class="sm:text-base lg:text-xl">React</h2>
+                    </div>
+                    <div class="flex items-center mr-3">
+                      <svg
+                        class="h-8 w-8 text-purple-500"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        stroke-width="2"
+                        stroke="currentColor"
+                        fill="none"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      >
+                        <path stroke="none" d="M0 0h24v24H0z" />
+                        <path d="M5 12l5 5l10 -10" />
+                      </svg>
+                      <h2 class="sm:text-base lg:text-xl">HTML</h2>
+                    </div>
+                    <div class="flex items-center mr-3">
+                      <svg
+                        class="h-8 w-8 text-purple-500"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        stroke-width="2"
+                        stroke="currentColor"
+                        fill="none"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      >
+                        <path stroke="none" d="M0 0h24v24H0z" />
+                        <path d="M5 12l5 5l10 -10" />
+                      </svg>
+                      <h2 class="sm:text-base lg:text-xl">CSS</h2>
+                    </div>
+                    <div class="flex items-center mr-3">
+                      <svg
+                        class="h-8 w-8 text-purple-500"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        stroke-width="2"
+                        stroke="currentColor"
+                        fill="none"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      >
+                        <path stroke="none" d="M0 0h24v24H0z" />
+                        <path d="M5 12l5 5l10 -10" />
+                      </svg>
+                      <h2 class="sm:text-base lg:text-xl">NestJS</h2>
+                    </div>
+                    <div class="flex items-center mr-3">
+                      <svg
+                        class="h-8 w-8 text-purple-500"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        stroke-width="2"
+                        stroke="currentColor"
+                        fill="none"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      >
+                        <path stroke="none" d="M0 0h24v24H0z" />
+                        <path d="M5 12l5 5l10 -10" />
+                      </svg>
+                      <h2 class="sm:text-base lg:text-xl">AWS</h2>
+                    </div>
+                    <div class="flex items-center mr-3">
+                      <svg
+                        class="h-8 w-8 text-purple-500"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        stroke-width="2"
+                        stroke="currentColor"
+                        fill="none"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      >
+                        <path stroke="none" d="M0 0h24v24H0z" />
+                        <path d="M5 12l5 5l10 -10" />
+                      </svg>
+                      <h2 class="sm:text-base lg:text-xl">Firebase</h2>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="border-t border-[#8890A4] border-opacity-40 mb-4"
+                ></div>
+                <div>
+                  <h1 class="mb-4 sm:text-2xl lg:text-4xl">Langues</h1>
+                  <div class="flex flex-wrap">
+                    <div class="flex items-center">
+                      <svg
+                        class="h-8 w-8 text-purple-500 mr-3"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        stroke-width="2"
+                        stroke="currentColor"
+                        fill="none"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      >
+                        <path stroke="none" d="M0 0h24v24H0z" />
+                        <path
+                          d="M5 4h4l2 5l-2.5 1.5a11 11 0 0 0 5 5l1.5 -2.5l5 2v4a2 2 0 0 1 -2 2a16 16 0 0 1 -15 -15a2 2 0 0 1 2 -2"
+                        />
+                        <path d="M15 7a2 2 0 0 1 2 2" />
+                        <path d="M15 3a6 6 0 0 1 6 6" />
+                      </svg>
+                      <h2 class="sm:text-base lg:text-xl">
+                        Français · Anglais
+                      </h2>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="text-white mt-8 py-[15px] sm:p-5 lg:p-10"
+                style="
+                  background-color: #0f1b1d;
+                  border: 1px solid #253032;
+                  border-radius: 40px;
+                "
+              >
+                <h1 class="mb-4 sm:text-2xl lg:text-4xl">Localisation</h1>
+                <div class="flex flex-wrap">
+                  <div class="flex items-center">
+                    <svg
+                      class="h-8 w-8 text-purple-500 mr-3"
+                      style="width: 20px; height: 20px"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"
+                      />
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
+                      />
+                    </svg>
+                    <h2 class="sm:text-base lg:text-xl">Boedaus</h2>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="w-full lg:px-4 mt-8 sm:w-2/2 lg:w-7/12">
+              <div
+                class="text-white sm:p-5 lg:p-10"
+                style="
+                  background-color: #0f1b1d;
+                  border: 1px solid #253032;
+                  border-radius: 28px;
+                "
+              >
+                <h1 class="sm:text-2xl lg:text-4xl">Experiences</h1>
+                <div
+                  style="
+                    border: 1px solid #ffffff;
+                    border-radius: 20px;
+                    margin-top: 27px;
+                  "
+                >
+                  <div class="flex flex-wrap mt-8 mb-8">
+                    <div class="w-full mb-4 sm:w-screen lg:w-1/3">
+                      <div
+                        class="flex lg:justify-center sm:justify-start sm:pl-2"
+                      >
+                        <svg
+                          class="h-8 w-8 text-purple-500"
+                          style="width: 29px; height: 29px"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          stroke="currentColor"
+                        >
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                            d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"
+                          />
+                        </svg>
+                        <div class="sm:flex lg:block sm:text-base lg:text-xl">
+                          <div>Feb 2022</div>
+                          <div>Maintenant</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="w-full sm:w-screen lg:w-2/3 p-3 sm:text-base lg:text-xl"
+                    >
+                      <div>Analyste SOC</div>
+                      <div style="opacity: 0.5">
+                        Sopra Steria - Paris, France
+                      </div>
+                      <br />
+                      <div>
+                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
+                        sed diam nonumy eirmod tempor invidunt ut labore et
+                        dolore magna aliquyam erat, sed diam voluptua.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  style="
+                    border: 1px solid #ffffff;
+                    border-radius: 20px;
+                    margin-top: 27px;
+                  "
+                >
+                  <div class="flex flex-wrap mt-8 mb-8">
+                    <div class="w-full mb-4 sm:w-screen lg:w-1/3">
+                      <div
+                        class="flex lg:justify-center sm:justify-start sm:pl-2"
+                      >
+                        <svg
+                          class="h-8 w-8 text-purple-500"
+                          style="width: 29px; height: 29px"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          stroke="currentColor"
+                        >
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                            d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"
+                          />
+                        </svg>
+                        <div class="sm:flex lg:block sm:text-base lg:text-xl">
+                          <div>Feb 2022</div>
+                          <div>Maintenant</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="w-full sm:w-screen lg:w-2/3 p-3 sm:text-base lg:text-xl"
+                    >
+                      <div>Analyste SOC</div>
+                      <div style="opacity: 0.5">
+                        Sopra Steria - Paris, France
+                      </div>
+                      <br />
+                      <div>
+                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
+                        sed diam nonumy eirmod tempor invidunt ut labore et
+                        dolore magna aliquyam erat, sed diam voluptua.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  style="
+                    border: 1px solid #ffffff;
+                    border-radius: 20px;
+                    margin-top: 27px;
+                  "
+                >
+                  <div class="flex flex-wrap mt-8 mb-8">
+                    <div class="w-full mb-4 sm:w-screen lg:w-1/3">
+                      <div
+                        class="flex lg:justify-center sm:justify-start sm:pl-2"
+                      >
+                        <svg
+                          class="h-8 w-8 text-purple-500"
+                          style="width: 29px; height: 29px"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          stroke="currentColor"
+                        >
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                            d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"
+                          />
+                        </svg>
+                        <div class="sm:flex lg:block sm:text-base lg:text-xl">
+                          <div>Feb 2022</div>
+                          <div>Maintenant</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="w-full sm:w-screen lg:w-2/3 p-3 sm:text-base lg:text-xl"
+                    >
+                      <div>Analyste SOC</div>
+                      <div style="opacity: 0.5">
+                        Sopra Steria - Paris, France
+                      </div>
+                      <br />
+                      <div>
+                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
+                        sed diam nonumy eirmod tempor invidunt ut labore et
+                        dolore magna aliquyam erat, sed diam voluptua.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <!-- ====== Footer Section Start -->
+        <footer
+          class="relative border-t border-[#8890A4] border-opacity-40 z-10 pt-20 lg:pt-[100px]"
+          style="margin-top: 120px"
+          data-wow-delay=".15s"
+        >
+          <div class="container">
+            <div class="flex flex-wrap lg:px-[120px]">
+              <div class="w-full px-4 sm:w-screen md:w-1/2 lg:w-3/12 xl:w-3/12">
+                <div class="mb-10 w-full">
+                  <a href="javascript:void(0)" class="inline-block">
+                    <img
+                      src="assets/images/footer.png"
+                      alt="logo"
+                      class="max-w-full"
+                    />
+                  </a>
+                </div>
+              </div>
+              <div class="w-full px-4 sm:w-screen md:w-1/2 lg:w-3/12 xl:w-4/12">
+                <div class="mb-10 w-full">
+                  <h4 class="mb-9 text-lg font-semibold text-white">
+                    About Me
+                  </h4>
+                  <ul>
+                    <li>
+                      <button
+                        class="fill-button-form px-1 text-center font-medium text-white duration-300 ease-in-out hover:bg-opacity-100"
+                        style="width: 200px"
+                      >
+                        Contact with
+                      </button>
+                    </li>
+                    <li>
+                      <button
+                        class="outline-button-form px-1 text-center font-medium text-white duration-300 ease-in-out hover:bg-opacity-100"
+                        style="margin-top: 20px; width: 200px"
+                      >
+                        FAQ
+                      </button>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="w-full px-4 sm:w-screen md:w-1/2 lg:w-3/12 xl:w-3/12">
+                <div class="mb-10 w-full">
+                  <h4 class="mb-9 text-lg font-semibold text-white">
+                    Features
+                  </h4>
+                  <ul>
+                    <li>
+                      <div class="grid sm:h-16">
+                        <select
+                          class="select-form appearance-none row-start-1 text-white col-start-1 focus:outline-none bg-transparent sm:h-12"
+                        >
+                          <option>Yes</option>
+                          <option>No</option>
+                          <option>Maybe</option>
+                        </select>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="grid sm:h-16">
+                        <select
+                          class="select-form appearance-none row-start-1 text-white col-start-1 focus:outline-none bg-transparent sm:h-12"
+                        >
+                          <option>Yes</option>
+                          <option>No</option>
+                          <option>Maybe</option>
+                        </select>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="grid sm:h-16">
+                        <select
+                          class="select-form appearance-none row-start-1 text-white col-start-1 focus:outline-none bg-transparent sm:h-12"
+                        >
+                          <option>Yes</option>
+                          <option>No</option>
+                          <option>Maybe</option>
+                        </select>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="grid sm:h-16">
+                        <select
+                          class="select-form appearance-none row-start-1 text-white col-start-1 focus:outline-none bg-transparent sm:h-12"
+                        >
+                          <option>Yes</option>
+                          <option>No</option>
+                          <option>Maybe</option>
+                        </select>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div
+                class="w-full px-4 sm:w-screen md:w-1/2 lg:w-3/12 xl:w-2/12 flex justify-center"
+              >
+                <div class="mb-11 w-full">
+                  <h4 class="mb-11 text-lg font-semibold text-white">
+                    Our Products
+                  </h4>
+                  <ul>
+                    <li>
+                      <a
+                        href="javascript:void(0)"
+                        class="mb-3 sm:mt-10 flex inline-block text-base text-gray-7 hover:text-primary"
+                      >
+                        <svg
+                          class="h-8 w-8 text-red-500"
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          stroke-width="2"
+                          stroke="currentColor"
+                          fill="none"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        >
+                          <path stroke="none" d="M0 0h24v24H0z" />
+                          <rect x="4" y="4" width="16" height="16" rx="4" />
+                          <circle cx="12" cy="12" r="3" />
+                          <line x1="16.5" y1="7.5" x2="16.5" y2="7.501" />
+                        </svg>
+                        Instagram
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="javascript:void(0)"
+                        class="mb-3 sm:mt-10 flex inline-block text-base text-gray-7 hover:text-primary"
+                      >
+                        <svg
+                          class="h-8 w-8 text-red-500"
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          stroke-width="2"
+                          stroke="currentColor"
+                          fill="none"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        >
+                          <path stroke="none" d="M0 0h24v24H0z" />
+                          <path
+                            d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3"
+                          />
+                        </svg>
+                        Instagram
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="javascript:void(0)"
+                        class="mb-3 sm:mt-10 flex inline-block text-base text-gray-7 hover:text-primary"
+                      >
+                        <svg
+                          class="h-8 w-8 text-red-500"
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          stroke-width="2"
+                          stroke="currentColor"
+                          fill="none"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        >
+                          <path stroke="none" d="M0 0h24v24H0z" />
+                          <path
+                            d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3"
+                          />
+                        </svg>
+                        Instagram
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="javascript:void(0)"
+                        class="mb-3 sm:mt-10 flex inline-block text-base text-gray-7 hover:text-primary"
+                      >
+                        <svg
+                          class="h-8 w-8 text-red-500"
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          stroke-width="2"
+                          stroke="currentColor"
+                          fill="none"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        >
+                          <path stroke="none" d="M0 0h24v24H0z" />
+                          <path
+                            d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3"
+                          />
+                        </svg>
+                        Instagram
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="mt-12 border-t border-[#8890A4] border-opacity-40 py-8 lg:mt-[60px]"
+          >
+            <div class="container">
+              <div class="-mx-4 flex flex-wrap justify-between">
+                <div
+                  class="w-full px-4 left-0 sm:w-screen lg:w-6/12 flex sm:mb-3 lg:mb-0"
+                >
+                  <div class="my-1 flex justify-center md:justify-end">
+                    <p class="text-base text-gray-7">
+                      @2024 Aideprojet
+                      <a
+                        href="https://tailgrids.com"
+                        rel="nofollow noopner"
+                        target="_blank"
+                        class="text-gray-1 hover:underline"
+                      >
+                        TailGrids and UIdeck
+                      </a>
+                    </p>
+                  </div>
+                </div>
+                <div
+                  class="w-full px-4 right-0 flex flex-wrap lg:justify-around sm:w-screen lg:w-6/12"
+                >
+                  <a
+                    href="javascript:void(0)"
+                    class="w-full sm:w-screen sm:mb-3 lg:mb-0 lg:w-4/12 lg:flex sm:justify-start lg:justify-end px-3 text-base text-gray-7 hover:text-white hover:underline"
+                  >
+                    Privacy policy
+                  </a>
+                  <a
+                    href="javascript:void(0)"
+                    class="w-full sm:w-screen sm:mb-3 lg:mb-0 lg:w-4/12 lg:flex sm:justify-start lg:justify-end px-3 text-base text-gray-7 hover:text-white hover:underline"
+                  >
+                    Legal notice
+                  </a>
+                  <a
+                    href="javascript:void(0)"
+                    class="w-full sm:w-screen sm:mb-3 lg:mb-0 lg:w-4/12 lg:flex sm:justify-start lg:justify-end px-3 text-base text-gray-7 hover:text-white hover:underline"
+                  >
+                    Terms of service
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </footer>
+        <!-- ====== Footer Section End -->
+      </div>
+
+      <!-- ====== Back To Top Start -->
+    </div>
+
+    <a
+      href="javascript:void(0)"
+      class="back-to-top fixed bottom-8 left-auto right-8 z-[999] hidden h-10 w-10 items-center justify-center rounded-md bg-primary text-white shadow-md transition duration-300 ease-in-out hover:bg-dark"
+    >
+      <span
+        class="mt-[6px] h-3 w-3 rotate-45 border-l border-t border-white"
+      ></span>
+    </a>
+    <!-- ====== Back To Top End -->
+
+    <!-- ====== All Scripts -->
+
+    <script src="assets/js/swiper-bundle.min.js"></script>
+    <script src="assets/js/custom.js"></script>
+    <script>
+      // ==== for menu scroll
+      const pageLink = document.querySelectorAll(".ud-menu-scroll");
+
+      pageLink.forEach((elem) => {
+        elem.addEventListener("click", (e) => {
+          e.preventDefault();
+          document.querySelector(elem.getAttribute("href")).scrollIntoView({
+            behavior: "smooth",
+            offsetTop: 1 - 60,
+          });
+        });
+      });
+
+      // section menu active
+      function onScroll(event) {
+        const sections = document.querySelectorAll(".ud-menu-scroll");
+        const scrollPos =
+          window.pageYOffset ||
+          document.documentElement.scrollTop ||
+          document.body.scrollTop;
+
+        for (let i = 0; i < sections.length; i++) {
+          const currLink = sections[i];
+          const val = currLink.getAttribute("href");
+          const refElement = document.querySelector(val);
+          const scrollTopMinus = scrollPos + 73;
+          if (
+            refElement.offsetTop <= scrollTopMinus &&
+            refElement.offsetTop + refElement.offsetHeight > scrollTopMinus
+          ) {
+            document
+              .querySelector(".ud-menu-scroll")
+              .classList.remove("active");
+            currLink.classList.add("active");
+          } else {
+            currLink.classList.remove("active");
+          }
+        }
+      }
+
+      window.document.addEventListener("scroll", onScroll);
+    </script>
+  </body>
+</html>

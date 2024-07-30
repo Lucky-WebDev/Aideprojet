@@ -1,0 +1,1552 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aideprojet | List</title>
+    <link
+      rel="shortcut icon"
+      href="assets/images/favicon.png"
+      type="image/x-icon"
+    />
+
+    <link rel="stylesheet" href="assets/css/custom.css" />
+    <link rel="stylesheet" href="assets/css/animate.css" />
+    <link rel="stylesheet" href="assets/css/tailwind.css" />
+
+    <!-- ==== WOW JS ==== -->
+    <script src="assets/js/wow.min.js"></script>
+    <script>
+      new WOW().init();
+    </script>
+  </head>
+
+  <body>
+    <!-- ====== Navbar Section Start -->
+    <div class="relative initial-background first-background">
+      <div class="flex w-full items-center bg-transparent">
+        <div class="container">
+          <div class="relative -mx-4 flex items-center justify-between">
+            <div class="w-60 max-w-full px-4">
+              <a href="index.html" class="navbar-logo block w-full py-5">
+                <img
+                  src="assets/images/logo.png"
+                  alt="logo"
+                  class="header-logo w-full"
+                />
+              </a>
+            </div>
+
+            <div class="flex w-full items-center justify-between px-4">
+              <button
+                id="navbarToggler"
+                class="flex justify-center items-center absolute right-4 top-1/2 block -translate-y-1/2 rounded-lg px-3 py-[6px] lg:hidden"
+              >
+                <div>
+                  <span
+                    class="text-white text-[20px]"
+                    style="margin-right: 10px"
+                    >Menu</span
+                  >
+                </div>
+                <div>
+                  <svg
+                    class="h-10 w-10 text-white text-red-500"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M4 6h16M4 12h16m-7 6h7"
+                    />
+                  </svg>
+                </div>
+              </button>
+              <nav
+                id="navbarCollapse"
+                class="absolute right-4 top-full hidden w-full max-w-[250px] rounded-lg bg-white py-5 shadow-lg lg:static lg:block lg:w-full lg:max-w-full lg:bg-transparent lg:py-0 lg:shadow-none xl:px-6"
+              >
+                <ul class="lg:flex 2xl:ml-20 justify-between items-center">
+                  <li class="submenu-item group relative">
+                    <div class="relative">
+                      <input
+                        type="search"
+                        class="search-form"
+                        style="width: 250px"
+                        placeholder="Developer, Recruter..."
+                      />
+                      <svg
+                        class="icon-form"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      >
+                        <circle cx="11" cy="11" r="8" />
+                        <line x1="21" y1="21" x2="16.65" y2="16.65" />
+                      </svg>
+                    </div>
+                  </li>
+                  <div class="flex justify-between" style="width: 450px">
+                    <li class="submenu-item group relative">
+                      <a
+                        href="javascript:void(0)"
+                        class="relative mx-8 flex items-center justify-between py-2 text-base font-medium text-dark group-hover:text-primary dark:text-white lg:mr-0 lg:inline-flex lg:py-6 lg:pl-0 lg:text-white lg:group-hover:text-white lg:group-hover:opacity-70"
+                      >
+                        Services
+                        <svg
+                          class="ml-2 fill-current"
+                          width="16"
+                          height="20"
+                          viewBox="0 0 16 20"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M7.99999 14.9C7.84999 14.9 7.72499 14.85 7.59999 14.75L1.84999 9.10005C1.62499 8.87505 1.62499 8.52505 1.84999 8.30005C2.07499 8.07505 2.42499 8.07505 2.64999 8.30005L7.99999 13.525L13.35 8.25005C13.575 8.02505 13.925 8.02505 14.15 8.25005C14.375 8.47505 14.375 8.82505 14.15 9.05005L8.39999 14.7C8.27499 14.825 8.14999 14.9 7.99999 14.9Z"
+                          />
+                        </svg>
+                      </a>
+                      <div
+                        class="submenu relative left-0 top-full hidden w-[250px] rounded-sm bg-white p-4 transition-[top] duration-300 group-hover:opacity-100 dark:bg-dark-2 lg:invisible lg:absolute lg:top-[110%] lg:block lg:opacity-0 lg:shadow-lg lg:group-hover:visible lg:group-hover:top-full"
+                      >
+                        <a
+                          href="404.html"
+                          class="block rounded px-4 py-[10px] text-sm text-body-color hover:text-primary dark:text-dark-6 dark:hover:text-primary"
+                        >
+                          404 Page
+                        </a>
+                        <a
+                          href="404.html"
+                          class="block rounded px-4 py-[10px] text-sm text-body-color hover:text-primary dark:text-dark-6 dark:hover:text-primary"
+                        >
+                          404 Page
+                        </a>
+                      </div>
+                    </li>
+                    <li class="submenu-item group relative">
+                      <a
+                        href="javascript:void(0)"
+                        class="relative mx-8 flex items-center justify-between py-2 text-base font-medium text-dark group-hover:text-primary dark:text-white lg:mr-0 lg:inline-flex lg:py-6 lg:pl-0 lg:text-white lg:group-hover:text-white lg:group-hover:opacity-70"
+                      >
+                        Services
+                        <svg
+                          class="ml-2 fill-current"
+                          width="16"
+                          height="20"
+                          viewBox="0 0 16 20"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M7.99999 14.9C7.84999 14.9 7.72499 14.85 7.59999 14.75L1.84999 9.10005C1.62499 8.87505 1.62499 8.52505 1.84999 8.30005C2.07499 8.07505 2.42499 8.07505 2.64999 8.30005L7.99999 13.525L13.35 8.25005C13.575 8.02505 13.925 8.02505 14.15 8.25005C14.375 8.47505 14.375 8.82505 14.15 9.05005L8.39999 14.7C8.27499 14.825 8.14999 14.9 7.99999 14.9Z"
+                          />
+                        </svg>
+                      </a>
+                      <div
+                        class="submenu relative left-0 top-full hidden w-[250px] rounded-sm bg-white p-4 transition-[top] duration-300 group-hover:opacity-100 dark:bg-dark-2 lg:invisible lg:absolute lg:top-[110%] lg:block lg:opacity-0 lg:shadow-lg lg:group-hover:visible lg:group-hover:top-full"
+                      >
+                        <a
+                          href="404.html"
+                          class="block rounded px-4 py-[10px] text-sm text-body-color hover:text-primary dark:text-dark-6 dark:hover:text-primary"
+                        >
+                          404 Page
+                        </a>
+                        <a
+                          href="404.html"
+                          class="block rounded px-4 py-[10px] text-sm text-body-color hover:text-primary dark:text-dark-6 dark:hover:text-primary"
+                        >
+                          404 Page
+                        </a>
+                      </div>
+                    </li>
+                    <li class="submenu-item group relative">
+                      <a
+                        href="javascript:void(0)"
+                        class="relative mx-8 flex items-center justify-between py-2 text-base font-medium text-dark group-hover:text-primary dark:text-white lg:mr-0 lg:inline-flex lg:py-6 lg:pl-0 lg:text-white lg:group-hover:text-white lg:group-hover:opacity-70"
+                      >
+                        Services
+                        <svg
+                          class="ml-2 fill-current"
+                          width="16"
+                          height="20"
+                          viewBox="0 0 16 20"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M7.99999 14.9C7.84999 14.9 7.72499 14.85 7.59999 14.75L1.84999 9.10005C1.62499 8.87505 1.62499 8.52505 1.84999 8.30005C2.07499 8.07505 2.42499 8.07505 2.64999 8.30005L7.99999 13.525L13.35 8.25005C13.575 8.02505 13.925 8.02505 14.15 8.25005C14.375 8.47505 14.375 8.82505 14.15 9.05005L8.39999 14.7C8.27499 14.825 8.14999 14.9 7.99999 14.9Z"
+                          />
+                        </svg>
+                      </a>
+                      <div
+                        class="submenu relative left-0 top-full hidden w-[250px] rounded-sm bg-white p-4 transition-[top] duration-300 group-hover:opacity-100 dark:bg-dark-2 lg:invisible lg:absolute lg:top-[110%] lg:block lg:opacity-0 lg:shadow-lg lg:group-hover:visible lg:group-hover:top-full"
+                      >
+                        <a
+                          href="404.html"
+                          class="block rounded px-4 py-[10px] text-sm text-body-color hover:text-primary dark:text-dark-6 dark:hover:text-primary"
+                        >
+                          404 Page
+                        </a>
+                        <a
+                          href="404.html"
+                          class="block rounded px-4 py-[10px] text-sm text-body-color hover:text-primary dark:text-dark-6 dark:hover:text-primary"
+                        >
+                          404 Page
+                        </a>
+                      </div>
+                    </li>
+                  </div>
+                  <li class="submenu-item group relative">
+                    <div class="hidden sm:flex" style="margin-left: 20px">
+                      <a
+                        href="#"
+                        class="cart-form py-2 mr-3 text-base text-white hover:opacity-70"
+                      >
+                        <svg
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          stroke-width="2"
+                          stroke="currentColor"
+                          fill="none"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        >
+                          <path stroke="none" d="M0 0h24v24H0z" />
+                          <circle cx="9" cy="19" r="2" />
+                          <circle cx="17" cy="19" r="2" />
+                          <path
+                            d="M3 3h2l2 12a3 3 0 0 0 3 2h7a3 3 0 0 0 3 -2l1 -7h-15.2"
+                          />
+                        </svg>
+                      </a>
+                      <a
+                        href="#"
+                        class="fill-button-form rounded-md w-[130px] px-6 mr-3 py-2 text-center font-medium text-white duration-300 ease-in-out hover:bg-opacity-100"
+                      >
+                        Developer
+                      </a>
+                      <a
+                        href="#"
+                        class="outline-button-form px-[22px] w-[110px] py-2 text-center font-medium text-white hover:opacity-70"
+                      >
+                        Service
+                      </a>
+                    </div>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- ====== Navbar Section End -->
+
+      <div class="container">
+        <div class="menu-two-form"></div>
+      </div>
+
+      <div class="container" style="margin-top: 41px">
+        <h1 class="text-white sm:text-4xl lg:text-7xl">
+          Tous les <span style="color: yellowgreen">profils</span>
+        </h1>
+      </div>
+
+      <div class="container sm:px-0">
+        <div class="filter-block-form">
+          <div class="flex flex-row justify-between gap-5 p-5">
+            <div class="relative w-full sm:w-1/2 lg:w-screen lg:w-2/12">
+              <input
+                type="text"
+                class="filter-input-form w-full"
+                placeholder="Filter"
+              />
+              <svg
+                class="filter-icon-form h-8 w-8 text-red-500"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                stroke-width="2"
+                stroke="currentColor"
+                fill="none"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path stroke="none" d="M0 0h24v24H0z" />
+                <circle cx="14" cy="6" r="2" />
+                <line x1="4" y1="6" x2="12" y2="6" />
+                <line x1="16" y1="6" x2="20" y2="6" />
+                <circle cx="8" cy="12" r="2" />
+                <line x1="4" y1="12" x2="6" y2="12" />
+                <line x1="10" y1="12" x2="20" y2="12" />
+                <circle cx="17" cy="18" r="2" />
+                <line x1="4" y1="18" x2="15" y2="18" />
+                <line x1="19" y1="18" x2="20" y2="18" />
+              </svg>
+            </div>
+            <div class="w-full sm:hidden lg:w-screen lg:block lg:w-2/12">
+              <button
+                class="filter-button-form rounded-md px-1 text-center font-medium text-white duration-300 ease-in-out"
+                style="border-radius: 24px; width: 100%"
+              >
+                Developer
+              </button>
+            </div>
+            <div class="w-full sm:hidden lg:w-screen lg:block lg:w-2/12">
+              <button
+                class="filter-button-form rounded-md px-1 text-center font-medium text-white duration-300 ease-in-out"
+                style="border-radius: 24px; width: 100%"
+              >
+                Developer
+              </button>
+            </div>
+            <div class="w-full sm:hidden lg:w-screen lg:block lg:w-2/12">
+              <button
+                class="filter-button-form rounded-md px-1 text-center font-medium text-white duration-300 ease-in-out"
+                style="border-radius: 24px; width: 100%"
+              >
+                Developer
+              </button>
+            </div>
+            <div class="w-full sm:w-1/2 lg:w-screen lg:w-2/12">
+              <label class="select" for="slct">
+                <select
+                  id="slct"
+                  required="required"
+                  style="width: 100%; height: 64px"
+                >
+                  >
+                  <option value="" disabled="disabled" selected="selected">
+                    Select option
+                  </option>
+                  <option value="#">One</option>
+                  <option value="#">Two</option>
+                  <option value="#">Three</option>
+                  <option value="#">Four</option>
+                  <option value="#">Five</option>
+                  <option value="#">Six</option>
+                  <option value="#">Seven</option>
+                </select>
+                <svg
+                  class="filter-icon-form h-8 w-8 text-red-500"
+                  style="bottom: 0"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  stroke-width="2"
+                  stroke="currentColor"
+                  fill="none"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path stroke="none" d="M0 0h24v24H0z" />
+                  <polyline points="6 9 12 15 18 9" />
+                </svg>
+              </label>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ====== Blog Section Start -->
+      <section class="sm:pt-6 lg:pt-20 pb-10 lg:pt-[120px] lg:pb-20">
+        <div class="container">
+          <div class="flex flex-wrap">
+            <div class="w-full sm:w-1/2 lg:w-1/4 sm:p-1 lg:p-3">
+              <div class="mb-10 wow fadeInUp group" data-wow-delay=".1s">
+                <div
+                  class="text-white rounded-xl bg-[#0F1B1D] sm:p-3 lg:p-5 py-[15px] shadow-testimonial sm:px-[15px]"
+                  style="
+                    border: 1px solid #253032;
+                    border-radius: 20px;
+                    padding: 20px;
+                  "
+                >
+                  <div class="flex justify-between items-center">
+                    <h2 class="sm:text-base lg:text-3xl">Romain</h2>
+                    <svg
+                      class="h-8 w-8 text-red-500"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      stroke-width="2"
+                      stroke="currentColor"
+                      fill="none"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <path stroke="none" d="M0 0h24v24H0z" />
+                      <path
+                        d="M9 4h6a2 2 0 0 1 2 2v14l-5-3l-5 3v-14a2 2 0 0 1 2 -2"
+                      />
+                    </svg>
+                  </div>
+                  <h3 class="sm:text-xs lg:text-xl">Antérieurement chez</h3>
+                  <img
+                    src="assets/images/person1.png"
+                    class="curve-form"
+                    style="margin-top: 10px"
+                  />
+                  <div
+                    class="flex justify-between items-center lg:p-3"
+                    style="margin-top: 10px"
+                  >
+                    <h4 class="sm:text-[8px] lg:text-base">chez</h4>
+                    <img
+                      src="assets/images/logo-google.png"
+                      class="sm:w-12 lg:w-32"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="w-full sm:w-1/2 lg:w-1/4 sm:p-1 lg:p-3">
+              <div class="mb-10 wow fadeInUp group" data-wow-delay=".1s">
+                <div
+                  class="text-white rounded-xl bg-[#0F1B1D] sm:p-3 lg:p-5 py-[15px] shadow-testimonial sm:px-[15px]"
+                  style="
+                    border: 1px solid #253032;
+                    border-radius: 20px;
+                    padding: 20px;
+                  "
+                >
+                  <div class="flex justify-between items-center">
+                    <h2 class="sm:text-base lg:text-3xl">Romain</h2>
+                    <svg
+                      class="h-8 w-8 text-red-500"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      stroke-width="2"
+                      stroke="currentColor"
+                      fill="none"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <path stroke="none" d="M0 0h24v24H0z" />
+                      <path
+                        d="M9 4h6a2 2 0 0 1 2 2v14l-5-3l-5 3v-14a2 2 0 0 1 2 -2"
+                      />
+                    </svg>
+                  </div>
+                  <h3 class="sm:text-xs lg:text-xl">Antérieurement chez</h3>
+                  <img
+                    src="assets/images/person1.png"
+                    class="curve-form"
+                    style="margin-top: 10px"
+                  />
+                  <div
+                    class="flex justify-between items-center lg:p-3"
+                    style="margin-top: 10px"
+                  >
+                    <h4 class="sm:text-[8px] lg:text-base">chez</h4>
+                    <img
+                      src="assets/images/logo-google.png"
+                      class="sm:w-12 lg:w-32"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="w-full sm:w-1/2 lg:w-1/4 sm:p-1 lg:p-3">
+              <div class="mb-10 wow fadeInUp group" data-wow-delay=".1s">
+                <div
+                  class="text-white rounded-xl bg-[#0F1B1D] sm:p-3 lg:p-5 py-[15px] shadow-testimonial sm:px-[15px]"
+                  style="
+                    border: 1px solid #253032;
+                    border-radius: 20px;
+                    padding: 20px;
+                  "
+                >
+                  <div class="flex justify-between items-center">
+                    <h2 class="sm:text-base lg:text-3xl">Romain</h2>
+                    <svg
+                      class="h-8 w-8 text-red-500"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      stroke-width="2"
+                      stroke="currentColor"
+                      fill="none"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <path stroke="none" d="M0 0h24v24H0z" />
+                      <path
+                        d="M9 4h6a2 2 0 0 1 2 2v14l-5-3l-5 3v-14a2 2 0 0 1 2 -2"
+                      />
+                    </svg>
+                  </div>
+                  <h3 class="sm:text-xs lg:text-xl">Antérieurement chez</h3>
+                  <img
+                    src="assets/images/person1.png"
+                    class="curve-form"
+                    style="margin-top: 10px"
+                  />
+                  <div
+                    class="flex justify-between items-center lg:p-3"
+                    style="margin-top: 10px"
+                  >
+                    <h4 class="sm:text-[8px] lg:text-base">chez</h4>
+                    <img
+                      src="assets/images/logo-google.png"
+                      class="sm:w-12 lg:w-32"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="w-full sm:w-1/2 lg:w-1/4 sm:p-1 lg:p-3">
+              <div class="mb-10 wow fadeInUp group" data-wow-delay=".1s">
+                <div
+                  class="text-white rounded-xl bg-[#0F1B1D] sm:p-3 lg:p-5 py-[15px] shadow-testimonial sm:px-[15px]"
+                  style="
+                    border: 1px solid #253032;
+                    border-radius: 20px;
+                    padding: 20px;
+                  "
+                >
+                  <div class="flex justify-between items-center">
+                    <h2 class="sm:text-base lg:text-3xl">Romain</h2>
+                    <svg
+                      class="h-8 w-8 text-red-500"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      stroke-width="2"
+                      stroke="currentColor"
+                      fill="none"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <path stroke="none" d="M0 0h24v24H0z" />
+                      <path
+                        d="M9 4h6a2 2 0 0 1 2 2v14l-5-3l-5 3v-14a2 2 0 0 1 2 -2"
+                      />
+                    </svg>
+                  </div>
+                  <h3 class="sm:text-xs lg:text-xl">Antérieurement chez</h3>
+                  <img
+                    src="assets/images/person1.png"
+                    class="curve-form"
+                    style="margin-top: 10px"
+                  />
+                  <div
+                    class="flex justify-between items-center lg:p-3"
+                    style="margin-top: 10px"
+                  >
+                    <h4 class="sm:text-[8px] lg:text-base">chez</h4>
+                    <img
+                      src="assets/images/logo-google.png"
+                      class="sm:w-12 lg:w-32"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="w-full sm:w-1/2 lg:w-1/4 sm:p-1 lg:p-3">
+              <div class="mb-10 wow fadeInUp group" data-wow-delay=".1s">
+                <div
+                  class="text-white rounded-xl bg-[#0F1B1D] sm:p-3 lg:p-5 py-[15px] shadow-testimonial sm:px-[15px]"
+                  style="
+                    border: 1px solid #253032;
+                    border-radius: 20px;
+                    padding: 20px;
+                  "
+                >
+                  <div class="flex justify-between items-center">
+                    <h2 class="sm:text-base lg:text-3xl">Romain</h2>
+                    <svg
+                      class="h-8 w-8 text-red-500"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      stroke-width="2"
+                      stroke="currentColor"
+                      fill="none"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <path stroke="none" d="M0 0h24v24H0z" />
+                      <path
+                        d="M9 4h6a2 2 0 0 1 2 2v14l-5-3l-5 3v-14a2 2 0 0 1 2 -2"
+                      />
+                    </svg>
+                  </div>
+                  <h3 class="sm:text-xs lg:text-xl">Antérieurement chez</h3>
+                  <img
+                    src="assets/images/person1.png"
+                    class="curve-form"
+                    style="margin-top: 10px"
+                  />
+                  <div
+                    class="flex justify-between items-center lg:p-3"
+                    style="margin-top: 10px"
+                  >
+                    <h4 class="sm:text-[8px] lg:text-base">chez</h4>
+                    <img
+                      src="assets/images/logo-google.png"
+                      class="sm:w-12 lg:w-32"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="w-full sm:w-1/2 lg:w-1/4 sm:p-1 lg:p-3">
+              <div class="mb-10 wow fadeInUp group" data-wow-delay=".1s">
+                <div
+                  class="text-white rounded-xl bg-[#0F1B1D] sm:p-3 lg:p-5 py-[15px] shadow-testimonial sm:px-[15px]"
+                  style="
+                    border: 1px solid #253032;
+                    border-radius: 20px;
+                    padding: 20px;
+                  "
+                >
+                  <div class="flex justify-between items-center">
+                    <h2 class="sm:text-base lg:text-3xl">Romain</h2>
+                    <svg
+                      class="h-8 w-8 text-red-500"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      stroke-width="2"
+                      stroke="currentColor"
+                      fill="none"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <path stroke="none" d="M0 0h24v24H0z" />
+                      <path
+                        d="M9 4h6a2 2 0 0 1 2 2v14l-5-3l-5 3v-14a2 2 0 0 1 2 -2"
+                      />
+                    </svg>
+                  </div>
+                  <h3 class="sm:text-xs lg:text-xl">Antérieurement chez</h3>
+                  <img
+                    src="assets/images/person1.png"
+                    class="curve-form"
+                    style="margin-top: 10px"
+                  />
+                  <div
+                    class="flex justify-between items-center lg:p-3"
+                    style="margin-top: 10px"
+                  >
+                    <h4 class="sm:text-[8px] lg:text-base">chez</h4>
+                    <img
+                      src="assets/images/logo-google.png"
+                      class="sm:w-12 lg:w-32"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="w-full sm:w-1/2 lg:w-1/4 sm:p-1 lg:p-3">
+              <div class="mb-10 wow fadeInUp group" data-wow-delay=".1s">
+                <img src="assets/images/contact-image.png" alt="contact" />
+              </div>
+            </div>
+            <div class="w-full sm:w-1/2 lg:w-1/4 sm:p-1 lg:p-3">
+              <div class="mb-10 wow fadeInUp group" data-wow-delay=".1s">
+                <div
+                  class="text-white rounded-xl bg-[#0F1B1D] sm:p-3 lg:p-5 py-[15px] shadow-testimonial sm:px-[15px]"
+                  style="
+                    border: 1px solid #253032;
+                    border-radius: 20px;
+                    padding: 20px;
+                  "
+                >
+                  <div class="flex justify-between items-center">
+                    <h2 class="sm:text-base lg:text-3xl">Romain</h2>
+                    <svg
+                      class="h-8 w-8 text-red-500"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      stroke-width="2"
+                      stroke="currentColor"
+                      fill="none"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <path stroke="none" d="M0 0h24v24H0z" />
+                      <path
+                        d="M9 4h6a2 2 0 0 1 2 2v14l-5-3l-5 3v-14a2 2 0 0 1 2 -2"
+                      />
+                    </svg>
+                  </div>
+                  <h3 class="sm:text-xs lg:text-xl">Antérieurement chez</h3>
+                  <img
+                    src="assets/images/person1.png"
+                    class="curve-form"
+                    style="margin-top: 10px"
+                  />
+                  <div
+                    class="flex justify-between items-center lg:p-3"
+                    style="margin-top: 10px"
+                  >
+                    <h4 class="sm:text-[8px] lg:text-base">chez</h4>
+                    <img
+                      src="assets/images/logo-google.png"
+                      class="sm:w-12 lg:w-32"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="w-full sm:w-1/2 lg:w-1/4 sm:p-1 lg:p-3">
+              <div class="mb-10 wow fadeInUp group" data-wow-delay=".1s">
+                <div
+                  class="text-white rounded-xl bg-[#0F1B1D] sm:p-3 lg:p-5 py-[15px] shadow-testimonial sm:px-[15px]"
+                  style="
+                    border: 1px solid #253032;
+                    border-radius: 20px;
+                    padding: 20px;
+                  "
+                >
+                  <div class="flex justify-between items-center">
+                    <h2 class="sm:text-base lg:text-3xl">Romain</h2>
+                    <svg
+                      class="h-8 w-8 text-red-500"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      stroke-width="2"
+                      stroke="currentColor"
+                      fill="none"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <path stroke="none" d="M0 0h24v24H0z" />
+                      <path
+                        d="M9 4h6a2 2 0 0 1 2 2v14l-5-3l-5 3v-14a2 2 0 0 1 2 -2"
+                      />
+                    </svg>
+                  </div>
+                  <h3 class="sm:text-xs lg:text-xl">Antérieurement chez</h3>
+                  <img
+                    src="assets/images/person1.png"
+                    class="curve-form"
+                    style="margin-top: 10px"
+                  />
+                  <div
+                    class="flex justify-between items-center lg:p-3"
+                    style="margin-top: 10px"
+                  >
+                    <h4 class="sm:text-[8px] lg:text-base">chez</h4>
+                    <img
+                      src="assets/images/logo-google.png"
+                      class="sm:w-12 lg:w-32"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="w-full sm:w-1/2 lg:w-1/4 sm:p-1 lg:p-3">
+              <div class="mb-10 wow fadeInUp group" data-wow-delay=".1s">
+                <div
+                  class="text-white rounded-xl bg-[#0F1B1D] sm:p-3 lg:p-5 py-[15px] shadow-testimonial sm:px-[15px]"
+                  style="
+                    border: 1px solid #253032;
+                    border-radius: 20px;
+                    padding: 20px;
+                  "
+                >
+                  <div class="flex justify-between items-center">
+                    <h2 class="sm:text-base lg:text-3xl">Romain</h2>
+                    <svg
+                      class="h-8 w-8 text-red-500"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      stroke-width="2"
+                      stroke="currentColor"
+                      fill="none"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <path stroke="none" d="M0 0h24v24H0z" />
+                      <path
+                        d="M9 4h6a2 2 0 0 1 2 2v14l-5-3l-5 3v-14a2 2 0 0 1 2 -2"
+                      />
+                    </svg>
+                  </div>
+                  <h3 class="sm:text-xs lg:text-xl">Antérieurement chez</h3>
+                  <img
+                    src="assets/images/person1.png"
+                    class="curve-form"
+                    style="margin-top: 10px"
+                  />
+                  <div
+                    class="flex justify-between items-center lg:p-3"
+                    style="margin-top: 10px"
+                  >
+                    <h4 class="sm:text-[8px] lg:text-base">chez</h4>
+                    <img
+                      src="assets/images/logo-google.png"
+                      class="sm:w-12 lg:w-32"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="w-full sm:w-1/2 lg:w-1/4 sm:p-1 lg:p-3">
+              <div class="mb-10 wow fadeInUp group" data-wow-delay=".1s">
+                <div
+                  class="text-white rounded-xl bg-[#0F1B1D] sm:p-3 lg:p-5 py-[15px] shadow-testimonial sm:px-[15px]"
+                  style="
+                    border: 1px solid #253032;
+                    border-radius: 20px;
+                    padding: 20px;
+                  "
+                >
+                  <div class="flex justify-between items-center">
+                    <h2 class="sm:text-base lg:text-3xl">Romain</h2>
+                    <svg
+                      class="h-8 w-8 text-red-500"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      stroke-width="2"
+                      stroke="currentColor"
+                      fill="none"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <path stroke="none" d="M0 0h24v24H0z" />
+                      <path
+                        d="M9 4h6a2 2 0 0 1 2 2v14l-5-3l-5 3v-14a2 2 0 0 1 2 -2"
+                      />
+                    </svg>
+                  </div>
+                  <h3 class="sm:text-xs lg:text-xl">Antérieurement chez</h3>
+                  <img
+                    src="assets/images/person1.png"
+                    class="curve-form"
+                    style="margin-top: 10px"
+                  />
+                  <div
+                    class="flex justify-between items-center lg:p-3"
+                    style="margin-top: 10px"
+                  >
+                    <h4 class="sm:text-[8px] lg:text-base">chez</h4>
+                    <img
+                      src="assets/images/logo-google.png"
+                      class="sm:w-12 lg:w-32"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="w-full sm:w-1/2 lg:w-1/4 sm:p-1 lg:p-3">
+              <div class="mb-10 wow fadeInUp group" data-wow-delay=".1s">
+                <div
+                  class="text-white rounded-xl bg-[#0F1B1D] sm:p-3 lg:p-5 py-[15px] shadow-testimonial sm:px-[15px]"
+                  style="
+                    border: 1px solid #253032;
+                    border-radius: 20px;
+                    padding: 20px;
+                  "
+                >
+                  <div class="flex justify-between items-center">
+                    <h2 class="sm:text-base lg:text-3xl">Romain</h2>
+                    <svg
+                      class="h-8 w-8 text-red-500"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      stroke-width="2"
+                      stroke="currentColor"
+                      fill="none"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <path stroke="none" d="M0 0h24v24H0z" />
+                      <path
+                        d="M9 4h6a2 2 0 0 1 2 2v14l-5-3l-5 3v-14a2 2 0 0 1 2 -2"
+                      />
+                    </svg>
+                  </div>
+                  <h3 class="sm:text-xs lg:text-xl">Antérieurement chez</h3>
+                  <img
+                    src="assets/images/person1.png"
+                    class="curve-form"
+                    style="margin-top: 10px"
+                  />
+                  <div
+                    class="flex justify-between items-center lg:p-3"
+                    style="margin-top: 10px"
+                  >
+                    <h4 class="sm:text-[8px] lg:text-base">chez</h4>
+                    <img
+                      src="assets/images/logo-google.png"
+                      class="sm:w-12 lg:w-32"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="w-full sm:w-1/2 lg:w-1/4 sm:p-1 lg:p-3">
+              <div class="mb-10 wow fadeInUp group" data-wow-delay=".1s">
+                <div
+                  class="text-white rounded-xl bg-[#0F1B1D] sm:p-3 lg:p-5 py-[15px] shadow-testimonial sm:px-[15px]"
+                  style="
+                    border: 1px solid #253032;
+                    border-radius: 20px;
+                    padding: 20px;
+                  "
+                >
+                  <div class="flex justify-between items-center">
+                    <h2 class="sm:text-base lg:text-3xl">Romain</h2>
+                    <svg
+                      class="h-8 w-8 text-red-500"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      stroke-width="2"
+                      stroke="currentColor"
+                      fill="none"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <path stroke="none" d="M0 0h24v24H0z" />
+                      <path
+                        d="M9 4h6a2 2 0 0 1 2 2v14l-5-3l-5 3v-14a2 2 0 0 1 2 -2"
+                      />
+                    </svg>
+                  </div>
+                  <h3 class="sm:text-xs lg:text-xl">Antérieurement chez</h3>
+                  <img
+                    src="assets/images/person1.png"
+                    class="curve-form"
+                    style="margin-top: 10px"
+                  />
+                  <div
+                    class="flex justify-between items-center lg:p-3"
+                    style="margin-top: 10px"
+                  >
+                    <h4 class="sm:text-[8px] lg:text-base">chez</h4>
+                    <img
+                      src="assets/images/logo-google.png"
+                      class="sm:w-12 lg:w-32"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="w-full sm:w-1/2 lg:w-1/4 sm:p-1 lg:p-3">
+              <div class="mb-10 wow fadeInUp group" data-wow-delay=".1s">
+                <div
+                  class="text-white rounded-xl bg-[#0F1B1D] sm:p-3 lg:p-5 py-[15px] shadow-testimonial sm:px-[15px]"
+                  style="
+                    border: 1px solid #253032;
+                    border-radius: 20px;
+                    padding: 20px;
+                  "
+                >
+                  <div class="flex justify-between items-center">
+                    <h2 class="sm:text-base lg:text-3xl">Romain</h2>
+                    <svg
+                      class="h-8 w-8 text-red-500"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      stroke-width="2"
+                      stroke="currentColor"
+                      fill="none"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <path stroke="none" d="M0 0h24v24H0z" />
+                      <path
+                        d="M9 4h6a2 2 0 0 1 2 2v14l-5-3l-5 3v-14a2 2 0 0 1 2 -2"
+                      />
+                    </svg>
+                  </div>
+                  <h3 class="sm:text-xs lg:text-xl">Antérieurement chez</h3>
+                  <img
+                    src="assets/images/person1.png"
+                    class="curve-form"
+                    style="margin-top: 10px"
+                  />
+                  <div
+                    class="flex justify-between items-center lg:p-3"
+                    style="margin-top: 10px"
+                  >
+                    <h4 class="sm:text-[8px] lg:text-base">chez</h4>
+                    <img
+                      src="assets/images/logo-google.png"
+                      class="sm:w-12 lg:w-32"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="w-full sm:w-1/2 lg:w-1/4 sm:p-1 lg:p-3">
+              <div class="mb-10 wow fadeInUp group" data-wow-delay=".1s">
+                <div
+                  class="text-white rounded-xl bg-[#0F1B1D] sm:p-3 lg:p-5 py-[15px] shadow-testimonial sm:px-[15px]"
+                  style="
+                    border: 1px solid #253032;
+                    border-radius: 20px;
+                    padding: 20px;
+                  "
+                >
+                  <div class="flex justify-between items-center">
+                    <h2 class="sm:text-base lg:text-3xl">Romain</h2>
+                    <svg
+                      class="h-8 w-8 text-red-500"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      stroke-width="2"
+                      stroke="currentColor"
+                      fill="none"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <path stroke="none" d="M0 0h24v24H0z" />
+                      <path
+                        d="M9 4h6a2 2 0 0 1 2 2v14l-5-3l-5 3v-14a2 2 0 0 1 2 -2"
+                      />
+                    </svg>
+                  </div>
+                  <h3 class="sm:text-xs lg:text-xl">Antérieurement chez</h3>
+                  <img
+                    src="assets/images/person1.png"
+                    class="curve-form"
+                    style="margin-top: 10px"
+                  />
+                  <div
+                    class="flex justify-between items-center lg:p-3"
+                    style="margin-top: 10px"
+                  >
+                    <h4 class="sm:text-[8px] lg:text-base">chez</h4>
+                    <img
+                      src="assets/images/logo-google.png"
+                      class="sm:w-12 lg:w-32"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="w-full sm:w-1/2 lg:w-1/4 sm:p-1 lg:p-3">
+              <div class="mb-10 wow fadeInUp group" data-wow-delay=".1s">
+                <div
+                  class="text-white rounded-xl bg-[#0F1B1D] sm:p-3 lg:p-5 py-[15px] shadow-testimonial sm:px-[15px]"
+                  style="
+                    border: 1px solid #253032;
+                    border-radius: 20px;
+                    padding: 20px;
+                  "
+                >
+                  <div class="flex justify-between items-center">
+                    <h2 class="sm:text-base lg:text-3xl">Romain</h2>
+                    <svg
+                      class="h-8 w-8 text-red-500"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      stroke-width="2"
+                      stroke="currentColor"
+                      fill="none"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <path stroke="none" d="M0 0h24v24H0z" />
+                      <path
+                        d="M9 4h6a2 2 0 0 1 2 2v14l-5-3l-5 3v-14a2 2 0 0 1 2 -2"
+                      />
+                    </svg>
+                  </div>
+                  <h3 class="sm:text-xs lg:text-xl">Antérieurement chez</h3>
+                  <img
+                    src="assets/images/person1.png"
+                    class="curve-form"
+                    style="margin-top: 10px"
+                  />
+                  <div
+                    class="flex justify-between items-center lg:p-3"
+                    style="margin-top: 10px"
+                  >
+                    <h4 class="sm:text-[8px] lg:text-base">chez</h4>
+                    <img
+                      src="assets/images/logo-google.png"
+                      class="sm:w-12 lg:w-32"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="mt-8 text-center wow fadeInUp" data-wow-delay=".2s">
+            <div class="inline-flex p-3 bg-transparent">
+              <ul class="flex items-center -mx-1">
+                <li class="px-1">
+                  <a
+                    href="javascript:void(0)"
+                    class="flex items-center justify-center text-base bg-transparent border rounded-md hover:border-primary hover:bg-primary h-[34px] w-[34px] border-stroke dark:border-dark-3 text-body-color dark:text-dark-6 hover:text-white dark:hover:border-primary dark:hover:text-white"
+                  >
+                    <span>
+                      <svg
+                        class="h-8 w-8 text-red-500"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        stroke-width="2"
+                        stroke="currentColor"
+                        fill="none"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      >
+                        <path stroke="none" d="M0 0h24v24H0z" />
+                        <line x1="5" y1="12" x2="19" y2="12" />
+                        <line x1="5" y1="12" x2="11" y2="18" />
+                        <line x1="5" y1="12" x2="11" y2="6" />
+                      </svg>
+                    </span>
+                  </a>
+                </li>
+                <li class="px-1">
+                  <a
+                    href="javascript:void(0)"
+                    class="flex items-center justify-center sm:border-none text-base bg-transparent rounded-full hover:bg-white hover:text-black h-[34px] w-[34px] text-body-color"
+                  >
+                    1
+                  </a>
+                </li>
+                <li class="px-1">
+                  <a
+                    href="javascript:void(0)"
+                    class="flex items-center justify-center sm:border-none text-base bg-transparent rounded-full hover:bg-white hover:text-black h-[34px] w-[34px] text-body-color"
+                  >
+                    2
+                  </a>
+                </li>
+                <li class="px-1 sm:hidden lg:block">
+                  <a
+                    href="javascript:void(0)"
+                    class="flex items-center justify-center sm:border-none text-base bg-transparent rounded-full hover:bg-white hover:text-black h-[34px] w-[34px] text-body-color"
+                  >
+                    3
+                  </a>
+                </li>
+                <li class="px-1">
+                  <a
+                    href="javascript:void(0)"
+                    class="flex items-center justify-center text-base bg-transparent border rounded-md hover:border-primary hover:bg-primary h-[34px] w-[34px] border-stroke dark:border-dark-3 text-body-color dark:text-dark-6 hover:text-white dark:hover:border-primary dark:hover:text-white"
+                  >
+                    <span>
+                      <svg
+                        class="h-8 w-8 text-red-500"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        stroke-width="2"
+                        stroke="currentColor"
+                        fill="none"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      >
+                        <path stroke="none" d="M0 0h24v24H0z" />
+                        <line x1="5" y1="12" x2="19" y2="12" />
+                        <line x1="13" y1="18" x2="19" y2="12" />
+                        <line x1="13" y1="6" x2="19" y2="12" />
+                      </svg>
+                    </span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+            <h1 class="text-lg" style="color: white">You can show 10 items</h1>
+          </div>
+        </div>
+      </section>
+      <!-- ====== Blog Section End -->
+
+      <div class="third-background sm">
+        <div class="container">
+          <div class="flex flex-wrap" style="padding-top: 100px">
+            <div
+              class="w-full sm:w-2/2 lg:w-1/2 flex justify-center items-center"
+            >
+              <div>
+                <h1 class="sm:text-4xl lg:text-5xl" style="color: mediumpurple">
+                  Talent
+                </h1>
+                <h1 class="sm:text-4xl lg:text-5xl" style="color: white">
+                  Talent developer in
+                  <span style="color: mediumpurple">Upwork</span>
+                </h1>
+                <h2
+                  class="sm:text-base lg:text-2xl sm:pt-4"
+                  style="color: white"
+                >
+                  We will provide the best performance and collaboration.<br />
+                  Also we have rich experience with Web development.
+                  <br /><br />
+                  Our strength is Frontend development and also we are good at
+                  Backend development.<br />
+                  We are available for you all the time.
+                </h2>
+                <br /><br />
+                <h2 class="sm:text-base lg:text-2xl" style="color: #d9f777">
+                  you will be very very happy!
+                </h2>
+                <br /><br />
+                <button
+                  class="flex justify-center items-center mb-4 w-[250px] h-[50px] sm:text-lg lg:text-2xl fill-button-form rounded-md px-1 text-center font-medium text-black duration-300 ease-in-out hover:bg-opacity-100"
+                  style="background-color: #d9f777"
+                >
+                  Contact with
+                  <svg
+                    class="h-8 w-8 text-red-500"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    stroke-width="2"
+                    stroke="currentColor"
+                    fill="none"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path stroke="none" d="M0 0h24v24H0z" />
+                    <line x1="5" y1="12" x2="19" y2="12" />
+                    <line x1="13" y1="18" x2="19" y2="12" />
+                    <line x1="13" y1="6" x2="19" y2="12" />
+                  </svg>
+                </button>
+              </div>
+            </div>
+            <div class="w-full sm:pt-10 lg:pt-0 sm:w-2/2 lg:w-1/2">
+              <img src="assets/images/talent-image.png" alt="talent" />
+            </div>
+          </div>
+        </div>
+
+        <footer
+          class="relative border-t border-[#8890A4] border-opacity-40 z-10 pt-20 lg:pt-[100px]"
+          style="margin-top: 120px"
+          data-wow-delay=".15s"
+        >
+          <div class="container">
+            <div class="flex flex-wrap lg:px-[120px]">
+              <div class="w-full px-4 sm:w-screen md:w-1/2 lg:w-3/12 xl:w-3/12">
+                <div class="mb-10 w-full">
+                  <a href="javascript:void(0)" class="inline-block">
+                    <img
+                      src="assets/images/footer.png"
+                      alt="logo"
+                      class="max-w-full"
+                    />
+                  </a>
+                </div>
+              </div>
+              <div class="w-full px-4 sm:w-screen md:w-1/2 lg:w-3/12 xl:w-4/12">
+                <div class="mb-10 w-full">
+                  <h4 class="mb-9 text-lg font-semibold text-white">
+                    About Me
+                  </h4>
+                  <ul>
+                    <li>
+                      <button
+                        class="fill-button-form px-1 text-center font-medium text-white duration-300 ease-in-out hover:bg-opacity-100"
+                        style="width: 200px"
+                      >
+                        Contact with
+                      </button>
+                    </li>
+                    <li>
+                      <button
+                        class="outline-button-form px-1 text-center font-medium text-white duration-300 ease-in-out hover:bg-opacity-100"
+                        style="margin-top: 20px; width: 200px"
+                      >
+                        FAQ
+                      </button>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="w-full px-4 sm:w-screen md:w-1/2 lg:w-3/12 xl:w-3/12">
+                <div class="mb-10 w-full">
+                  <h4 class="mb-9 text-lg font-semibold text-white">
+                    Features
+                  </h4>
+                  <ul>
+                    <li>
+                      <div class="grid sm:h-16">
+                        <select
+                          class="select-form appearance-none row-start-1 text-white col-start-1 focus:outline-none bg-transparent sm:h-12"
+                        >
+                          <option>Yes</option>
+                          <option>No</option>
+                          <option>Maybe</option>
+                        </select>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="grid sm:h-16">
+                        <select
+                          class="select-form appearance-none row-start-1 text-white col-start-1 focus:outline-none bg-transparent sm:h-12"
+                        >
+                          <option>Yes</option>
+                          <option>No</option>
+                          <option>Maybe</option>
+                        </select>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="grid sm:h-16">
+                        <select
+                          class="select-form appearance-none row-start-1 text-white col-start-1 focus:outline-none bg-transparent sm:h-12"
+                        >
+                          <option>Yes</option>
+                          <option>No</option>
+                          <option>Maybe</option>
+                        </select>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="grid sm:h-16">
+                        <select
+                          class="select-form appearance-none row-start-1 text-white col-start-1 focus:outline-none bg-transparent sm:h-12"
+                        >
+                          <option>Yes</option>
+                          <option>No</option>
+                          <option>Maybe</option>
+                        </select>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div
+                class="w-full px-4 sm:w-screen md:w-1/2 lg:w-3/12 xl:w-2/12 flex justify-center"
+              >
+                <div class="mb-11 w-full">
+                  <h4 class="mb-11 text-lg font-semibold text-white">
+                    Our Products
+                  </h4>
+                  <ul>
+                    <li>
+                      <a
+                        href="javascript:void(0)"
+                        class="mb-3 sm:mt-10 flex inline-block text-base text-gray-7 hover:text-primary"
+                      >
+                        <svg
+                          class="h-8 w-8 text-red-500"
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          stroke-width="2"
+                          stroke="currentColor"
+                          fill="none"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        >
+                          <path stroke="none" d="M0 0h24v24H0z" />
+                          <rect x="4" y="4" width="16" height="16" rx="4" />
+                          <circle cx="12" cy="12" r="3" />
+                          <line x1="16.5" y1="7.5" x2="16.5" y2="7.501" />
+                        </svg>
+                        Instagram
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="javascript:void(0)"
+                        class="mb-3 sm:mt-10 flex inline-block text-base text-gray-7 hover:text-primary"
+                      >
+                        <svg
+                          class="h-8 w-8 text-red-500"
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          stroke-width="2"
+                          stroke="currentColor"
+                          fill="none"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        >
+                          <path stroke="none" d="M0 0h24v24H0z" />
+                          <path
+                            d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3"
+                          />
+                        </svg>
+                        Instagram
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="javascript:void(0)"
+                        class="mb-3 sm:mt-10 flex inline-block text-base text-gray-7 hover:text-primary"
+                      >
+                        <svg
+                          class="h-8 w-8 text-red-500"
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          stroke-width="2"
+                          stroke="currentColor"
+                          fill="none"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        >
+                          <path stroke="none" d="M0 0h24v24H0z" />
+                          <path
+                            d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3"
+                          />
+                        </svg>
+                        Instagram
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="javascript:void(0)"
+                        class="mb-3 sm:mt-10 flex inline-block text-base text-gray-7 hover:text-primary"
+                      >
+                        <svg
+                          class="h-8 w-8 text-red-500"
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          stroke-width="2"
+                          stroke="currentColor"
+                          fill="none"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        >
+                          <path stroke="none" d="M0 0h24v24H0z" />
+                          <path
+                            d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3"
+                          />
+                        </svg>
+                        Instagram
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="mt-12 border-t border-[#8890A4] border-opacity-40 py-8 lg:mt-[60px]"
+          >
+            <div class="container">
+              <div class="-mx-4 flex flex-wrap justify-between">
+                <div
+                  class="w-full px-4 left-0 sm:w-screen lg:w-6/12 flex sm:mb-3 lg:mb-0"
+                >
+                  <div class="my-1 flex justify-center md:justify-end">
+                    <p class="text-base text-gray-7">
+                      @2024 Aideprojet
+                      <a
+                        href="https://tailgrids.com"
+                        rel="nofollow noopner"
+                        target="_blank"
+                        class="text-gray-1 hover:underline"
+                      >
+                        TailGrids and UIdeck
+                      </a>
+                    </p>
+                  </div>
+                </div>
+                <div
+                  class="w-full px-4 right-0 flex flex-wrap lg:justify-around sm:w-screen lg:w-6/12"
+                >
+                  <a
+                    href="javascript:void(0)"
+                    class="w-full sm:w-screen sm:mb-3 lg:mb-0 lg:w-4/12 lg:flex sm:justify-start lg:justify-end px-3 text-base text-gray-7 hover:text-white hover:underline"
+                  >
+                    Privacy policy
+                  </a>
+                  <a
+                    href="javascript:void(0)"
+                    class="w-full sm:w-screen sm:mb-3 lg:mb-0 lg:w-4/12 lg:flex sm:justify-start lg:justify-end px-3 text-base text-gray-7 hover:text-white hover:underline"
+                  >
+                    Legal notice
+                  </a>
+                  <a
+                    href="javascript:void(0)"
+                    class="w-full sm:w-screen sm:mb-3 lg:mb-0 lg:w-4/12 lg:flex sm:justify-start lg:justify-end px-3 text-base text-gray-7 hover:text-white hover:underline"
+                  >
+                    Terms of service
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </footer>
+        <!-- ====== Footer Section End -->
+      </div>
+
+      <!-- ====== Back To Top Start -->
+    </div>
+
+    <a
+      href="javascript:void(0)"
+      class="back-to-top fixed bottom-8 left-auto right-8 z-[999] hidden h-10 w-10 items-center justify-center rounded-md bg-primary text-white shadow-md transition duration-300 ease-in-out hover:bg-dark"
+    >
+      <span
+        class="mt-[6px] h-3 w-3 rotate-45 border-l border-t border-white"
+      ></span>
+    </a>
+    <!-- ====== Back To Top End -->
+
+    <!-- ====== All Scripts -->
+
+    <script src="assets/js/custom.js"></script>
+    <script>
+      // ==== for menu scroll
+      const pageLink = document.querySelectorAll(".ud-menu-scroll");
+
+      pageLink.forEach((elem) => {
+        elem.addEventListener("click", (e) => {
+          e.preventDefault();
+          document.querySelector(elem.getAttribute("href")).scrollIntoView({
+            behavior: "smooth",
+            offsetTop: 1 - 60,
+          });
+        });
+      });
+
+      // section menu active
+      function onScroll(event) {
+        const sections = document.querySelectorAll(".ud-menu-scroll");
+        const scrollPos =
+          window.pageYOffset ||
+          document.documentElement.scrollTop ||
+          document.body.scrollTop;
+
+        for (let i = 0; i < sections.length; i++) {
+          const currLink = sections[i];
+          const val = currLink.getAttribute("href");
+          const refElement = document.querySelector(val);
+          const scrollTopMinus = scrollPos + 73;
+          if (
+            refElement.offsetTop <= scrollTopMinus &&
+            refElement.offsetTop + refElement.offsetHeight > scrollTopMinus
+          ) {
+            document
+              .querySelector(".ud-menu-scroll")
+              .classList.remove("active");
+            currLink.classList.add("active");
+          } else {
+            currLink.classList.remove("active");
+          }
+        }
+      }
+
+      window.document.addEventListener("scroll", onScroll);
+    </script>
+  </body>
+</html>

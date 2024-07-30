@@ -1,0 +1,1720 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aideprojet | Home</title>
+    <link
+      rel="shortcut icon"
+      href="assets/images/favicon.png"
+      type="image/x-icon"
+    />
+
+    <link type="text/css" rel="stylesheet" href="assets/css/slick.css" />
+    <link type="text/css" rel="stylesheet" href="assets/css/slick-theme.css" />
+
+    <link rel="stylesheet" href="assets/css/custom.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/animate.css" />
+    <link rel="stylesheet" href="assets/css/tailwind.css" />
+
+    <!-- ==== WOW JS ==== -->
+    <script src="assets/js/wow.min.js"></script>
+    <script>
+      new WOW().init();
+    </script>
+
+    <style>
+      .slick-prev:before,
+      .slick-next:before {
+        color: white;
+      }
+      .slick-prev:before {
+        content: "←";
+      }
+      .slick-next:before {
+        content: "→";
+      }
+      .products-slick .slick-slide {
+        transition: all ease-in-out 0.5s;
+        opacity: 0.5;
+      }
+
+      .products-slick .slick-active {
+        opacity: 0.5;
+      }
+
+      .products-slick .slick-current {
+        opacity: 1;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- ====== Navbar Section Start -->
+    <div class="relative first-background initial-background">
+      <!--        <img src="assets/images/mask1.png" class="absolute" style="top: 0; left: 0; width: 100%">-->
+      <div class="flex w-full items-center bg-transparent">
+        <div class="container">
+          <div class="relative -mx-4 flex items-center justify-between">
+            <div class="w-60 max-w-full px-4">
+              <a href="index.html" class="navbar-logo block w-full py-5">
+                <img
+                  src="assets/images/logo.png"
+                  alt="logo"
+                  class="header-logo w-full"
+                />
+              </a>
+            </div>
+
+            <div class="flex w-full items-center justify-between px-4">
+              <button
+                id="navbarToggler"
+                class="flex justify-center items-center absolute right-4 top-1/2 -translate-y-1/2 rounded-lg px-3 py-[6px] xl:hidden"
+              >
+                <div>
+                  <span
+                    class="text-white text-[20px]"
+                    style="margin-right: 10px"
+                    >Menu</span
+                  >
+                </div>
+                <div>
+                  <svg
+                    class="h-10 w-10 text-white"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M4 6h16M4 12h16m-7 6h7"
+                    />
+                  </svg>
+                </div>
+              </button>
+              <nav
+                id="navbarCollapse"
+                class="absolute right-4 top-full hidden w-full max-w-[250px] rounded-lg bg-white py-5 shadow-lg xl:static xl:block xl:w-full xl:max-w-full xl:bg-transparent xl:py-0 xl:shadow-none xl:px-6"
+              >
+                <ul class="xl:flex 2xl:ml-20 justify-between items-center">
+                  <li class="submenu-item group relative">
+                    <div class="relative">
+                      <input
+                        type="search"
+                        class="search-form"
+                        style="width: 250px"
+                        placeholder="Developer, Recruter..."
+                      />
+                      <svg
+                        class="icon-form"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      >
+                        <circle cx="11" cy="11" r="8" />
+                        <line x1="21" y1="21" x2="16.65" y2="16.65" />
+                      </svg>
+                    </div>
+                  </li>
+                  <div class="flex justify-between" style="width: 450px">
+                    <li class="submenu-item group relative">
+                      <a
+                        href="javascript:void(0)"
+                        class="relative mx-8 flex items-center justify-between py-2 text-base font-medium text-dark group-hover:text-primary dark:text-white xl:mr-0 xl:inline-flex xl:py-6 xl:pl-0 xl:text-white xl:group-hover:text-white xl:group-hover:opacity-70"
+                      >
+                        Services
+                        <svg
+                          class="ml-2 fill-current"
+                          width="16"
+                          height="20"
+                          viewBox="0 0 16 20"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M7.99999 14.9C7.84999 14.9 7.72499 14.85 7.59999 14.75L1.84999 9.10005C1.62499 8.87505 1.62499 8.52505 1.84999 8.30005C2.07499 8.07505 2.42499 8.07505 2.64999 8.30005L7.99999 13.525L13.35 8.25005C13.575 8.02505 13.925 8.02505 14.15 8.25005C14.375 8.47505 14.375 8.82505 14.15 9.05005L8.39999 14.7C8.27499 14.825 8.14999 14.9 7.99999 14.9Z"
+                          />
+                        </svg>
+                      </a>
+                      <div
+                        class="submenu relative left-0 top-full hidden w-[250px] rounded-sm bg-white p-4 transition-[top] duration-300 group-hover:opacity-100 dark:bg-dark-2 xl:invisible xl:absolute xl:top-[110%] xl:block xl:opacity-0 xl:shadow-lg xl:group-hover:visible xl:group-hover:top-full"
+                      >
+                        <a
+                          href="404.html"
+                          class="block rounded px-4 py-[10px] text-sm text-body-color hover:text-primary dark:text-dark-6 dark:hover:text-primary"
+                        >
+                          404 Page
+                        </a>
+                        <a
+                          href="404.html"
+                          class="block rounded px-4 py-[10px] text-sm text-body-color hover:text-primary dark:text-dark-6 dark:hover:text-primary"
+                        >
+                          404 Page
+                        </a>
+                      </div>
+                    </li>
+                    <li class="submenu-item group relative">
+                      <a
+                        href="javascript:void(0)"
+                        class="relative mx-8 flex items-center justify-between py-2 text-base font-medium text-dark group-hover:text-primary dark:text-white xl:mr-0 xl:inline-flex xl:py-6 xl:pl-0 xl:text-white xl:group-hover:text-white xl:group-hover:opacity-70"
+                      >
+                        Services
+                        <svg
+                          class="ml-2 fill-current"
+                          width="16"
+                          height="20"
+                          viewBox="0 0 16 20"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M7.99999 14.9C7.84999 14.9 7.72499 14.85 7.59999 14.75L1.84999 9.10005C1.62499 8.87505 1.62499 8.52505 1.84999 8.30005C2.07499 8.07505 2.42499 8.07505 2.64999 8.30005L7.99999 13.525L13.35 8.25005C13.575 8.02505 13.925 8.02505 14.15 8.25005C14.375 8.47505 14.375 8.82505 14.15 9.05005L8.39999 14.7C8.27499 14.825 8.14999 14.9 7.99999 14.9Z"
+                          />
+                        </svg>
+                      </a>
+                      <div
+                        class="submenu relative left-0 top-full hidden w-[250px] rounded-sm bg-white p-4 transition-[top] duration-300 group-hover:opacity-100 dark:bg-dark-2 xl:invisible xl:absolute xl:top-[110%] xl:block xl:opacity-0 xl:shadow-lg xl:group-hover:visible xl:group-hover:top-full"
+                      >
+                        <a
+                          href="404.html"
+                          class="block rounded px-4 py-[10px] text-sm text-body-color hover:text-primary dark:text-dark-6 dark:hover:text-primary"
+                        >
+                          404 Page
+                        </a>
+                        <a
+                          href="404.html"
+                          class="block rounded px-4 py-[10px] text-sm text-body-color hover:text-primary dark:text-dark-6 dark:hover:text-primary"
+                        >
+                          404 Page
+                        </a>
+                      </div>
+                    </li>
+                    <li class="submenu-item group relative">
+                      <a
+                        href="javascript:void(0)"
+                        class="relative mx-8 flex items-center justify-between py-2 text-base font-medium text-dark group-hover:text-primary dark:text-white xl:mr-0 xl:inline-flex xl:py-6 xl:pl-0 xl:text-white xl:group-hover:text-white xl:group-hover:opacity-70"
+                      >
+                        Services
+                        <svg
+                          class="ml-2 fill-current"
+                          width="16"
+                          height="20"
+                          viewBox="0 0 16 20"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M7.99999 14.9C7.84999 14.9 7.72499 14.85 7.59999 14.75L1.84999 9.10005C1.62499 8.87505 1.62499 8.52505 1.84999 8.30005C2.07499 8.07505 2.42499 8.07505 2.64999 8.30005L7.99999 13.525L13.35 8.25005C13.575 8.02505 13.925 8.02505 14.15 8.25005C14.375 8.47505 14.375 8.82505 14.15 9.05005L8.39999 14.7C8.27499 14.825 8.14999 14.9 7.99999 14.9Z"
+                          />
+                        </svg>
+                      </a>
+                      <div
+                        class="submenu relative left-0 top-full hidden w-[250px] rounded-sm bg-white p-4 transition-[top] duration-300 group-hover:opacity-100 dark:bg-dark-2 xl:invisible xl:absolute xl:top-[110%] xl:block xl:opacity-0 xl:shadow-lg xl:group-hover:visible xl:group-hover:top-full"
+                      >
+                        <a
+                          href="404.html"
+                          class="block rounded px-4 py-[10px] text-sm text-body-color hover:text-primary dark:text-dark-6 dark:hover:text-primary"
+                        >
+                          404 Page
+                        </a>
+                        <a
+                          href="404.html"
+                          class="block rounded px-4 py-[10px] text-sm text-body-color hover:text-primary dark:text-dark-6 dark:hover:text-primary"
+                        >
+                          404 Page
+                        </a>
+                      </div>
+                    </li>
+                  </div>
+                  <li class="submenu-item group relative">
+                    <div class="hidden sm:flex" style="margin-left: 20px">
+                      <a
+                        href="#"
+                        class="cart-form py-2 mr-3 text-base text-white hover:opacity-70"
+                      >
+                        <svg
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          stroke-width="2"
+                          stroke="currentColor"
+                          fill="none"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        >
+                          <path stroke="none" d="M0 0h24v24H0z" />
+                          <circle cx="9" cy="19" r="2" />
+                          <circle cx="17" cy="19" r="2" />
+                          <path
+                            d="M3 3h2l2 12a3 3 0 0 0 3 2h7a3 3 0 0 0 3 -2l1 -7h-15.2"
+                          />
+                        </svg>
+                      </a>
+                      <a
+                        href="#"
+                        class="fill-button-form w-[130px] px-6 mr-3 py-2 text-center font-medium text-white duration-300 ease-in-out hover:bg-opacity-100"
+                      >
+                        Developer
+                      </a>
+                      <a
+                        href="#"
+                        class="outline-button-form px-[22px] w-[110px] py-2 text-center font-medium text-white hover:opacity-70"
+                      >
+                        Service
+                      </a>
+                    </div>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- ====== Navbar Section End -->
+
+      <div class="container">
+        <div class="menu-form"></div>
+      </div>
+
+      <div class="section">
+        <!-- container -->
+        <div class="container">
+          <!-- row -->
+          <div>
+            <div class="-mx-4 flex flex-wrap justify-center">
+              <div class="w-full px-4">
+                <div class="sm:text-left xl:text-center text-white mt-28">
+                  <h1 class="sm:text-4xl xl:text-7xl">
+                    <span style="color: yellowgreen">Recrutez</span>
+                    les 10 % de profils <br />les plus
+                    <span style="color: yellowgreen">performants</span>
+                  </h1>
+                  <h4 class="sm:text-xl xl:text-3xl mt-4">
+                    Quel que soit votre projet, nos profils sont prêts à
+                    répondre à vos besoins.<br />
+                    Avec nos talents, votre projet est entre de bonnes mains.
+                  </h4>
+                </div>
+              </div>
+            </div>
+
+            <!-- Products tab & slick -->
+            <div class="products-tabs" style="margin-top: 50px">
+              <!-- tab -->
+              <div id="tab2" class="sm:-m-4 xl:m-0 tab-pane fade in active">
+                <div class="products-slick" data-nav="#slick-nav-2">
+                  <!-- product -->
+                  <div
+                    class="text-white mx-3 m-3 sm:w-64 xl:w-72"
+                    style="border-radius: 20px; padding: 20px"
+                  >
+                    <div class="outline-block">
+                      <div class="flex justify-between items-center">
+                        <h2 style="font-size: 20px">Romain</h2>
+                        <svg
+                          class="h-8 w-8 text-red-500"
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          stroke-width="2"
+                          stroke="currentColor"
+                          fill="none"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        >
+                          <path stroke="none" d="M0 0h24v24H0z" />
+                          <path
+                            d="M9 4h6a2 2 0 0 1 2 2v14l-5-3l-5 3v-14a2 2 0 0 1 2 -2"
+                          />
+                        </svg>
+                      </div>
+                      <h3>Antérieurement chez</h3>
+                      <img
+                        src="assets/images/profile.png"
+                        style="margin-top: 10px; border-radius: 20px"
+                      />
+                      <div class="flex justify-between items-center mt-8">
+                        <h4 style="font-size: 15px">chez</h4>
+                        <img
+                          src="assets/images/logo-google.png"
+                          style="width: 100px"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="text-white mx-3 m-3 sm:w-64 xl:w-72"
+                    style="border-radius: 20px; padding: 20px"
+                  >
+                    <div class="outline-block">
+                      <div class="flex justify-between items-center">
+                        <h2 style="font-size: 20px">David</h2>
+                        <svg
+                          class="h-8 w-8 text-red-500"
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          stroke-width="2"
+                          stroke="currentColor"
+                          fill="none"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        >
+                          <path stroke="none" d="M0 0h24v24H0z" />
+                          <path
+                            d="M9 4h6a2 2 0 0 1 2 2v14l-5-3l-5 3v-14a2 2 0 0 1 2 -2"
+                          />
+                        </svg>
+                      </div>
+                      <h3>Antérieurement chez</h3>
+                      <img
+                        src="assets/images/profile.png"
+                        style="margin-top: 10px; border-radius: 20px"
+                      />
+                      <div class="flex justify-between items-center mt-8">
+                        <h4 style="font-size: 15px">chez</h4>
+                        <img
+                          src="assets/images/logo-google.png"
+                          style="width: 100px"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="text-white mx-3 m-3 sm:w-64 xl:w-72"
+                    style="border-radius: 20px; padding: 20px"
+                  >
+                    <div class="outline-block">
+                      <div class="flex justify-between items-center">
+                        <h2 style="font-size: 20px">Brian</h2>
+                        <svg
+                          class="h-8 w-8 text-red-500"
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          stroke-width="2"
+                          stroke="currentColor"
+                          fill="none"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        >
+                          <path stroke="none" d="M0 0h24v24H0z" />
+                          <path
+                            d="M9 4h6a2 2 0 0 1 2 2v14l-5-3l-5 3v-14a2 2 0 0 1 2 -2"
+                          />
+                        </svg>
+                      </div>
+                      <h3>Antérieurement chez</h3>
+                      <img
+                        src="assets/images/profile.png"
+                        style="margin-top: 10px; border-radius: 20px"
+                      />
+                      <div class="flex justify-between items-center mt-8">
+                        <h4 style="font-size: 15px">chez</h4>
+                        <img
+                          src="assets/images/logo-google.png"
+                          style="width: 100px"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="text-white mx-3 m-3 sm:w-64 xl:w-72"
+                    style="border-radius: 20px; padding: 20px"
+                  >
+                    <div class="outline-block">
+                      <div class="flex justify-between items-center">
+                        <h2 style="font-size: 20px">Laura</h2>
+                        <svg
+                          class="h-8 w-8 text-red-500"
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          stroke-width="2"
+                          stroke="currentColor"
+                          fill="none"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        >
+                          <path stroke="none" d="M0 0h24v24H0z" />
+                          <path
+                            d="M9 4h6a2 2 0 0 1 2 2v14l-5-3l-5 3v-14a2 2 0 0 1 2 -2"
+                          />
+                        </svg>
+                      </div>
+                      <h3>Antérieurement chez</h3>
+                      <img
+                        src="assets/images/profile.png"
+                        style="margin-top: 10px; border-radius: 20px"
+                      />
+                      <div class="flex justify-between items-center mt-8">
+                        <h4 style="font-size: 15px">chez</h4>
+                        <img
+                          src="assets/images/logo-google.png"
+                          style="width: 100px"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="text-white mx-3 m-3 sm:w-64 xl:w-72"
+                    style="border-radius: 20px; padding: 20px"
+                  >
+                    <div class="outline-block">
+                      <div class="flex justify-between items-center">
+                        <h2 style="font-size: 20px">Joel</h2>
+                        <svg
+                          class="h-8 w-8 text-red-500"
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          stroke-width="2"
+                          stroke="currentColor"
+                          fill="none"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        >
+                          <path stroke="none" d="M0 0h24v24H0z" />
+                          <path
+                            d="M9 4h6a2 2 0 0 1 2 2v14l-5-3l-5 3v-14a2 2 0 0 1 2 -2"
+                          />
+                        </svg>
+                      </div>
+                      <h3>Antérieurement chez</h3>
+                      <img
+                        src="assets/images/profile.png"
+                        style="margin-top: 10px; border-radius: 20px"
+                      />
+                      <div class="flex justify-between items-center mt-8">
+                        <h4 style="font-size: 15px">chez</h4>
+                        <img
+                          src="assets/images/logo-google.png"
+                          style="width: 100px"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="text-white mx-3 m-3 sm:w-64 xl:w-72"
+                    style="border-radius: 20px; padding: 20px"
+                  >
+                    <div class="outline-block">
+                      <div class="flex justify-between items-center">
+                        <h2 style="font-size: 20px">Romain</h2>
+                        <svg
+                          class="h-8 w-8 text-red-500"
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          stroke-width="2"
+                          stroke="currentColor"
+                          fill="none"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        >
+                          <path stroke="none" d="M0 0h24v24H0z" />
+                          <path
+                            d="M9 4h6a2 2 0 0 1 2 2v14l-5-3l-5 3v-14a2 2 0 0 1 2 -2"
+                          />
+                        </svg>
+                      </div>
+                      <h3>Antérieurement chez</h3>
+                      <img
+                        src="assets/images/profile.png"
+                        style="margin-top: 10px; border-radius: 20px"
+                      />
+                      <div class="flex justify-between items-center mt-8">
+                        <h4 style="font-size: 15px">chez</h4>
+                        <img
+                          src="assets/images/logo-google.png"
+                          style="width: 100px"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- <svg viewBox="0 0 500 500" preserveAspectRatio="xMinYMin meet">
+                  <path
+                    d="M0,100 C150,200 350,0 500,100 L500,00 L0,0 Z"
+                    style="stroke: none; fill: red"
+                  ></path>
+                </svg>
+                <svg width="600" height="400">
+                  <mask id="svgmask1" sty>
+                    <path
+                      d="M0,100 C150,200 350,0 500,100 L500,00 L0,0 Z"
+                      style="stroke: none; fill: red"
+                    ></path>
+                  </mask>
+                  <image
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    xlink:href="./assets/images/profile.png"
+                    mask="url(#svgmask1)"
+                  ></image>
+                </svg> -->
+                <div
+                  id="slick-nav-2"
+                  class="products-slick-nav"
+                  style="margin-top: 90px"
+                ></div>
+              </div>
+              <!-- /tab -->
+            </div>
+            <!-- /Products tab & slick -->
+          </div>
+        </div>
+        <!-- /container -->
+      </div>
+
+      <div class="container">
+        <div
+          class="flex flex-wrap justify-between items-center pb-4"
+          style="margin-top: 88px"
+        >
+          <div class="w-full xs:w-12/12 p-3 xl:w-4/12">
+            <div class="block-item">
+              <h2
+                style="
+                  font-size: 27px;
+                  padding-left: 38px;
+                  display: flex;
+                  align-items: center;
+                "
+              >
+                <img
+                  src="assets/images/developpement.png"
+                  style="width: 40px"
+                />
+                <h2 class="sm:text-3xl" style="margin-left: 20px">
+                  Développeurs
+                </h2>
+              </h2>
+            </div>
+          </div>
+          <div class="w-full xs:w-12/12 p-3 xl:w-4/12">
+            <div class="block-item">
+              <h2
+                style="
+                  font-size: 27px;
+                  padding-left: 38px;
+                  display: flex;
+                  align-items: center;
+                "
+              >
+                <img src="assets/images/design.png" style="width: 40px" />
+                <h2 class="sm:text-3xl" style="margin-left: 20px">Designers</h2>
+              </h2>
+            </div>
+          </div>
+          <div class="w-full xs:w-12/12 p-3 xl:w-4/12">
+            <div class="block-item">
+              <h2
+                style="
+                  font-size: 27px;
+                  padding-left: 38px;
+                  display: flex;
+                  align-items: center;
+                "
+              >
+                <img src="assets/images/marketing.png" style="width: 40px" />
+                <h2 class="sm:text-3xl" style="margin-left: 20px">
+                  Marqueteurs
+                </h2>
+              </h2>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="second-background">
+        <!-- ====== Testimonial Section Start -->
+        <div class="section">
+          <!-- container -->
+          <div class="container">
+            <!-- row -->
+            <div>
+              <div class="-mx-4 flex flex-wrap justify-center">
+                <div class="w-full px-4">
+                  <div class="sm:text-left xl:text-center text-white mt-28">
+                    <h1 class="sm:text-4xl xl:text-7xl">
+                      Explorez nos profils par
+                      <span style="color: yellowgreen">excellence</span>
+                    </h1>
+                    <h4 class="sm:text-xl lg:text-3xl mt-4">
+                      Découvrez nos talents mondialement reconnus et bénéficiez
+                      de leurs<br />
+                      compétences de pointe.
+                    </h4>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Products tab & slick -->
+              <div class="products-tab sm:mt-10">
+                <!-- tab -->
+                <div id="tab2" class="tab-pane fade in active">
+                  <div class="products-slick-two" data-nav="#slick-nav-1">
+                    <div
+                      class="product text-white rounded-xl mx-3 m-3"
+                      style="
+                        border: 1px solid #253032;
+                        border-radius: 20px;
+                        padding: 20px;
+                      "
+                    >
+                      <div class="flex justify-between items-center">
+                        <h2 style="font-size: 20px">Romain</h2>
+                        <svg
+                          class="h-8 w-8 text-red-500"
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          stroke-width="2"
+                          stroke="currentColor"
+                          fill="none"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        >
+                          <path stroke="none" d="M0 0h24v24H0z" />
+                          <path
+                            d="M9 4h6a2 2 0 0 1 2 2v14l-5-3l-5 3v-14a2 2 0 0 1 2 -2"
+                          />
+                        </svg>
+                      </div>
+                      <h3>Antérieurement chez</h3>
+                      <img
+                        src="assets/images/profile.png"
+                        style="margin-top: 10px; border-radius: 20px"
+                      />
+                      <div class="flex justify-between items-center mt-8">
+                        <h4 style="font-size: 15px">chez</h4>
+                        <img
+                          src="assets/images/logo-google.png"
+                          style="width: 100px"
+                        />
+                      </div>
+                    </div>
+                    <div
+                      class="product text-white rounded-xl mx-3 m-3"
+                      style="
+                        border: 1px solid #253032;
+                        border-radius: 20px;
+                        padding: 20px;
+                      "
+                    >
+                      <div class="flex justify-between items-center">
+                        <h2 style="font-size: 20px">Romain</h2>
+                        <svg
+                          class="h-8 w-8 text-red-500"
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          stroke-width="2"
+                          stroke="currentColor"
+                          fill="none"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        >
+                          <path stroke="none" d="M0 0h24v24H0z" />
+                          <path
+                            d="M9 4h6a2 2 0 0 1 2 2v14l-5-3l-5 3v-14a2 2 0 0 1 2 -2"
+                          />
+                        </svg>
+                      </div>
+                      <h3>Antérieurement chez</h3>
+                      <img
+                        src="assets/images/profile.png"
+                        style="margin-top: 10px; border-radius: 20px"
+                      />
+                      <div class="flex justify-between items-center mt-8">
+                        <h4 style="font-size: 15px">chez</h4>
+                        <img
+                          src="assets/images/logo-google.png"
+                          style="width: 100px"
+                        />
+                      </div>
+                    </div>
+                    <div
+                      class="product text-white rounded-xl mx-3 m-3"
+                      style="
+                        border: 1px solid #253032;
+                        border-radius: 20px;
+                        padding: 20px;
+                      "
+                    >
+                      <div class="flex justify-between items-center">
+                        <h2 style="font-size: 20px">Romain</h2>
+                        <svg
+                          class="h-8 w-8 text-red-500"
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          stroke-width="2"
+                          stroke="currentColor"
+                          fill="none"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        >
+                          <path stroke="none" d="M0 0h24v24H0z" />
+                          <path
+                            d="M9 4h6a2 2 0 0 1 2 2v14l-5-3l-5 3v-14a2 2 0 0 1 2 -2"
+                          />
+                        </svg>
+                      </div>
+                      <h3>Antérieurement chez</h3>
+                      <img
+                        src="assets/images/profile.png"
+                        style="margin-top: 10px; border-radius: 20px"
+                      />
+                      <div class="flex justify-between items-center mt-8">
+                        <h4 style="font-size: 15px">chez</h4>
+                        <img
+                          src="assets/images/logo-google.png"
+                          style="width: 100px"
+                        />
+                      </div>
+                    </div>
+                    <div
+                      class="product text-white rounded-xl mx-3 m-3"
+                      style="
+                        border: 1px solid #253032;
+                        border-radius: 20px;
+                        padding: 20px;
+                      "
+                    >
+                      <div class="flex justify-between items-center">
+                        <h2 style="font-size: 20px">Romain</h2>
+                        <svg
+                          class="h-8 w-8 text-red-500"
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          stroke-width="2"
+                          stroke="currentColor"
+                          fill="none"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        >
+                          <path stroke="none" d="M0 0h24v24H0z" />
+                          <path
+                            d="M9 4h6a2 2 0 0 1 2 2v14l-5-3l-5 3v-14a2 2 0 0 1 2 -2"
+                          />
+                        </svg>
+                      </div>
+                      <h3>Antérieurement chez</h3>
+                      <img
+                        src="assets/images/profile.png"
+                        style="margin-top: 10px; border-radius: 20px"
+                      />
+                      <div class="flex justify-between items-center mt-8">
+                        <h4 style="font-size: 15px">chez</h4>
+                        <img
+                          src="assets/images/logo-google.png"
+                          style="width: 100px"
+                        />
+                      </div>
+                    </div>
+                    <div
+                      class="product text-white rounded-xl mx-3 m-3"
+                      style="
+                        border: 1px solid #253032;
+                        border-radius: 20px;
+                        padding: 20px;
+                      "
+                    >
+                      <div class="flex justify-between items-center">
+                        <h2 style="font-size: 20px">Romain</h2>
+                        <svg
+                          class="h-8 w-8 text-red-500"
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          stroke-width="2"
+                          stroke="currentColor"
+                          fill="none"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        >
+                          <path stroke="none" d="M0 0h24v24H0z" />
+                          <path
+                            d="M9 4h6a2 2 0 0 1 2 2v14l-5-3l-5 3v-14a2 2 0 0 1 2 -2"
+                          />
+                        </svg>
+                      </div>
+                      <h3>Antérieurement chez</h3>
+                      <img
+                        src="assets/images/profile.png"
+                        style="margin-top: 10px; border-radius: 20px"
+                      />
+                      <div class="flex justify-between items-center mt-8">
+                        <h4 style="font-size: 15px">chez</h4>
+                        <img
+                          src="assets/images/logo-google.png"
+                          style="width: 100px"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    id="slick-nav-1"
+                    class="products-slick-nav sm:mt-10"
+                  ></div>
+                </div>
+                <div class="flex justify-center items-center sm:mt-5">
+                  <button
+                    class="outline-button-form px-1 text-center mt-5 font-medium text-white duration-300 ease-in-out hover:bg-opacity-100"
+                    style="width: 300px"
+                  >
+                    Explorez tous les profils
+                  </button>
+                </div>
+                <!-- /tab -->
+              </div>
+              <!-- /Products tab & slick -->
+            </div>
+            <!-- /row -->
+          </div>
+          <!-- /container -->
+        </div>
+
+        <div class="container" style="margin-top: 140px">
+          <div class="sm:block xl:hidden">
+            <h1 class="text-white sm:text-4xl xl:text-7xl mb-5">
+              Pourquoi <br />choisir
+              <span style="color: yellowgreen">Aideprojet</span>
+            </h1>
+            <div class="mobile-double-background">
+              <div>
+                <div class="flex flex-wrap">
+                  <div class="w-full text-white sm:p-5 md:p-14">
+                    <div class="sm:ml-5" style="margin-top: 20px">
+                      <div class="flex items-center">
+                        <svg
+                          style="width: 31px; height: 31px"
+                          class="h-8 w-8 text-red-500"
+                          width="31"
+                          height="31"
+                          viewBox="0 0 31 31"
+                          stroke-width="2"
+                          stroke="currentColor"
+                          fill="none"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        >
+                          <path stroke="none" d="M0 0h24v24H0z" />
+                          <circle cx="12" cy="12" r="9" />
+                          <path d="M9 12l2 2l4 -4" />
+                        </svg>
+                        <div
+                          class="sm:text-2xl xl:text-4xl"
+                          style="margin-left: 20px"
+                        >
+                          Recrutement sans stress
+                        </div>
+                      </div>
+                      <div
+                        class="sm:text-lg xl:text-2xl"
+                        style="margin-top: 15px; margin-bottom: 32px"
+                      >
+                        Aideprojet vous permet d’intégrer, de payer et de
+                        récompenser les nouveaux membres de votre équipe,
+                        partout.
+                      </div>
+                    </div>
+                    <div class="sm:ml-5">
+                      <div style="display: flex; align-items: center">
+                        <svg
+                          style="width: 31px; height: 31px"
+                          class="h-8 w-8 text-red-500"
+                          width="31"
+                          height="31"
+                          viewBox="0 0 31 31"
+                          stroke-width="2"
+                          stroke="currentColor"
+                          fill="none"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        >
+                          <path stroke="none" d="M0 0h24v24H0z" />
+                          <circle cx="12" cy="12" r="9" />
+                          <path d="M9 12l2 2l4 -4" />
+                        </svg>
+                        <div
+                          class="sm:text-2xl xl:text-4xl"
+                          style="margin-left: 20px"
+                        >
+                          Recrutement sans stress
+                        </div>
+                      </div>
+                      <div
+                        class="sm:text-lg xl:text-2xl"
+                        style="margin-top: 15px; margin-bottom: 32px"
+                      >
+                        Aideprojet vous permet d’intégrer, de payer et de
+                        récompenser les nouveaux membres de votre équipe,
+                        partout.
+                      </div>
+                    </div>
+                    <div class="sm:ml-5">
+                      <div style="display: flex; align-items: center">
+                        <svg
+                          style="width: 31px; height: 31px"
+                          class="h-8 w-8 text-red-500"
+                          width="31"
+                          height="31"
+                          viewBox="0 0 31 31"
+                          stroke-width="2"
+                          stroke="currentColor"
+                          fill="none"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        >
+                          <path stroke="none" d="M0 0h24v24H0z" />
+                          <circle cx="12" cy="12" r="9" />
+                          <path d="M9 12l2 2l4 -4" />
+                        </svg>
+                        <div
+                          class="sm:text-2xl xl:text-4xl"
+                          style="margin-left: 20px"
+                        >
+                          Recrutement sans stress
+                        </div>
+                      </div>
+                      <div
+                        class="sm:text-lg xl:text-2xl"
+                        style="margin-top: 15px; margin-bottom: 32px"
+                      >
+                        Aideprojet vous permet d’intégrer, de payer et de
+                        récompenser les nouveaux membres de votre équipe,
+                        partout.
+                      </div>
+                    </div>
+                    <img
+                      src="assets/images/person.png"
+                      style="
+                        width: 297px;
+                        margin-bottom: -20px;
+                        margin-left: 30px;
+                      "
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="sm:hidden xl:block">
+            <div class="double-background">
+              <img
+                src="assets/images/person.png"
+                class="absolute sm:w-96"
+                style="width: 580px; bottom: 0px; left: 110px"
+              />
+              <h1
+                class="absolute text-white sm:text-4xl xl:text-7xl"
+                style="top: -50px"
+              >
+                Pourquoi <br />choisir
+                <span style="color: yellowgreen">Aideprojet</span>
+              </h1>
+              <div>
+                <div
+                  class="container"
+                  style="position: absolute; margin-top: 60px"
+                ></div>
+                <div class="flex flex-wrap justify-center items-center">
+                  <div class="w-full xl:w-6/12"></div>
+                  <div
+                    class="flex justify-center items-center w-full xl:w-5/12 mt-11 text-white"
+                    style="height: 700px"
+                  >
+                    <div>
+                      <div>
+                        <div style="display: flex; align-items: center">
+                          <svg
+                            style="width: 31px; height: 31px"
+                            class="h-8 w-8 text-red-500"
+                            width="31"
+                            height="31"
+                            viewBox="0 0 31 31"
+                            stroke-width="2"
+                            stroke="currentColor"
+                            fill="none"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          >
+                            <path stroke="none" d="M0 0h24v24H0z" />
+                            <circle cx="12" cy="12" r="9" />
+                            <path d="M9 12l2 2l4 -4" />
+                          </svg>
+                          <div
+                            class="sm:text-2xl lg:text-4xl"
+                            style="margin-left: 20px"
+                          >
+                            Recrutement sans stress
+                          </div>
+                        </div>
+                        <div
+                          class="sm:text-lg xl:text-2xl sm:ml-0 xl:ml-14"
+                          style="
+                            margin-top: 15px;
+                            margin-bottom: 32px;
+                            margin-left: 50px;
+                          "
+                        >
+                          Aideprojet vous permet d’intégrer, de payer et de
+                          récompenser les nouveaux membres de votre équipe,
+                          partout.
+                        </div>
+                      </div>
+                      <div>
+                        <div style="display: flex; align-items: center">
+                          <svg
+                            style="width: 31px; height: 31px"
+                            class="h-8 w-8 text-red-500"
+                            width="31"
+                            height="31"
+                            viewBox="0 0 31 31"
+                            stroke-width="2"
+                            stroke="currentColor"
+                            fill="none"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          >
+                            <path stroke="none" d="M0 0h24v24H0z" />
+                            <circle cx="12" cy="12" r="9" />
+                            <path d="M9 12l2 2l4 -4" />
+                          </svg>
+                          <div
+                            class="sm:text-2xl lg:text-4xl"
+                            style="margin-left: 20px"
+                          >
+                            Recrutement sans stress
+                          </div>
+                        </div>
+                        <div
+                          class="sm:text-lg xl:text-2xl sm:ml-0 xl:ml-14"
+                          style="
+                            margin-top: 15px;
+                            margin-bottom: 32px;
+                            margin-left: 50px;
+                          "
+                        >
+                          Aideprojet vous permet d’intégrer, de payer et de
+                          récompenser les nouveaux membres de votre équipe,
+                          partout.
+                        </div>
+                      </div>
+                      <div>
+                        <div style="display: flex; align-items: center">
+                          <svg
+                            style="width: 31px; height: 31px"
+                            class="h-8 w-8 text-red-500"
+                            width="31"
+                            height="31"
+                            viewBox="0 0 31 31"
+                            stroke-width="2"
+                            stroke="currentColor"
+                            fill="none"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          >
+                            <path stroke="none" d="M0 0h24v24H0z" />
+                            <circle cx="12" cy="12" r="9" />
+                            <path d="M9 12l2 2l4 -4" />
+                          </svg>
+                          <div
+                            class="sm:text-2xl lg:text-4xl"
+                            style="margin-left: 20px"
+                          >
+                            Recrutement sans stress
+                          </div>
+                        </div>
+                        <div
+                          class="sm:text-lg xl:text-2xl sm:ml-0 xl:ml-14"
+                          style="
+                            margin-top: 15px;
+                            margin-bottom: 32px;
+                            margin-left: 50px;
+                          "
+                        >
+                          Aideprojet vous permet d’intégrer, de payer et de
+                          récompenser les nouveaux membres de votre équipe,
+                          partout.
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="container" style="margin-top: 126px">
+          <div class="sm:block xl:hidden h-[1124px]">
+            <div class="flex justify-between">
+              <div>
+                <h1 class="text-white sm:text-4xl xl:text-7xl">
+                  Les <span style="color: yellowgreen">meilleurs talents</span
+                  ><br />
+                  au but d’un clique
+                </h1>
+                <div class="relative">
+                  <img src="assets/images/girl.png" />
+                  <div
+                    class="arrow-block-small-form absolute"
+                    style="
+                      padding: 10px;
+                      right: 10px;
+                      bottom: 10px;
+                      background-color: #020f11;
+                      color: #d9f777;
+                    "
+                  >
+                    <div class="flex justify-end items-center w-full">
+                      <svg
+                        class="h-8 w-8 text-red-500"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        stroke-width="2"
+                        stroke="currentColor"
+                        fill="none"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      >
+                        <path stroke="none" d="M0 0h24v24H0z" />
+                        <line x1="17" y1="7" x2="7" y2="17" />
+                        <polyline points="8 7 17 7 17 16" />
+                      </svg>
+                    </div>
+                    <h2
+                      style="
+                        font-size: 20px;
+                        margin-top: 10px;
+                        margin-left: 15px;
+                      "
+                    >
+                      Chercher un profil
+                    </h2>
+                  </div>
+                </div>
+                <div class="relative">
+                  <img
+                    src="assets/images/man.png"
+                    class="relative"
+                    style="margin-top: 20px"
+                  />
+                  <div
+                    class="arrow-block-small-form absolute"
+                    style="
+                      padding: 10px;
+                      right: 10px;
+                      bottom: 10px;
+                      background-color: #d9f777;
+                    "
+                  >
+                    <div class="flex justify-end items-center w-full">
+                      <svg
+                        class="h-8 w-8 text-red-500"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        stroke-width="2"
+                        stroke="currentColor"
+                        fill="none"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      >
+                        <path stroke="none" d="M0 0h24v24H0z" />
+                        <line x1="17" y1="7" x2="7" y2="17" />
+                        <polyline points="8 7 17 7 17 16" />
+                      </svg>
+                    </div>
+                    <h2
+                      style="
+                        font-size: 20px;
+                        margin-top: 10px;
+                        margin-left: 15px;
+                      "
+                    >
+                      Chercher un profil
+                    </h2>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="sm:hidden xl:block h-[1124px]">
+            <div class="flex justify-between">
+              <div class="relative lg:-mr-24 xl:-mr-48 2xl:-mr-48">
+                <h1
+                  class="text-white lg:text-5xl xl:text-7xl"
+                  style="width: 500px; height: 303px"
+                >
+                  Les <span style="color: yellowgreen">meilleurs talents</span
+                  ><br />
+                  au but d’un clique
+                </h1>
+                <img src="assets/images/girl.png" style="height: 821px" />
+                <div
+                  class="arrow-block-form absolute"
+                  style="
+                    padding: 15px;
+                    right: 49px;
+                    bottom: 49px;
+                    background-color: #020f11;
+                    color: #d9f777;
+                  "
+                >
+                  <div class="flex justify-end items-center w-full">
+                    <svg
+                      class="h-10 w-10 text-red-500"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      stroke-width="2"
+                      stroke="currentColor"
+                      fill="none"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <path stroke="none" d="M0 0h24v24H0z" />
+                      <line x1="17" y1="7" x2="7" y2="17" />
+                      <polyline points="8 7 17 7 17 16" />
+                    </svg>
+                  </div>
+                  <h2
+                    style="font-size: 40px; margin-top: 20px; margin-left: 30px"
+                  >
+                    Chercher un profil
+                  </h2>
+                </div>
+              </div>
+              <div class="relative">
+                <img src="assets/images/man.png" style="height: 1120px" />
+                <div
+                  class="arrow-block-form absolute"
+                  style="
+                    padding: 15px;
+                    right: 49px;
+                    top: 49px;
+                    background-color: #d9f777;
+                  "
+                >
+                  <div class="flex justify-end items-center w-full">
+                    <svg
+                      class="h-10 w-10 text-red-500"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      stroke-width="2"
+                      stroke="currentColor"
+                      fill="none"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <path stroke="none" d="M0 0h24v24H0z" />
+                      <line x1="17" y1="7" x2="7" y2="17" />
+                      <polyline points="8 7 17 7 17 16" />
+                    </svg>
+                  </div>
+                  <h2
+                    style="font-size: 40px; margin-top: 20px; margin-left: 30px"
+                  >
+                    Chercher un profil
+                  </h2>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ====== Footer Section Start -->
+        <footer
+          class="relative border-t border-[#8890A4] border-opacity-40 z-10 pt-20 lg:pt-[100px]"
+          style="margin-top: 120px"
+          data-wow-delay=".15s"
+        >
+          <div class="container">
+            <div class="flex flex-wrap lg:px-[120px]">
+              <div class="w-full px-4 sm:w-screen md:w-1/2 lg:w-3/12 xl:w-3/12">
+                <div class="mb-10 w-full">
+                  <a href="javascript:void(0)" class="inline-block">
+                    <img
+                      src="assets/images/footer.png"
+                      alt="logo"
+                      class="max-w-full"
+                    />
+                  </a>
+                </div>
+              </div>
+              <div class="w-full px-4 sm:w-screen md:w-1/2 lg:w-3/12 xl:w-4/12">
+                <div class="mb-10 w-full">
+                  <h4 class="mb-9 text-lg font-semibold text-white">
+                    About Me
+                  </h4>
+                  <ul>
+                    <li>
+                      <button
+                        class="fill-button-form px-1 text-center font-medium text-white duration-300 ease-in-out hover:bg-opacity-100"
+                        style="width: 200px"
+                      >
+                        Contact with
+                      </button>
+                    </li>
+                    <li>
+                      <button
+                        class="outline-button-form px-1 text-center font-medium text-white duration-300 ease-in-out hover:bg-opacity-100"
+                        style="margin-top: 20px; width: 200px"
+                      >
+                        FAQ
+                      </button>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="w-full px-4 sm:w-screen md:w-1/2 lg:w-3/12 xl:w-3/12">
+                <div class="mb-10 w-full">
+                  <h4 class="mb-9 text-lg font-semibold text-white">
+                    Features
+                  </h4>
+                  <ul>
+                    <li>
+                      <div class="grid sm:h-16">
+                        <select
+                          class="select-form appearance-none row-start-1 text-white col-start-1 focus:outline-none bg-transparent sm:h-12"
+                        >
+                          <option>Yes</option>
+                          <option>No</option>
+                          <option>Maybe</option>
+                        </select>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="grid sm:h-16">
+                        <select
+                          class="select-form appearance-none row-start-1 text-white col-start-1 focus:outline-none bg-transparent sm:h-12"
+                        >
+                          <option>Yes</option>
+                          <option>No</option>
+                          <option>Maybe</option>
+                        </select>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="grid sm:h-16">
+                        <select
+                          class="select-form appearance-none row-start-1 text-white col-start-1 focus:outline-none bg-transparent sm:h-12"
+                        >
+                          <option>Yes</option>
+                          <option>No</option>
+                          <option>Maybe</option>
+                        </select>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="grid sm:h-16">
+                        <select
+                          class="select-form appearance-none row-start-1 text-white col-start-1 focus:outline-none bg-transparent sm:h-12"
+                        >
+                          <option>Yes</option>
+                          <option>No</option>
+                          <option>Maybe</option>
+                        </select>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div
+                class="w-full px-4 sm:w-screen md:w-1/2 lg:w-3/12 xl:w-2/12 flex justify-center"
+              >
+                <div class="mb-11 w-full">
+                  <h4 class="mb-11 text-lg font-semibold text-white">
+                    Our Products
+                  </h4>
+                  <ul>
+                    <li>
+                      <a
+                        href="javascript:void(0)"
+                        class="mb-3 sm:mt-10 flex text-base text-gray-7 hover:text-primary"
+                      >
+                        <svg
+                          class="h-8 w-8 text-red-500"
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          stroke-width="2"
+                          stroke="currentColor"
+                          fill="none"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        >
+                          <path stroke="none" d="M0 0h24v24H0z" />
+                          <rect x="4" y="4" width="16" height="16" rx="4" />
+                          <circle cx="12" cy="12" r="3" />
+                          <line x1="16.5" y1="7.5" x2="16.5" y2="7.501" />
+                        </svg>
+                        Instagram
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="javascript:void(0)"
+                        class="mb-3 sm:mt-10 flex text-base text-gray-7 hover:text-primary"
+                      >
+                        <svg
+                          class="h-8 w-8 text-red-500"
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          stroke-width="2"
+                          stroke="currentColor"
+                          fill="none"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        >
+                          <path stroke="none" d="M0 0h24v24H0z" />
+                          <path
+                            d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3"
+                          />
+                        </svg>
+                        Instagram
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="javascript:void(0)"
+                        class="mb-3 sm:mt-10 flex text-base text-gray-7 hover:text-primary"
+                      >
+                        <svg
+                          class="h-8 w-8 text-red-500"
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          stroke-width="2"
+                          stroke="currentColor"
+                          fill="none"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        >
+                          <path stroke="none" d="M0 0h24v24H0z" />
+                          <path
+                            d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3"
+                          />
+                        </svg>
+                        Instagram
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="javascript:void(0)"
+                        class="mb-3 sm:mt-10 flex text-base text-gray-7 hover:text-primary"
+                      >
+                        <svg
+                          class="h-8 w-8 text-red-500"
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          stroke-width="2"
+                          stroke="currentColor"
+                          fill="none"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        >
+                          <path stroke="none" d="M0 0h24v24H0z" />
+                          <path
+                            d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3"
+                          />
+                        </svg>
+                        Instagram
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="mt-12 border-t border-[#8890A4] border-opacity-40 py-8 lg:mt-[60px]"
+          >
+            <div class="container">
+              <div class="-mx-4 flex flex-wrap justify-between">
+                <div
+                  class="w-full px-4 left-0 sm:w-screen lg:w-6/12 flex sm:mb-3 lg:mb-0"
+                >
+                  <div class="my-1 flex justify-center md:justify-end">
+                    <p class="text-base text-gray-7">
+                      @2024 Aideprojet
+                      <a
+                        href="https://tailgrids.com"
+                        rel="nofollow noopner"
+                        target="_blank"
+                        class="text-gray-1 hover:underline"
+                      >
+                        TailGrids and UIdeck
+                      </a>
+                    </p>
+                  </div>
+                </div>
+                <div
+                  class="w-full px-4 right-0 flex flex-wrap lg:justify-around sm:w-screen lg:w-6/12"
+                >
+                  <a
+                    href="javascript:void(0)"
+                    class="w-full sm:w-screen sm:mb-3 lg:mb-0 lg:w-4/12 lg:flex sm:justify-start lg:justify-end px-3 text-base text-gray-7 hover:text-white hover:underline"
+                  >
+                    Privacy policy
+                  </a>
+                  <a
+                    href="javascript:void(0)"
+                    class="w-full sm:w-screen sm:mb-3 lg:mb-0 lg:w-4/12 lg:flex sm:justify-start lg:justify-end px-3 text-base text-gray-7 hover:text-white hover:underline"
+                  >
+                    Legal notice
+                  </a>
+                  <a
+                    href="javascript:void(0)"
+                    class="w-full sm:w-screen sm:mb-3 lg:mb-0 lg:w-4/12 lg:flex sm:justify-start lg:justify-end px-3 text-base text-gray-7 hover:text-white hover:underline"
+                  >
+                    Terms of service
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </footer>
+      </div>
+    </div>
+
+    <a
+      href="javascript:void(0)"
+      class="back-to-top fixed bottom-8 left-auto right-8 z-[999] hidden h-10 w-10 items-center justify-center rounded-md bg-primary text-white shadow-md transition duration-300 ease-in-out hover:bg-dark"
+    >
+      <span
+        class="mt-[6px] h-3 w-3 rotate-45 border-l border-t border-white"
+      ></span>
+    </a>
+
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/slick.min.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/custom.js"></script>
+
+    <script>
+      $(document).on("ready", function () {
+        $(".products-slick").on(
+          "beforeChange",
+          function (event, slick, currentSlide, nextSlide) {
+            let min = "50px";
+            let med = "30px";
+            let max = "0px";
+            let min_outline = "-50px";
+            let med_outline = "-30px";
+            let max_outline = "-0px";
+            // Set the swiper items by different theme.
+            var currentSlide = nextSlide;
+            let centerElement = document.querySelector(
+              `[data-slick-index="${currentSlide}"]`
+            );
+            let nextElement1 = document.querySelector(
+              `[data-slick-index="${currentSlide + 1}"]`
+            );
+            let nextElement2 = document.querySelector(
+              `[data-slick-index="${currentSlide - 1}"]`
+            );
+            let lastElement1 = document.querySelector(
+              `[data-slick-index="${currentSlide + 2}"]`
+            );
+            let lastElement2 = document.querySelector(
+              `[data-slick-index="${currentSlide - 2}"]`
+            );
+            if (currentSlide !== 0) {
+              let startElement = document.querySelector(
+                `[data-slick-index="${currentSlide + 3}"]`
+              );
+              let endElement = document.querySelector(
+                `[data-slick-index="${currentSlide - 3}"]`
+              );
+              startElement.style.padding = min;
+              endElement.style.padding = min;
+              startElement.style.outlineOffset = min_outline;
+              endElement.style.outlineOffset = min_outline;
+              startElement.style.outline = "1px solid #253032";
+              endElement.style.outline = "1px solid #253032";
+            }
+            centerElement.style.padding = max;
+            nextElement1.style.padding = "60px 30px 0px 30px";
+            nextElement2.style.padding = "60px 30px 0px 30px";
+            lastElement1.style.padding = "100px 100px 0px 0px";
+            lastElement2.style.padding = "100px 0px 0px 100px";
+            centerElement.style.outlineOffset = max_outline;
+            nextElement1.style.outlineOffset = med_outline;
+            nextElement2.style.outlineOffset = med_outline;
+            lastElement1.style.outlineOffset = min_outline;
+            lastElement2.style.outlineOffset = min_outline;
+            centerElement.style.outline = "none";
+            nextElement1.style.outline = "none";
+            nextElement2.style.outline = "none";
+            lastElement1.style.outline = "none";
+            lastElement2.style.outline = "none";
+            centerElement.style.borderRadius = "20px";
+            nextElement1.style.borderRadius = "20px";
+            nextElement2.style.borderRadius = "20px";
+            lastElement1.style.borderRadius = "20px";
+            lastElement2.style.borderRadius = "20px";
+          }
+        );
+      });
+
+      const pageLink = document.querySelectorAll(".ud-menu-scroll");
+
+      pageLink.forEach((elem) => {
+        elem.addEventListener("click", (e) => {
+          e.preventDefault();
+          document.querySelector(elem.getAttribute("href")).scrollIntoView({
+            behavior: "smooth",
+            offsetTop: 1 - 60,
+          });
+        });
+      });
+
+      // section menu active
+      function onScroll(event) {
+        const sections = document.querySelectorAll(".ud-menu-scroll");
+        const scrollPos =
+          window.pageYOffset ||
+          document.documentElement.scrollTop ||
+          document.body.scrollTop;
+
+        for (let i = 0; i < sections.length; i++) {
+          const currLink = sections[i];
+          const val = currLink.getAttribute("href");
+          const refElement = document.querySelector(val);
+          const scrollTopMinus = scrollPos + 73;
+          if (
+            refElement.offsetTop <= scrollTopMinus &&
+            refElement.offsetTop + refElement.offsetHeight > scrollTopMinus
+          ) {
+            document
+              .querySelector(".ud-menu-scroll")
+              .classList.remove("active");
+            currLink.classList.add("active");
+          } else {
+            currLink.classList.remove("active");
+          }
+        }
+      }
+
+      window.document.addEventListener("scroll", onScroll);
+    </script>
+  </body>
+</html>
