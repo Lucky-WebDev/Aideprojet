@@ -433,6 +433,50 @@ select:focus {
   align-items: center;
 }
 
+.dropdown-image1 {
+  display: none;
+  background-image: url("../images/submenu/submenu-image4.png");
+  background-size: 301px 100%;
+  background-repeat: no-repeat;
+  border-radius: 20px;
+}
+
+.dropdown-content:hover .dropdown-image1 {
+  display: block;
+}
+
+.development-event:hover .dropdown-image1 {
+  display: block;
+  /* background-image: url("../images/submenu/submenu-image4.png") !important; */
+  background: url("../images/submenu/submenu-image5.png") no-repeat !important;
+}
+
+/* #development-event:hover .dropdown-image1 {
+  background-image: url("../images/submenu/submenu-image4.png");
+}
+
+#development-event:hover .dropdown-image1 {
+  background-image: url("../images/submenu/submenu-image4.png");
+}
+
+#development-event:hover .dropdown-image1 {
+  background-image: url("../images/submenu/submenu-image4.png");
+} */
+
+.dropdown-image {
+  background-image: url("../images/person1.png");
+  background-size: 301px 100%;
+  background-repeat: no-repeat;
+  border-radius: 20px;
+}
+
+.dropdown-image {
+  background-image: url("../images/person1.png");
+  background-size: 301px 100%;
+  background-repeat: no-repeat;
+  border-radius: 20px;
+}
+
 .dropdown-image {
   background-image: url("../images/person1.png");
   background-size: 301px 100%;
