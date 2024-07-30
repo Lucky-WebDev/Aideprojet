@@ -42,16 +42,7 @@
       }
       .products-slick .slick-slide {
         transition: all ease-in-out 0.5s;
-        /* opacity: 0.5; */
       }
-
-      /* .products-slick .slick-active {
-        opacity: 0.5;
-      }
-
-      .products-slick .slick-current {
-        opacity: 1;
-      } */
     </style>
   </head>
 
@@ -131,7 +122,7 @@
                       <li class="submenu-item group relative flex items-center">
                         <div class="dropdown">
                           <div class="dropdown-item">
-                            Developers
+                            Formations
                             <svg
                               class="ml-2 fill-current"
                               width="16"
@@ -186,12 +177,12 @@
                                     </div>
                                   </div>
                                   <div style="font-size: 12px">
-                                    I am Senior web developer. I am available
-                                    for you all the time.
+                                    Découvrez notre gamme complète de services
+                                    digitaux et professionnels.
                                   </div>
                                 </div>
-                                <div class="dropdown-subitem">
-                                  <div>Developement</div>
+                                <div class="development-event dropdown-subitem">
+                                  <div>Developpement</div>
                                   <div class="dropdown-arrow">
                                     <svg
                                       class="h-8 w-8 text-red-500"
@@ -280,8 +271,12 @@
                                 </div>
                               </div>
                               <div
-                                class="sm:hidden xl:block dropdown-image"
-                                style="width: 280px; height: inherit"
+                                class="sm:hidden xl:block dropdown-image1"
+                                style="
+                                  width: 280px;
+                                  height: inherit;
+                                  margin-left: -35px;
+                                "
                               ></div>
                             </div>
                           </div>
@@ -335,8 +330,8 @@
                                   </div>
                                 </div>
                                 <div style="font-size: 12px">
-                                  I am Senior web developer. I am available for
-                                  you all the time.
+                                  Découvrez notre gamme complète de services
+                                  digitaux et professionnels.
                                 </div>
                               </div>
                               <div class="dropdown-subitem">
@@ -361,7 +356,7 @@
                                   </svg>
                                 </div>
                               </div>
-                              <div class="dropdown-subitem">
+                              <div id="designer-event" class="dropdown-subitem">
                                 <div>Designers</div>
                                 <div class="dropdown-arrow">
                                   <svg
@@ -383,7 +378,7 @@
                                   </svg>
                                 </div>
                               </div>
-                              <div class="dropdown-subitem">
+                              <div id="marketer-event" class="dropdown-subitem">
                                 <div>Marketers</div>
                                 <div class="dropdown-arrow">
                                   <svg
@@ -405,7 +400,7 @@
                                   </svg>
                                 </div>
                               </div>
-                              <div class="dropdown-subitem">
+                              <div id="profile-event" class="dropdown-subitem">
                                 <div>Developers without profile</div>
                                 <div class="dropdown-arrow">
                                   <svg
@@ -487,8 +482,8 @@
                                     </div>
                                   </div>
                                   <div style="font-size: 12px">
-                                    I am Senior web developer. I am available
-                                    for you all the time.
+                                    Découvrez notre gamme complète de services
+                                    digitaux et professionnels.
                                   </div>
                                 </div>
                                 <div class="dropdown-subitem">
@@ -653,7 +648,7 @@
                     les 10 % de profils <br />les plus
                     <span style="color: yellowgreen">performants</span>
                   </h1>
-                  <h4 class="sm:text-xl xl:text-3xl mt-4">
+                  <h4 class="sm:text-xl xl:text-2xl mt-4">
                     Quel que soit votre projet, nos profils sont prêts à
                     répondre à vos besoins.<br />
                     Avec nos talents, votre projet est entre de bonnes mains.
@@ -697,6 +692,28 @@
                         src="assets/images/profile.png"
                         style="margin-top: 10px; border-radius: 20px"
                       />
+                      <!-- <svg
+                        viewBox="0 0 500 150"
+                        preserveAspectRatio="none"
+                        style="
+                          height: 100%;
+                          width: 100%;
+                          height: 150px;
+                          overflow: hidden;
+                        "
+                      >
+                        <mask id="svgmask1">
+                          <path
+                            d="M0.00,92.27 C216.83,192.92 304.30,8.39 500.00,109.03 L500.00,0.00 L0.00,0.00 Z"
+                            style="stroke: none; fill: #e1efe3"
+                          ></path>
+                        </mask>
+                        <image
+                          xmlns:xlink="http://www.w3.org/1999/xlink"
+                          xlink:href="assets/images/profile.png"
+                          mask="url(#svgmask1)"
+                        ></image>
+                      </svg> -->
                       <div class="flex justify-between items-center mt-8">
                         <h4 style="font-size: 15px">chez</h4>
                         <img
@@ -949,7 +966,7 @@
                   src="assets/images/developpement.png"
                   style="width: 40px"
                 />
-                <h2 class="sm:text-3xl" style="margin-left: 20px">
+                <h2 class="sm:text-2xl xl:text-4xl" style="margin-left: 20px">
                   Développeurs
                 </h2>
               </h2>
@@ -966,7 +983,9 @@
                 "
               >
                 <img src="assets/images/design.png" style="width: 40px" />
-                <h2 class="sm:text-3xl" style="margin-left: 20px">Designers</h2>
+                <h2 class="sm:text-2xl xl:text-4xl" style="margin-left: 20px">
+                  Designers
+                </h2>
               </h2>
             </div>
           </div>
@@ -981,7 +1000,7 @@
                 "
               >
                 <img src="assets/images/marketing.png" style="width: 40px" />
-                <h2 class="sm:text-3xl" style="margin-left: 20px">
+                <h2 class="sm:text-2xl xl:text-4xl" style="margin-left: 20px">
                   Marqueteurs
                 </h2>
               </h2>
@@ -1003,7 +1022,7 @@
                       Explorez nos profils par
                       <span style="color: yellowgreen">excellence</span>
                     </h1>
-                    <h4 class="sm:text-xl lg:text-3xl mt-4">
+                    <h4 class="sm:text-xl lg:text-2xl mt-4">
                       Découvrez nos talents mondialement reconnus et bénéficiez
                       de leurs<br />
                       compétences de pointe.
@@ -1226,7 +1245,7 @@
                 <div class="flex justify-center items-center sm:mt-5">
                   <button
                     class="outline-button-form px-1 text-center mt-5 font-medium text-white duration-300 ease-in-out hover:bg-opacity-100"
-                    style="width: 300px"
+                    style="width: 240px"
                   >
                     Explorez tous les profils
                   </button>
@@ -1276,7 +1295,7 @@
                         </div>
                       </div>
                       <div
-                        class="sm:text-lg xl:text-2xl"
+                        class="sm:text-xl xl:text-2xl"
                         style="margin-top: 15px; margin-bottom: 32px"
                       >
                         Aideprojet vous permet d’intégrer, de payer et de
@@ -1306,16 +1325,16 @@
                           class="sm:text-2xl xl:text-4xl"
                           style="margin-left: 20px"
                         >
-                          Recrutement sans stress
+                          Embauchez facilement
                         </div>
                       </div>
                       <div
-                        class="sm:text-lg xl:text-2xl"
+                        class="sm:text-xl xl:text-2xl"
                         style="margin-top: 15px; margin-bottom: 32px"
                       >
-                        Aideprojet vous permet d’intégrer, de payer et de
-                        récompenser les nouveaux membres de votre équipe,
-                        partout.
+                        Recruter ou embauchez des talents, ou sollicitez notre
+                        aide pour attirer et fidéliser les meilleurs talents
+                        mondiaux.
                       </div>
                     </div>
                     <div class="sm:ml-5">
@@ -1340,16 +1359,16 @@
                           class="sm:text-2xl xl:text-4xl"
                           style="margin-left: 20px"
                         >
-                          Recrutement sans stress
+                          Accédez à l’Élite
                         </div>
                       </div>
                       <div
-                        class="sm:text-lg xl:text-2xl"
+                        class="sm:text-xl xl:text-2xl"
                         style="margin-top: 15px; margin-bottom: 32px"
                       >
-                        Aideprojet vous permet d’intégrer, de payer et de
-                        récompenser les nouveaux membres de votre équipe,
-                        partout.
+                        Nos talents d’élite offrent une excellence inégalée,
+                        assurant un avantage concurrentiel et une qualité
+                        supérieure dans chaque projet.
                       </div>
                     </div>
                     <img
@@ -1613,8 +1632,8 @@
             <div class="flex justify-between">
               <div class="relative lg:-mr-24 xl:-mr-48 2xl:-mr-48">
                 <h1
-                  class="text-white lg:text-5xl xl:text-7xl"
-                  style="width: 500px; height: 303px"
+                  class="text-white sm:text-4xl xl:text-7xl"
+                  style="width: 550px; height: 303px"
                 >
                   Les <span style="color: yellowgreen">meilleurs talents</span
                   ><br />
@@ -1844,7 +1863,7 @@
                             d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3"
                           />
                         </svg>
-                        Instagram
+                        Facebook
                       </a>
                     </li>
                     <li>
@@ -1868,7 +1887,7 @@
                             d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3"
                           />
                         </svg>
-                        Instagram
+                        Linkedin
                       </a>
                     </li>
                     <li>
@@ -1892,7 +1911,7 @@
                             d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3"
                           />
                         </svg>
-                        Instagram
+                        Twitter
                       </a>
                     </li>
                   </ul>

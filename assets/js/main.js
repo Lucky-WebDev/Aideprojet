@@ -26,6 +26,7 @@
       centerMode: true,
       centerPadding: "0px",
       focusOnChange: true,
+      touchMove: false,
       variableWidth: true,
       arrows: true,
       appendArrows: $nav ? $nav : false,
