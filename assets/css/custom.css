@@ -478,3 +478,31 @@ select:focus {
   justify-content: center;
   align-items: unset;
 }
+
+@font-face {
+  font-family: Degular;
+  src: url(../fonts/Degular-Medium.otf);
+  font-weight: Medium;
+}
+
+@font-face {
+  font-family: Degular;
+  src: url(../fonts/Degular-Regular.otf);
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: Gelica;
+  src: url(../fonts/fonnts.com-Gelica-Medium.otf);
+  font-weight: Medium;
+}
+
+@font-face {
+  font-family: Gelica;
+  src: url(../fonts/fonnts.com-Gelica-Light.otf);
+  font-weight: lighter;
+}
+
+* {
+  font-family: Degular;
+}
