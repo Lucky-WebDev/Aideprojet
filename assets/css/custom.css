@@ -19,6 +19,8 @@
   top: 0px;
   z-index: 1000;
   background-color: #0f1b1d;
+  padding-top: 10px;
+  padding-bottom: 10px;
   width: 100%;
 }
 
@@ -71,7 +73,6 @@
   height: 55px;
   background-color: mediumpurple;
   border: 1px solid mediumpurple;
-  border: none;
   border-radius: 20px;
   font-size: 20px;
   box-sizing: border-box;
@@ -79,6 +80,7 @@
 
 .fill-button-form:hover {
   background-color: transparent;
+  border: 1px solid mediumpurple;
 }
 
 .outline-button-form {
@@ -142,11 +144,62 @@
   margin-top: 10px;
 }
 
-.arrow-block-form {
+.arrow-block-form1 {
   width: 537px;
   height: 178px;
   border: none;
   border-radius: 31px;
+  padding: 15px;
+  right: 49px;
+  bottom: 49px;
+  background-color: #020f11;
+  color: #d9f777;
+}
+
+.arrow-block-form1:hover {
+  background-color: #d9f777;
+  color: #020f11;
+}
+
+.arrow-block-form1:hover .arrow-item {
+  position: relative;
+  animation-name: example;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+}
+
+.arrow-block-form2 {
+  width: 537px;
+  height: 178px;
+  border: none;
+  border-radius: 31px;
+  padding: 15px;
+  right: 49px;
+  top: 49px;
+  background-color: #d9f777;
+}
+
+.arrow-block-form2:hover {
+  color: #d9f777;
+  background-color: #020f11;
+}
+
+.arrow-block-form2:hover .arrow-item {
+  position: relative;
+  animation-name: example;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes example {
+  0% {
+    left: 0px;
+    top: 0px;
+  }
+  100% {
+    left: 25px;
+    top: -25px;
+  }
 }
 
 .arrow-block-small-form {
