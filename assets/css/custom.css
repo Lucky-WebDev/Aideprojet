@@ -525,28 +525,32 @@ select:focus {
 
 @font-face {
   font-family: Degular;
-  src: url(../fonts/Degular-Medium.otf);
+  src: url(../fonts/Degular-Medium.otf) format("opentype");;
   font-weight: Medium;
 }
 
 @font-face {
   font-family: Degular;
-  src: url(../fonts/Degular-Regular.otf);
+  src: url(../fonts/Degular-Regular.otf) format("opentype");;
   font-weight: normal;
 }
 
 @font-face {
   font-family: Gelica;
-  src: url(../fonts/fonnts.com-Gelica-Medium.otf);
+  src: url(../fonts/fonnts.com-Gelica-Medium.otf) format("opentype");;
   font-weight: Medium;
 }
 
 @font-face {
   font-family: Gelica;
-  src: url(../fonts/fonnts.com-Gelica-Light.otf);
+  src: url(../fonts/fonnts.com-Gelica-Light.otf) format("opentype");;
   font-weight: lighter;
 }
 
 * {
   font-family: Degular;
+}
+
+.font-Gelia {
+  font-family: Gelica;
 }
