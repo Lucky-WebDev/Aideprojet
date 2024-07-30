@@ -433,22 +433,16 @@ select:focus {
   align-items: center;
 }
 
-.dropdown-image1 {
-  display: none;
+.community .dropdown-image1 {
   background-image: url("../images/submenu/submenu-image4.png");
   background-size: 301px 100%;
   background-repeat: no-repeat;
   border-radius: 20px;
+  transition: all 0.5s ease;
 }
 
-.dropdown-content:hover .dropdown-image1 {
-  display: block;
-}
-
-.development-event:hover .dropdown-image1 {
-  display: block;
-  /* background-image: url("../images/submenu/submenu-image4.png") !important; */
-  background: url("../images/submenu/submenu-image5.png") no-repeat !important;
+.community .development-event:hover .dropdown-image1 {
+  background-image: url("../images/submenu/submenu-image5.png") !important;
 }
 
 /* #development-event:hover .dropdown-image1 {

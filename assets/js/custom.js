@@ -3,37 +3,6 @@
 
   // ======= Sticky
   window.onscroll = function () {
-    const ud_header = document.querySelector(".ud-header");
-    const sticky = ud_header.offsetTop;
-    const logo = document.querySelectorAll(".header-logo");
-
-    if (window.pageYOffset > sticky) {
-      ud_header.classList.add("sticky");
-    } else {
-      ud_header.classList.remove("sticky");
-    }
-
-    if (logo.length) {
-      // === logo change
-      if (ud_header.classList.contains("sticky")) {
-        document.querySelector(".header-logo").src =
-          "assets/images/logo/logo.svg";
-      } else {
-        document.querySelector(".header-logo").src =
-          "assets/images/logo/logo-white.svg";
-      }
-    }
-
-    if (document.documentElement.classList.contains("dark")) {
-      if (logo.length) {
-        // === logo change
-        if (ud_header.classList.contains("sticky")) {
-          document.querySelector(".header-logo").src =
-            "assets/images/logo/logo-white.svg";
-        }
-      }
-    }
-
     // show or hide the back-top-top button
     const backToTop = document.querySelector(".back-to-top");
     if (
@@ -116,44 +85,4 @@
   document.querySelector(".back-to-top").onclick = () => {
     scrollTo(document.documentElement);
   };
-
-  /* ========  themeSwitcher start ========= */
-
-  // themeSwitcher
-  const themeSwitcher = document.getElementById("themeSwitcher");
-
-  // Theme Vars
-  const userTheme = localStorage.getItem("theme");
-  const systemTheme = window.matchMedia(
-    "(prefers-color0scheme: light)"
-  ).matches;
-
-  // Initial Theme Check
-  const themeCheck = () => {
-    if (userTheme === "light" || (!userTheme && systemTheme)) {
-      document.documentElement.classList.add("light");
-      return;
-    }
-  };
-
-  // Manual Theme Switch
-  const themeSwitch = () => {
-    if (document.documentElement.classList.contains("light")) {
-      document.documentElement.classList.remove("light");
-      localStorage.setItem("theme", "dark");
-      return;
-    }
-
-    document.documentElement.classList.add("light");
-    localStorage.setItem("theme", "light");
-  };
-
-  // call theme switch on clicking buttons
-  themeSwitcher.addEventListener("click", () => {
-    themeSwitch();
-  });
-
-  // invoke theme check on initial load
-  themeCheck();
-  /* ========  themeSwitcher End ========= */
 })();
