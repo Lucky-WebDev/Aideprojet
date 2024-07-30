@@ -66,19 +66,12 @@
     );
 
   // ===== Sub-menu
-  // const submenuItems = document.querySelectorAll(".submenu-item");
-  // submenuItems.forEach((el) => {
-  //   console.log(submenuItems);
-  //   el.querySelector("a").addEventListener("click", () => {
-  //     el.querySelector(".submenu").classList.toggle("hidden");
-  //   });
-  // });
-
-  let serviceItem = document.querySelector("#serviceToggle");
-  serviceItem.addEventListener("click", () => {
-    serviceItem.querySelector("#serviceModal").classList.toggle("hidden");
+  const submenuItems = document.querySelectorAll(".submenu-item");
+  submenuItems.forEach((el) => {
+    el.querySelector("a").addEventListener("click", () => {
+      el.querySelector(".submenu").classList.toggle("hidden");
+    });
   });
-
   // ===== Faq accordion
   const faqs = document.querySelectorAll(".single-faq");
   faqs.forEach((el) => {
