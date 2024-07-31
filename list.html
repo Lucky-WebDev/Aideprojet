@@ -25,116 +25,294 @@
   <body>
     <!-- ====== Navbar Section Start -->
     <div class="relative initial-background first-background">
-      <div class="flex w-full items-center bg-transparent">
-        <div class="container">
-          <div class="relative -mx-4 flex items-center justify-between">
-            <div class="w-60 max-w-full px-4">
-              <a href="index.html" class="navbar-logo block w-full">
-                <img
-                  src="assets/images/logo.png"
-                  alt="logo"
-                  class="header-logo w-full"
-                />
-              </a>
-            </div>
+      <div class="sticky-header">
+        <div class="flex w-full items-center bg-transparent">
+          <div class="container">
+            <div class="relative -mx-4 flex items-center justify-between">
+              <div class="max-w-full">
+                <a href="index.html" class="navbar-logo block w-full">
+                  <img
+                    src="assets/images/logo.png"
+                    alt="logo"
+                    class="header-logo w-full"
+                  />
+                </a>
+              </div>
 
-            <div class="flex w-full items-center justify-between px-4">
-              <button
-                id="navbarToggler"
-                class="flex justify-center items-center absolute right-4 top-1/2 -translate-y-1/2 rounded-lg px-3 py-[6px] lg:hidden"
-              >
-                <div>
-                  <span
-                    class="text-white text-[20px]"
-                    style="margin-right: 10px"
-                    >Menu</span
-                  >
-                </div>
-                <div>
-                  <svg
-                    class="h-10 w-10 text-white"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                  >
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
-                      d="M4 6h16M4 12h16m-7 6h7"
-                    />
-                  </svg>
-                </div>
-              </button>
-              <nav
-                id="navbarCollapse"
-                class="absolute right-4 top-full hidden w-full max-w-[250px] rounded-lg bg-white py-5 shadow-lg lg:static lg:block lg:w-full lg:max-w-full lg:bg-transparent lg:py-0 lg:shadow-none xl:px-6"
-              >
-                <ul class="lg:flex 2xl:ml-20 justify-between items-center">
-                  <li class="submenu-item group relative">
-                    <div class="relative">
-                      <input
-                        type="search"
-                        class="search-form"
-                        style="width: 250px"
-                        placeholder="Developer, Recruter..."
-                      />
-                      <svg
-                        class="icon-form"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        stroke="currentColor"
-                        stroke-width="2"
+              <div class="flex w-full items-center justify-between px-4">
+                <button
+                  id="navbarToggler"
+                  class="flex justify-center items-center absolute right-4 top-1/2 -translate-y-1/2 rounded-lg px-3 py-[6px] lg:hidden"
+                >
+                  <div>
+                    <span
+                      class="text-white text-[20px]"
+                      style="margin-right: 10px"
+                      >Menu</span
+                    >
+                  </div>
+                  <div>
+                    <svg
+                      class="h-10 w-10 text-white"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                    >
+                      <path
                         stroke-linecap="round"
                         stroke-linejoin="round"
-                      >
-                        <circle cx="11" cy="11" r="8" />
-                        <line x1="21" y1="21" x2="16.65" y2="16.65" />
-                      </svg>
-                    </div>
-                  </li>
-                  <div
-                    class="font-Gelia flex justify-between"
-                    style="width: 450px; margin-left: 20px"
-                  >
-                    <li class="submenu-item group relative flex items-center">
-                      <div class="dropdown">
-                        <div class="dropdown-item cursor-pointer">
-                          Formations
-                          <svg
-                            class="ml-2 fill-current"
-                            width="16"
-                            height="20"
-                            viewBox="0 0 16 20"
-                            fill="none"
-                            xmlns="http://www.w3.org/2000/svg"
-                          >
-                            <path
-                              d="M7.99999 14.9C7.84999 14.9 7.72499 14.85 7.59999 14.75L1.84999 9.10005C1.62499 8.87505 1.62499 8.52505 1.84999 8.30005C2.07499 8.07505 2.42499 8.07505 2.64999 8.30005L7.99999 13.525L13.35 8.25005C13.575 8.02505 13.925 8.02505 14.15 8.25005C14.375 8.47505 14.375 8.82505 14.15 9.05005L8.39999 14.7C8.27499 14.825 8.14999 14.9 7.99999 14.9Z"
-                            />
-                          </svg>
-                        </div>
-                        <div
-                          class="font-Gelia dropdown-content"
-                          style="width: 780px"
+                        stroke-width="2"
+                        d="M4 6h16M4 12h16m-7 6h7"
+                      />
+                    </svg>
+                  </div>
+                </button>
+                <nav
+                  id="navbarCollapse"
+                  class="absolute right-4 top-full hidden w-full max-w-[250px] rounded-lg bg-white py-5 shadow-lg lg:static lg:block lg:w-full lg:max-w-full lg:bg-transparent lg:py-0 lg:shadow-none xl:px-6"
+                >
+                  <ul class="lg:flex 2xl:ml-20 justify-between items-center">
+                    <li class="submenu-item group relative">
+                      <div class="relative">
+                        <input
+                          type="search"
+                          class="search-form"
+                          style="width: 250px"
+                          placeholder="Développeur, designer…"
+                        />
+                        <svg
+                          class="icon-form"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          stroke="currentColor"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
                         >
+                          <circle cx="11" cy="11" r="8" />
+                          <line x1="21" y1="21" x2="16.65" y2="16.65" />
+                        </svg>
+                      </div>
+                    </li>
+                    <div
+                      class="font-Gelia flex justify-between"
+                      style="margin-left: 20px"
+                    >
+                      <li
+                        class="submenu-item group relative flex items-center lg:mr-10"
+                      >
+                        <div class="dropdown">
+                          <div class="dropdown-item cursor-pointer">
+                            Formations
+                            <svg
+                              class="ml-2 fill-current"
+                              width="16"
+                              height="20"
+                              viewBox="0 0 16 20"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                d="M7.99999 14.9C7.84999 14.9 7.72499 14.85 7.59999 14.75L1.84999 9.10005C1.62499 8.87505 1.62499 8.52505 1.84999 8.30005C2.07499 8.07505 2.42499 8.07505 2.64999 8.30005L7.99999 13.525L13.35 8.25005C13.575 8.02505 13.925 8.02505 14.15 8.25005C14.375 8.47505 14.375 8.82505 14.15 9.05005L8.39999 14.7C8.27499 14.825 8.14999 14.9 7.99999 14.9Z"
+                              />
+                            </svg>
+                          </div>
                           <div
-                            class="flex justify-between items-center"
-                            style="height: 450px"
+                            class="font-Gelia dropdown-content"
+                            style="width: 780px"
                           >
                             <div
-                              class="flex flex-col justify-between h-full mr-3"
+                              class="flex justify-between items-center"
+                              style="height: 450px"
                             >
                               <div
-                                class="dropdown-submenu-background3"
-                                style="width: 481px; height: 141px"
+                                class="flex flex-col justify-between h-full mr-3"
                               >
                                 <div
-                                  class="flex justify-between items-center"
+                                  class="dropdown-submenu-background3"
+                                  style="width: 481px; height: 141px"
+                                >
+                                  <div
+                                    class="flex justify-between items-center"
+                                  >
+                                    <div style="font-size: 24px">
+                                      Formations
+                                    </div>
+                                    <div
+                                      class="flex justify-center items-center dropdown-title-arrow"
+                                    >
+                                      <svg
+                                        class="h-8 w-8 text-red-500"
+                                        width="24"
+                                        height="24"
+                                        viewBox="0 0 24 24"
+                                        stroke-width="2"
+                                        stroke="currentColor"
+                                        fill="none"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                      >
+                                        <path stroke="none" d="M0 0h24v24H0z" />
+                                        <line x1="5" y1="12" x2="19" y2="12" />
+                                        <line x1="15" y1="16" x2="19" y2="12" />
+                                        <line x1="15" y1="8" x2="19" y2="12" />
+                                      </svg>
+                                    </div>
+                                  </div>
+                                  <div
+                                    style="font-size: 16px; margin-top: 10px"
+                                  >
+                                    Découvrez notre gamme complète de services
+                                    digitaux et professionnels.
+                                  </div>
+                                </div>
+                                <div
+                                  id="development-item"
+                                  class="development-item dropdown-subitem"
                                 >
                                   <div style="font-size: 24px">
-                                    Formations
+                                    Developpement
                                   </div>
+                                  <div class="dropdown-arrow">
+                                    <svg
+                                      class="h-8 w-8 text-red-500"
+                                      style="color: black"
+                                      width="24"
+                                      height="24"
+                                      viewBox="0 0 24 24"
+                                      stroke-width="2"
+                                      stroke="currentColor"
+                                      fill="none"
+                                      stroke-linecap="round"
+                                      stroke-linejoin="round"
+                                    >
+                                      <path stroke="none" d="M0 0h24v24H0z" />
+                                      <line x1="5" y1="12" x2="19" y2="12" />
+                                      <line x1="15" y1="16" x2="19" y2="12" />
+                                      <line x1="15" y1="8" x2="19" y2="12" />
+                                    </svg>
+                                  </div>
+                                  <div
+                                    class="dropdown-image1"
+                                    style="pointer-events: none"
+                                  ></div>
+                                </div>
+                                <div
+                                  id="ux-ui-item"
+                                  class="ux-ui-item dropdown-subitem"
+                                >
+                                  <div style="font-size: 24px">UX/UI</div>
+                                  <div class="dropdown-arrow">
+                                    <svg
+                                      class="h-8 w-8 text-red-500"
+                                      style="color: black"
+                                      width="24"
+                                      height="24"
+                                      viewBox="0 0 24 24"
+                                      stroke-width="2"
+                                      stroke="currentColor"
+                                      fill="none"
+                                      stroke-linecap="round"
+                                      stroke-linejoin="round"
+                                    >
+                                      <path stroke="none" d="M0 0h24v24H0z" />
+                                      <line x1="5" y1="12" x2="19" y2="12" />
+                                      <line x1="15" y1="16" x2="19" y2="12" />
+                                      <line x1="15" y1="8" x2="19" y2="12" />
+                                    </svg>
+                                  </div>
+                                  <div class="dropdown-image1"></div>
+                                </div>
+                                <div
+                                  id="marketing-digital-item"
+                                  class="marketing-digital-item dropdown-subitem"
+                                >
+                                  <div style="font-size: 24px">
+                                    Marketing Digital
+                                  </div>
+                                  <div class="dropdown-arrow">
+                                    <svg
+                                      class="h-8 w-8 text-red-500"
+                                      style="color: black"
+                                      width="24"
+                                      height="24"
+                                      viewBox="0 0 24 24"
+                                      stroke-width="2"
+                                      stroke="currentColor"
+                                      fill="none"
+                                      stroke-linecap="round"
+                                      stroke-linejoin="round"
+                                    >
+                                      <path stroke="none" d="M0 0h24v24H0z" />
+                                      <line x1="5" y1="12" x2="19" y2="12" />
+                                      <line x1="15" y1="16" x2="19" y2="12" />
+                                      <line x1="15" y1="8" x2="19" y2="12" />
+                                    </svg>
+                                  </div>
+                                  <div class="dropdown-image1"></div>
+                                </div>
+                                <div
+                                  id="cultural-digital-item"
+                                  class="cultural-digital-item dropdown-subitem"
+                                >
+                                  <div style="font-size: 24px">
+                                    Cultural digital
+                                  </div>
+                                  <div class="dropdown-arrow">
+                                    <svg
+                                      class="h-8 w-8 text-red-500"
+                                      style="color: black"
+                                      width="24"
+                                      height="24"
+                                      viewBox="0 0 24 24"
+                                      stroke-width="2"
+                                      stroke="currentColor"
+                                      fill="none"
+                                      stroke-linecap="round"
+                                      stroke-linejoin="round"
+                                    >
+                                      <path stroke="none" d="M0 0h24v24H0z" />
+                                      <line x1="5" y1="12" x2="19" y2="12" />
+                                      <line x1="15" y1="16" x2="19" y2="12" />
+                                      <line x1="15" y1="8" x2="19" y2="12" />
+                                    </svg>
+                                  </div>
+                                  <div class="dropdown-image1"></div>
+                                </div>
+                              </div>
+                              <div class="dropdown-image1"></div>
+                            </div>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="submenu-item group relative lg:mr-10">
+                        <div class="dropdown">
+                          <div class="dropdown-item cursor-pointer">
+                            Recruter
+                            <svg
+                              class="ml-2 fill-current"
+                              width="16"
+                              height="20"
+                              viewBox="0 0 16 20"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                d="M7.99999 14.9C7.84999 14.9 7.72499 14.85 7.59999 14.75L1.84999 9.10005C1.62499 8.87505 1.62499 8.52505 1.84999 8.30005C2.07499 8.07505 2.42499 8.07505 2.64999 8.30005L7.99999 13.525L13.35 8.25005C13.575 8.02505 13.925 8.02505 14.15 8.25005C14.375 8.47505 14.375 8.82505 14.15 9.05005L8.39999 14.7C8.27499 14.825 8.14999 14.9 7.99999 14.9Z"
+                              />
+                            </svg>
+                          </div>
+                          <div
+                            class="font-Gelia dropdown-content"
+                            style="right: -250px"
+                          >
+                            <div style="height: 415px">
+                              <div
+                                class="dropdown-submenu-background2"
+                                style="width: 451px; height: 141px"
+                              >
+                                <div class="flex justify-between items-center">
+                                  <div style="font-size: 24px">Recruter</div>
                                   <div
                                     class="flex justify-center items-center dropdown-title-arrow"
                                   >
@@ -156,20 +334,13 @@
                                     </svg>
                                   </div>
                                 </div>
-                                <div
-                                  style="font-size: 16px; margin-top: 10px"
-                                >
+                                <div style="font-size: 16px; margin-top: 10px">
                                   Découvrez notre gamme complète de services
                                   digitaux et professionnels.
                                 </div>
                               </div>
-                              <div
-                                id="development-item"
-                                class="development-item dropdown-subitem"
-                              >
-                                <div style="font-size: 24px">
-                                  Developpement
-                                </div>
+                              <div class="dropdown-subitem" style="width: 100%">
+                                <div style="font-size: 24px">Developers</div>
                                 <div class="dropdown-arrow">
                                   <svg
                                     class="h-8 w-8 text-red-500"
@@ -189,16 +360,9 @@
                                     <line x1="15" y1="8" x2="19" y2="12" />
                                   </svg>
                                 </div>
-                                <div
-                                  class="dropdown-image1"
-                                  style="pointer-events: none"
-                                ></div>
                               </div>
-                              <div
-                                id="ux-ui-item"
-                                class="ux-ui-item dropdown-subitem"
-                              >
-                                <div style="font-size: 24px">UX/UI</div>
+                              <div class="dropdown-subitem" style="width: 100%">
+                                <div style="font-size: 24px">Designers</div>
                                 <div class="dropdown-arrow">
                                   <svg
                                     class="h-8 w-8 text-red-500"
@@ -218,15 +382,9 @@
                                     <line x1="15" y1="8" x2="19" y2="12" />
                                   </svg>
                                 </div>
-                                <div class="dropdown-image1"></div>
                               </div>
-                              <div
-                                id="marketing-digital-item"
-                                class="marketing-digital-item dropdown-subitem"
-                              >
-                                <div style="font-size: 24px">
-                                  Marketing Digital
-                                </div>
+                              <div class="dropdown-subitem" style="width: 100%">
+                                <div style="font-size: 24px">Marketers</div>
                                 <div class="dropdown-arrow">
                                   <svg
                                     class="h-8 w-8 text-red-500"
@@ -246,14 +404,10 @@
                                     <line x1="15" y1="8" x2="19" y2="12" />
                                   </svg>
                                 </div>
-                                <div class="dropdown-image1"></div>
                               </div>
-                              <div
-                                id="cultural-digital-item"
-                                class="cultural-digital-item dropdown-subitem"
-                              >
+                              <div class="dropdown-subitem" style="width: 100%">
                                 <div style="font-size: 24px">
-                                  Cultural digital
+                                  Developers without profile
                                 </div>
                                 <div class="dropdown-arrow">
                                   <svg
@@ -274,203 +428,84 @@
                                     <line x1="15" y1="8" x2="19" y2="12" />
                                   </svg>
                                 </div>
-                                <div class="dropdown-image1"></div>
                               </div>
                             </div>
-                            <div class="dropdown-image1"></div>
                           </div>
                         </div>
-                      </div>
-                    </li>
-                    <li class="submenu-item group relative">
-                      <div class="dropdown">
-                        <div class="dropdown-item cursor-pointer">
-                          Recruters
-                          <svg
-                            class="ml-2 fill-current"
-                            width="16"
-                            height="20"
-                            viewBox="0 0 16 20"
-                            fill="none"
-                            xmlns="http://www.w3.org/2000/svg"
-                          >
-                            <path
-                              d="M7.99999 14.9C7.84999 14.9 7.72499 14.85 7.59999 14.75L1.84999 9.10005C1.62499 8.87505 1.62499 8.52505 1.84999 8.30005C2.07499 8.07505 2.42499 8.07505 2.64999 8.30005L7.99999 13.525L13.35 8.25005C13.575 8.02505 13.925 8.02505 14.15 8.25005C14.375 8.47505 14.375 8.82505 14.15 9.05005L8.39999 14.7C8.27499 14.825 8.14999 14.9 7.99999 14.9Z"
-                            />
-                          </svg>
-                        </div>
-                        <div
-                          class="font-Gelia dropdown-content"
-                          style="right: -250px"
-                        >
-                          <div style="height: 415px">
-                            <div
-                              class="dropdown-submenu-background2"
-                              style="width: 451px; height: 141px"
+                      </li>
+                      <li class="submenu-item group relative flex items-center">
+                        <div class="dropdown">
+                          <div class="dropdown-item cursor-pointer">
+                            Services
+                            <svg
+                              class="ml-2 fill-current"
+                              width="16"
+                              height="20"
+                              viewBox="0 0 16 20"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
                             >
-                              <div class="flex justify-between items-center">
-                                <div style="font-size: 24px">Recruters</div>
-                                <div
-                                  class="flex justify-center items-center dropdown-title-arrow"
-                                >
-                                  <svg
-                                    class="h-8 w-8 text-red-500"
-                                    width="24"
-                                    height="24"
-                                    viewBox="0 0 24 24"
-                                    stroke-width="2"
-                                    stroke="currentColor"
-                                    fill="none"
-                                    stroke-linecap="round"
-                                    stroke-linejoin="round"
-                                  >
-                                    <path stroke="none" d="M0 0h24v24H0z" />
-                                    <line x1="5" y1="12" x2="19" y2="12" />
-                                    <line x1="15" y1="16" x2="19" y2="12" />
-                                    <line x1="15" y1="8" x2="19" y2="12" />
-                                  </svg>
-                                </div>
-                              </div>
-                              <div style="font-size: 16px; margin-top: 10px">
-                                Découvrez notre gamme complète de services
-                                digitaux et professionnels.
-                              </div>
-                            </div>
-                            <div class="dropdown-subitem" style="width: 100%">
-                              <div style="font-size: 24px">Developers</div>
-                              <div class="dropdown-arrow">
-                                <svg
-                                  class="h-8 w-8 text-red-500"
-                                  style="color: black"
-                                  width="24"
-                                  height="24"
-                                  viewBox="0 0 24 24"
-                                  stroke-width="2"
-                                  stroke="currentColor"
-                                  fill="none"
-                                  stroke-linecap="round"
-                                  stroke-linejoin="round"
-                                >
-                                  <path stroke="none" d="M0 0h24v24H0z" />
-                                  <line x1="5" y1="12" x2="19" y2="12" />
-                                  <line x1="15" y1="16" x2="19" y2="12" />
-                                  <line x1="15" y1="8" x2="19" y2="12" />
-                                </svg>
-                              </div>
-                            </div>
-                            <div class="dropdown-subitem" style="width: 100%">
-                              <div style="font-size: 24px">Designers</div>
-                              <div class="dropdown-arrow">
-                                <svg
-                                  class="h-8 w-8 text-red-500"
-                                  style="color: black"
-                                  width="24"
-                                  height="24"
-                                  viewBox="0 0 24 24"
-                                  stroke-width="2"
-                                  stroke="currentColor"
-                                  fill="none"
-                                  stroke-linecap="round"
-                                  stroke-linejoin="round"
-                                >
-                                  <path stroke="none" d="M0 0h24v24H0z" />
-                                  <line x1="5" y1="12" x2="19" y2="12" />
-                                  <line x1="15" y1="16" x2="19" y2="12" />
-                                  <line x1="15" y1="8" x2="19" y2="12" />
-                                </svg>
-                              </div>
-                            </div>
-                            <div class="dropdown-subitem" style="width: 100%">
-                              <div style="font-size: 24px">Marketers</div>
-                              <div class="dropdown-arrow">
-                                <svg
-                                  class="h-8 w-8 text-red-500"
-                                  style="color: black"
-                                  width="24"
-                                  height="24"
-                                  viewBox="0 0 24 24"
-                                  stroke-width="2"
-                                  stroke="currentColor"
-                                  fill="none"
-                                  stroke-linecap="round"
-                                  stroke-linejoin="round"
-                                >
-                                  <path stroke="none" d="M0 0h24v24H0z" />
-                                  <line x1="5" y1="12" x2="19" y2="12" />
-                                  <line x1="15" y1="16" x2="19" y2="12" />
-                                  <line x1="15" y1="8" x2="19" y2="12" />
-                                </svg>
-                              </div>
-                            </div>
-                            <div class="dropdown-subitem" style="width: 100%">
-                              <div style="font-size: 24px">
-                                Developers without profile
-                              </div>
-                              <div class="dropdown-arrow">
-                                <svg
-                                  class="h-8 w-8 text-red-500"
-                                  style="color: black"
-                                  width="24"
-                                  height="24"
-                                  viewBox="0 0 24 24"
-                                  stroke-width="2"
-                                  stroke="currentColor"
-                                  fill="none"
-                                  stroke-linecap="round"
-                                  stroke-linejoin="round"
-                                >
-                                  <path stroke="none" d="M0 0h24v24H0z" />
-                                  <line x1="5" y1="12" x2="19" y2="12" />
-                                  <line x1="15" y1="16" x2="19" y2="12" />
-                                  <line x1="15" y1="8" x2="19" y2="12" />
-                                </svg>
-                              </div>
-                            </div>
+                              <path
+                                d="M7.99999 14.9C7.84999 14.9 7.72499 14.85 7.59999 14.75L1.84999 9.10005C1.62499 8.87505 1.62499 8.52505 1.84999 8.30005C2.07499 8.07505 2.42499 8.07505 2.64999 8.30005L7.99999 13.525L13.35 8.25005C13.575 8.02505 13.925 8.02505 14.15 8.25005C14.375 8.47505 14.375 8.82505 14.15 9.05005L8.39999 14.7C8.27499 14.825 8.14999 14.9 7.99999 14.9Z"
+                              />
+                            </svg>
                           </div>
-                        </div>
-                      </div>
-                    </li>
-                    <li class="submenu-item group relative flex items-center">
-                      <div class="dropdown">
-                        <div class="dropdown-item cursor-pointer">
-                          Services
-                          <svg
-                            class="ml-2 fill-current"
-                            width="16"
-                            height="20"
-                            viewBox="0 0 16 20"
-                            fill="none"
-                            xmlns="http://www.w3.org/2000/svg"
-                          >
-                            <path
-                              d="M7.99999 14.9C7.84999 14.9 7.72499 14.85 7.59999 14.75L1.84999 9.10005C1.62499 8.87505 1.62499 8.52505 1.84999 8.30005C2.07499 8.07505 2.42499 8.07505 2.64999 8.30005L7.99999 13.525L13.35 8.25005C13.575 8.02505 13.925 8.02505 14.15 8.25005C14.375 8.47505 14.375 8.82505 14.15 9.05005L8.39999 14.7C8.27499 14.825 8.14999 14.9 7.99999 14.9Z"
-                            />
-                          </svg>
-                        </div>
-                        <div
-                          class="font-Gelia dropdown-content"
-                          style="width: 780px; right: -280px"
-                        >
                           <div
-                            class="flex justify-between items-center"
-                            style="height: 450px"
+                            class="font-Gelia dropdown-content"
+                            style="width: 780px; right: -280px"
                           >
                             <div
-                              class="flex flex-col justify-between h-full mr-3"
+                              class="flex justify-between items-center"
+                              style="height: 450px"
                             >
                               <div
-                                class="dropdown-submenu-background1"
-                                style="width: 451px; height: 141px"
+                                class="flex flex-col justify-between h-full mr-3"
                               >
                                 <div
-                                  class="flex justify-between items-center"
+                                  class="dropdown-submenu-background1"
+                                  style="width: 451px; height: 141px"
                                 >
-                                  <div style="font-size: 24px">Services</div>
                                   <div
-                                    class="flex justify-center items-center dropdown-title-arrow"
+                                    class="flex justify-between items-center"
                                   >
+                                    <div style="font-size: 24px">Services</div>
+                                    <div
+                                      class="flex justify-center items-center dropdown-title-arrow"
+                                    >
+                                      <svg
+                                        class="h-8 w-8"
+                                        width="24"
+                                        height="24"
+                                        viewBox="0 0 24 24"
+                                        stroke-width="2"
+                                        stroke="currentColor"
+                                        fill="none"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                      >
+                                        <path stroke="none" d="M0 0h24v24H0z" />
+                                        <line x1="5" y1="12" x2="19" y2="12" />
+                                        <line x1="15" y1="16" x2="19" y2="12" />
+                                        <line x1="15" y1="8" x2="19" y2="12" />
+                                      </svg>
+                                    </div>
+                                  </div>
+                                  <div
+                                    style="font-size: 16px; margin-top: 10px"
+                                  >
+                                    Découvrez notre gamme complète de services
+                                    digitaux et professionnels.
+                                  </div>
+                                </div>
+                                <div
+                                  id="site-web-item"
+                                  class="site-web-item dropdown-subitem"
+                                >
+                                  <div style="font-size: 24px">Site Web</div>
+                                  <div class="dropdown-arrow">
                                     <svg
-                                      class="h-8 w-8"
+                                      class="h-8 w-8 text-red-500"
+                                      style="color: black"
                                       width="24"
                                       height="24"
                                       viewBox="0 0 24 24"
@@ -486,171 +521,142 @@
                                       <line x1="15" y1="8" x2="19" y2="12" />
                                     </svg>
                                   </div>
+                                  <div
+                                    class="dropdown-image2"
+                                    style="pointer-events: none"
+                                  ></div>
                                 </div>
                                 <div
-                                  style="font-size: 16px; margin-top: 10px"
+                                  id="application-item"
+                                  class="application-item dropdown-subitem"
                                 >
-                                  Découvrez notre gamme complète de services
-                                  digitaux et professionnels.
-                                </div>
-                              </div>
-                              <div
-                                id="site-web-item"
-                                class="site-web-item dropdown-subitem"
-                              >
-                                <div style="font-size: 24px">Site Web</div>
-                                <div class="dropdown-arrow">
-                                  <svg
-                                    class="h-8 w-8 text-red-500"
-                                    style="color: black"
-                                    width="24"
-                                    height="24"
-                                    viewBox="0 0 24 24"
-                                    stroke-width="2"
-                                    stroke="currentColor"
-                                    fill="none"
-                                    stroke-linecap="round"
-                                    stroke-linejoin="round"
-                                  >
-                                    <path stroke="none" d="M0 0h24v24H0z" />
-                                    <line x1="5" y1="12" x2="19" y2="12" />
-                                    <line x1="15" y1="16" x2="19" y2="12" />
-                                    <line x1="15" y1="8" x2="19" y2="12" />
-                                  </svg>
+                                  <div style="font-size: 24px">
+                                    Application Mobile VI
+                                  </div>
+                                  <div class="dropdown-arrow">
+                                    <svg
+                                      class="h-8 w-8 text-red-500"
+                                      style="color: black"
+                                      width="24"
+                                      height="24"
+                                      viewBox="0 0 24 24"
+                                      stroke-width="2"
+                                      stroke="currentColor"
+                                      fill="none"
+                                      stroke-linecap="round"
+                                      stroke-linejoin="round"
+                                    >
+                                      <path stroke="none" d="M0 0h24v24H0z" />
+                                      <line x1="5" y1="12" x2="19" y2="12" />
+                                      <line x1="15" y1="16" x2="19" y2="12" />
+                                      <line x1="15" y1="8" x2="19" y2="12" />
+                                    </svg>
+                                  </div>
+                                  <div class="dropdown-image2"></div>
                                 </div>
                                 <div
-                                  class="dropdown-image2"
-                                  style="pointer-events: none"
-                                ></div>
-                              </div>
-                              <div
-                                id="application-item"
-                                class="application-item dropdown-subitem"
-                              >
-                                <div style="font-size: 24px">
-                                  Application Mobile VI
+                                  id="sociaty-item"
+                                  class="sociaty-item dropdown-subitem"
+                                >
+                                  <div style="font-size: 24px">Sociaty</div>
+                                  <div class="dropdown-arrow">
+                                    <svg
+                                      class="h-8 w-8 text-red-500"
+                                      style="color: black"
+                                      width="24"
+                                      height="24"
+                                      viewBox="0 0 24 24"
+                                      stroke-width="2"
+                                      stroke="currentColor"
+                                      fill="none"
+                                      stroke-linecap="round"
+                                      stroke-linejoin="round"
+                                    >
+                                      <path stroke="none" d="M0 0h24v24H0z" />
+                                      <line x1="5" y1="12" x2="19" y2="12" />
+                                      <line x1="15" y1="16" x2="19" y2="12" />
+                                      <line x1="15" y1="8" x2="19" y2="12" />
+                                    </svg>
+                                  </div>
+                                  <div class="dropdown-image2"></div>
                                 </div>
-                                <div class="dropdown-arrow">
-                                  <svg
-                                    class="h-8 w-8 text-red-500"
-                                    style="color: black"
-                                    width="24"
-                                    height="24"
-                                    viewBox="0 0 24 24"
-                                    stroke-width="2"
-                                    stroke="currentColor"
-                                    fill="none"
-                                    stroke-linecap="round"
-                                    stroke-linejoin="round"
-                                  >
-                                    <path stroke="none" d="M0 0h24v24H0z" />
-                                    <line x1="5" y1="12" x2="19" y2="12" />
-                                    <line x1="15" y1="16" x2="19" y2="12" />
-                                    <line x1="15" y1="8" x2="19" y2="12" />
-                                  </svg>
+                                <div
+                                  id="compatability-item"
+                                  class="compatability-item dropdown-subitem"
+                                >
+                                  <div style="font-size: 24px">
+                                    Compatability
+                                  </div>
+                                  <div class="dropdown-arrow">
+                                    <svg
+                                      class="h-8 w-8 text-red-500"
+                                      style="color: black"
+                                      width="24"
+                                      height="24"
+                                      viewBox="0 0 24 24"
+                                      stroke-width="2"
+                                      stroke="currentColor"
+                                      fill="none"
+                                      stroke-linecap="round"
+                                      stroke-linejoin="round"
+                                    >
+                                      <path stroke="none" d="M0 0h24v24H0z" />
+                                      <line x1="5" y1="12" x2="19" y2="12" />
+                                      <line x1="15" y1="16" x2="19" y2="12" />
+                                      <line x1="15" y1="8" x2="19" y2="12" />
+                                    </svg>
+                                  </div>
+                                  <div class="dropdown-image2"></div>
                                 </div>
-                                <div class="dropdown-image2"></div>
-                              </div>
-                              <div
-                                id="sociaty-item"
-                                class="sociaty-item dropdown-subitem"
-                              >
-                                <div style="font-size: 24px">Sociaty</div>
-                                <div class="dropdown-arrow">
-                                  <svg
-                                    class="h-8 w-8 text-red-500"
-                                    style="color: black"
-                                    width="24"
-                                    height="24"
-                                    viewBox="0 0 24 24"
-                                    stroke-width="2"
-                                    stroke="currentColor"
-                                    fill="none"
-                                    stroke-linecap="round"
-                                    stroke-linejoin="round"
-                                  >
-                                    <path stroke="none" d="M0 0h24v24H0z" />
-                                    <line x1="5" y1="12" x2="19" y2="12" />
-                                    <line x1="15" y1="16" x2="19" y2="12" />
-                                    <line x1="15" y1="8" x2="19" y2="12" />
-                                  </svg>
-                                </div>
-                                <div class="dropdown-image2"></div>
-                              </div>
-                              <div
-                                id="compatability-item"
-                                class="compatability-item dropdown-subitem"
-                              >
-                                <div style="font-size: 24px">
-                                  Compatability
-                                </div>
-                                <div class="dropdown-arrow">
-                                  <svg
-                                    class="h-8 w-8 text-red-500"
-                                    style="color: black"
-                                    width="24"
-                                    height="24"
-                                    viewBox="0 0 24 24"
-                                    stroke-width="2"
-                                    stroke="currentColor"
-                                    fill="none"
-                                    stroke-linecap="round"
-                                    stroke-linejoin="round"
-                                  >
-                                    <path stroke="none" d="M0 0h24v24H0z" />
-                                    <line x1="5" y1="12" x2="19" y2="12" />
-                                    <line x1="15" y1="16" x2="19" y2="12" />
-                                    <line x1="15" y1="8" x2="19" y2="12" />
-                                  </svg>
-                                </div>
-                                <div class="dropdown-image2"></div>
                               </div>
                             </div>
                           </div>
                         </div>
+                      </li>
+                    </div>
+                    <li class="submenu-item group relative">
+                      <div class="hidden sm:flex" style="margin-left: 20px">
+                        <a
+                          href="#"
+                          class="cart-form py-2 mr-3 text-base text-white hover:opacity-70"
+                        >
+                          <svg
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                            stroke-width="2"
+                            stroke="currentColor"
+                            fill="none"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          >
+                            <path stroke="none" d="M0 0h24v24H0z" />
+                            <circle cx="9" cy="19" r="2" />
+                            <circle cx="17" cy="19" r="2" />
+                            <path
+                              d="M3 3h2l2 12a3 3 0 0 0 3 2h7a3 3 0 0 0 3 -2l1 -7h-15.2"
+                            />
+                          </svg>
+                        </a>
+                        <a
+                          href="#"
+                          class="fill-button-form mr-3 px-5 flex justify-center items-center text-white"
+                          style="width: 150px"
+                        >
+                          Se connecter
+                        </a>
+                        <a
+                          href="#"
+                          class="outline-button-form flex px-5 justify-center items-center text-white"
+                          style="width: 100px"
+                        >
+                          S’inscrire
+                        </a>
                       </div>
                     </li>
-                  </div>
-                  <li class="submenu-item group relative">
-                    <div class="hidden sm:flex" style="margin-left: 20px">
-                      <a
-                        href="#"
-                        class="cart-form py-2 mr-3 text-base text-white hover:opacity-70"
-                      >
-                        <svg
-                          width="24"
-                          height="24"
-                          viewBox="0 0 24 24"
-                          stroke-width="2"
-                          stroke="currentColor"
-                          fill="none"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                        >
-                          <path stroke="none" d="M0 0h24v24H0z" />
-                          <circle cx="9" cy="19" r="2" />
-                          <circle cx="17" cy="19" r="2" />
-                          <path
-                            d="M3 3h2l2 12a3 3 0 0 0 3 2h7a3 3 0 0 0 3 -2l1 -7h-15.2"
-                          />
-                        </svg>
-                      </a>
-                      <a
-                        href="#"
-                        class="fill-button-form w-[130px] px-6 mr-3 py-2 flex justify-center items-center font-medium text-white"
-                      >
-                        Developer
-                      </a>
-                      <a
-                        href="#"
-                        class="outline-button-form px-[22px] w-[110px] py-2 flex justify-center items-center font-medium text-white"
-                      >
-                        Service
-                      </a>
-                    </div>
-                  </li>
-                </ul>
-              </nav>
+                  </ul>
+                </nav>
+              </div>
             </div>
           </div>
         </div>
@@ -769,7 +775,7 @@
                   style="
                     border: 1px solid #253032;
                     border-radius: 20px;
-                    padding: 20px;
+                    
                   "
                 >
                   <div class="flex justify-between items-center">
@@ -791,7 +797,7 @@
                       />
                     </svg>
                   </div>
-                  <h3 class="sm:text-xs lg:text-xl">Product Designer</h3>
+                  <h3 class="sm:text-xs lg:text-lg">Product Designer</h3>
                   <img
                     src="assets/images/person1.png"
                     class="curve-form"
@@ -801,12 +807,12 @@
                     class="flex justify-between items-center lg:p-3"
                     style="margin-top: 10px"
                   >
-                    <h4 class="sm:text-[8px] lg:text-base">
-                      Antérieurement chez
+                    <h4 class="sm:text-xs lg:text-base">
+                      Antérieurement
                     </h4>
                     <img
                       src="assets/images/logo-google.png"
-                      class="sm:w-12 lg:w-32"
+                      class="sm:w-12 xl:w-32"
                     />
                   </div>
                 </div>
@@ -819,7 +825,7 @@
                   style="
                     border: 1px solid #253032;
                     border-radius: 20px;
-                    padding: 20px;
+                    
                   "
                 >
                   <div class="flex justify-between items-center">
@@ -841,7 +847,7 @@
                       />
                     </svg>
                   </div>
-                  <h3 class="sm:text-xs lg:text-xl">Product Designer</h3>
+                  <h3 class="sm:text-xs lg:text-lg">Product Designer</h3>
                   <img
                     src="assets/images/person1.png"
                     class="curve-form"
@@ -851,12 +857,12 @@
                     class="flex justify-between items-center lg:p-3"
                     style="margin-top: 10px"
                   >
-                    <h4 class="sm:text-[8px] lg:text-base">
-                      Antérieurement chez
+                    <h4 class="sm:text-xs lg:text-base">
+                      Antérieurement
                     </h4>
                     <img
                       src="assets/images/logo-google.png"
-                      class="sm:w-12 lg:w-32"
+                      class="sm:w-12 xl:w-32"
                     />
                   </div>
                 </div>
@@ -869,7 +875,7 @@
                   style="
                     border: 1px solid #253032;
                     border-radius: 20px;
-                    padding: 20px;
+                    
                   "
                 >
                   <div class="flex justify-between items-center">
@@ -891,7 +897,7 @@
                       />
                     </svg>
                   </div>
-                  <h3 class="sm:text-xs lg:text-xl">Product Designer</h3>
+                  <h3 class="sm:text-xs lg:text-lg">Product Designer</h3>
                   <img
                     src="assets/images/person1.png"
                     class="curve-form"
@@ -901,12 +907,12 @@
                     class="flex justify-between items-center lg:p-3"
                     style="margin-top: 10px"
                   >
-                    <h4 class="sm:text-[8px] lg:text-base">
-                      Antérieurement chez
+                    <h4 class="sm:text-xs lg:text-base">
+                      Antérieurement
                     </h4>
                     <img
                       src="assets/images/logo-google.png"
-                      class="sm:w-12 lg:w-32"
+                      class="sm:w-12 xl:w-32"
                     />
                   </div>
                 </div>
@@ -919,7 +925,7 @@
                   style="
                     border: 1px solid #253032;
                     border-radius: 20px;
-                    padding: 20px;
+                    
                   "
                 >
                   <div class="flex justify-between items-center">
@@ -941,7 +947,7 @@
                       />
                     </svg>
                   </div>
-                  <h3 class="sm:text-xs lg:text-xl">Product Designer</h3>
+                  <h3 class="sm:text-xs lg:text-lg">Product Designer</h3>
                   <img
                     src="assets/images/person1.png"
                     class="curve-form"
@@ -951,12 +957,12 @@
                     class="flex justify-between items-center lg:p-3"
                     style="margin-top: 10px"
                   >
-                    <h4 class="sm:text-[8px] lg:text-base">
-                      Antérieurement chez
+                    <h4 class="sm:text-xs lg:text-base">
+                      Antérieurement
                     </h4>
                     <img
                       src="assets/images/logo-google.png"
-                      class="sm:w-12 lg:w-32"
+                      class="sm:w-12 xl:w-32"
                     />
                   </div>
                 </div>
@@ -969,7 +975,7 @@
                   style="
                     border: 1px solid #253032;
                     border-radius: 20px;
-                    padding: 20px;
+                    
                   "
                 >
                   <div class="flex justify-between items-center">
@@ -991,7 +997,7 @@
                       />
                     </svg>
                   </div>
-                  <h3 class="sm:text-xs lg:text-xl">Product Designer</h3>
+                  <h3 class="sm:text-xs lg:text-lg">Product Designer</h3>
                   <img
                     src="assets/images/person1.png"
                     class="curve-form"
@@ -1001,12 +1007,12 @@
                     class="flex justify-between items-center lg:p-3"
                     style="margin-top: 10px"
                   >
-                    <h4 class="sm:text-[8px] lg:text-base">
-                      Antérieurement chez
+                    <h4 class="sm:text-xs lg:text-base">
+                      Antérieurement
                     </h4>
                     <img
                       src="assets/images/logo-google.png"
-                      class="sm:w-12 lg:w-32"
+                      class="sm:w-12 xl:w-32"
                     />
                   </div>
                 </div>
@@ -1019,7 +1025,7 @@
                   style="
                     border: 1px solid #253032;
                     border-radius: 20px;
-                    padding: 20px;
+                    
                   "
                 >
                   <div class="flex justify-between items-center">
@@ -1041,7 +1047,7 @@
                       />
                     </svg>
                   </div>
-                  <h3 class="sm:text-xs lg:text-xl">Product Designer</h3>
+                  <h3 class="sm:text-xs lg:text-lg">Product Designer</h3>
                   <img
                     src="assets/images/person1.png"
                     class="curve-form"
@@ -1051,12 +1057,12 @@
                     class="flex justify-between items-center lg:p-3"
                     style="margin-top: 10px"
                   >
-                    <h4 class="sm:text-[8px] lg:text-base">
-                      Antérieurement chez
+                    <h4 class="sm:text-xs lg:text-base">
+                      Antérieurement
                     </h4>
                     <img
                       src="assets/images/logo-google.png"
-                      class="sm:w-12 lg:w-32"
+                      class="sm:w-12 xl:w-32"
                     />
                   </div>
                 </div>
@@ -1074,7 +1080,7 @@
                   style="
                     border: 1px solid #253032;
                     border-radius: 20px;
-                    padding: 20px;
+                    
                   "
                 >
                   <div class="flex justify-between items-center">
@@ -1096,7 +1102,7 @@
                       />
                     </svg>
                   </div>
-                  <h3 class="sm:text-xs lg:text-xl">Product Designer</h3>
+                  <h3 class="sm:text-xs lg:text-lg">Product Designer</h3>
                   <img
                     src="assets/images/person1.png"
                     class="curve-form"
@@ -1106,12 +1112,12 @@
                     class="flex justify-between items-center lg:p-3"
                     style="margin-top: 10px"
                   >
-                    <h4 class="sm:text-[8px] lg:text-base">
-                      Antérieurement chez
+                    <h4 class="sm:text-xs lg:text-base">
+                      Antérieurement
                     </h4>
                     <img
                       src="assets/images/logo-google.png"
-                      class="sm:w-12 lg:w-32"
+                      class="sm:w-12 xl:w-32"
                     />
                   </div>
                 </div>
@@ -1124,7 +1130,7 @@
                   style="
                     border: 1px solid #253032;
                     border-radius: 20px;
-                    padding: 20px;
+                    
                   "
                 >
                   <div class="flex justify-between items-center">
@@ -1146,7 +1152,7 @@
                       />
                     </svg>
                   </div>
-                  <h3 class="sm:text-xs lg:text-xl">Product Designer</h3>
+                  <h3 class="sm:text-xs lg:text-lg">Product Designer</h3>
                   <img
                     src="assets/images/person1.png"
                     class="curve-form"
@@ -1156,12 +1162,12 @@
                     class="flex justify-between items-center lg:p-3"
                     style="margin-top: 10px"
                   >
-                    <h4 class="sm:text-[8px] lg:text-base">
-                      Antérieurement chez
+                    <h4 class="sm:text-xs lg:text-base">
+                      Antérieurement
                     </h4>
                     <img
                       src="assets/images/logo-google.png"
-                      class="sm:w-12 lg:w-32"
+                      class="sm:w-12 xl:w-32"
                     />
                   </div>
                 </div>
@@ -1174,7 +1180,7 @@
                   style="
                     border: 1px solid #253032;
                     border-radius: 20px;
-                    padding: 20px;
+                    
                   "
                 >
                   <div class="flex justify-between items-center">
@@ -1196,7 +1202,7 @@
                       />
                     </svg>
                   </div>
-                  <h3 class="sm:text-xs lg:text-xl">Product Designer</h3>
+                  <h3 class="sm:text-xs lg:text-lg">Product Designer</h3>
                   <img
                     src="assets/images/person1.png"
                     class="curve-form"
@@ -1206,12 +1212,12 @@
                     class="flex justify-between items-center lg:p-3"
                     style="margin-top: 10px"
                   >
-                    <h4 class="sm:text-[8px] lg:text-base">
-                      Antérieurement chez
+                    <h4 class="sm:text-xs lg:text-base">
+                      Antérieurement
                     </h4>
                     <img
                       src="assets/images/logo-google.png"
-                      class="sm:w-12 lg:w-32"
+                      class="sm:w-12 xl:w-32"
                     />
                   </div>
                 </div>
@@ -1224,7 +1230,7 @@
                   style="
                     border: 1px solid #253032;
                     border-radius: 20px;
-                    padding: 20px;
+                    
                   "
                 >
                   <div class="flex justify-between items-center">
@@ -1246,7 +1252,7 @@
                       />
                     </svg>
                   </div>
-                  <h3 class="sm:text-xs lg:text-xl">Product Designer</h3>
+                  <h3 class="sm:text-xs lg:text-lg">Product Designer</h3>
                   <img
                     src="assets/images/person1.png"
                     class="curve-form"
@@ -1256,12 +1262,12 @@
                     class="flex justify-between items-center lg:p-3"
                     style="margin-top: 10px"
                   >
-                    <h4 class="sm:text-[8px] lg:text-base">
-                      Antérieurement chez
+                    <h4 class="sm:text-xs lg:text-base">
+                      Antérieurement
                     </h4>
                     <img
                       src="assets/images/logo-google.png"
-                      class="sm:w-12 lg:w-32"
+                      class="sm:w-12 xl:w-32"
                     />
                   </div>
                 </div>
@@ -1274,7 +1280,7 @@
                   style="
                     border: 1px solid #253032;
                     border-radius: 20px;
-                    padding: 20px;
+                    
                   "
                 >
                   <div class="flex justify-between items-center">
@@ -1296,7 +1302,7 @@
                       />
                     </svg>
                   </div>
-                  <h3 class="sm:text-xs lg:text-xl">Product Designer</h3>
+                  <h3 class="sm:text-xs lg:text-lg">Product Designer</h3>
                   <img
                     src="assets/images/person1.png"
                     class="curve-form"
@@ -1306,12 +1312,12 @@
                     class="flex justify-between items-center lg:p-3"
                     style="margin-top: 10px"
                   >
-                    <h4 class="sm:text-[8px] lg:text-base">
-                      Antérieurement chez
+                    <h4 class="sm:text-xs lg:text-base">
+                      Antérieurement
                     </h4>
                     <img
                       src="assets/images/logo-google.png"
-                      class="sm:w-12 lg:w-32"
+                      class="sm:w-12 xl:w-32"
                     />
                   </div>
                 </div>
@@ -1324,7 +1330,7 @@
                   style="
                     border: 1px solid #253032;
                     border-radius: 20px;
-                    padding: 20px;
+                    
                   "
                 >
                   <div class="flex justify-between items-center">
@@ -1346,7 +1352,7 @@
                       />
                     </svg>
                   </div>
-                  <h3 class="sm:text-xs lg:text-xl">Product Designer</h3>
+                  <h3 class="sm:text-xs lg:text-lg">Product Designer</h3>
                   <img
                     src="assets/images/person1.png"
                     class="curve-form"
@@ -1356,12 +1362,12 @@
                     class="flex justify-between items-center lg:p-3"
                     style="margin-top: 10px"
                   >
-                    <h4 class="sm:text-[8px] lg:text-base">
-                      Antérieurement chez
+                    <h4 class="sm:text-xs lg:text-base">
+                      Antérieurement
                     </h4>
                     <img
                       src="assets/images/logo-google.png"
-                      class="sm:w-12 lg:w-32"
+                      class="sm:w-12 xl:w-32"
                     />
                   </div>
                 </div>
@@ -1374,7 +1380,7 @@
                   style="
                     border: 1px solid #253032;
                     border-radius: 20px;
-                    padding: 20px;
+                    
                   "
                 >
                   <div class="flex justify-between items-center">
@@ -1396,7 +1402,7 @@
                       />
                     </svg>
                   </div>
-                  <h3 class="sm:text-xs lg:text-xl">Product Designer</h3>
+                  <h3 class="sm:text-xs lg:text-lg">Product Designer</h3>
                   <img
                     src="assets/images/person1.png"
                     class="curve-form"
@@ -1406,12 +1412,12 @@
                     class="flex justify-between items-center lg:p-3"
                     style="margin-top: 10px"
                   >
-                    <h4 class="sm:text-[8px] lg:text-base">
-                      Antérieurement chez
+                    <h4 class="sm:text-xs lg:text-base">
+                      Antérieurement
                     </h4>
                     <img
                       src="assets/images/logo-google.png"
-                      class="sm:w-12 lg:w-32"
+                      class="sm:w-12 xl:w-32"
                     />
                   </div>
                 </div>
@@ -1424,7 +1430,7 @@
                   style="
                     border: 1px solid #253032;
                     border-radius: 20px;
-                    padding: 20px;
+                    
                   "
                 >
                   <div class="flex justify-between items-center">
@@ -1446,7 +1452,7 @@
                       />
                     </svg>
                   </div>
-                  <h3 class="sm:text-xs lg:text-xl">Product Designer</h3>
+                  <h3 class="sm:text-xs lg:text-lg">Product Designer</h3>
                   <img
                     src="assets/images/person1.png"
                     class="curve-form"
@@ -1456,12 +1462,12 @@
                     class="flex justify-between items-center lg:p-3"
                     style="margin-top: 10px"
                   >
-                    <h4 class="sm:text-[8px] lg:text-base">
-                      Antérieurement chez
+                    <h4 class="sm:text-xs lg:text-base">
+                      Antérieurement
                     </h4>
                     <img
                       src="assets/images/logo-google.png"
-                      class="sm:w-12 lg:w-32"
+                      class="sm:w-12 xl:w-32"
                     />
                   </div>
                 </div>
@@ -1474,7 +1480,7 @@
                   style="
                     border: 1px solid #253032;
                     border-radius: 20px;
-                    padding: 20px;
+                    
                   "
                 >
                   <div class="flex justify-between items-center">
@@ -1496,7 +1502,7 @@
                       />
                     </svg>
                   </div>
-                  <h3 class="sm:text-xs lg:text-xl">Product Designer</h3>
+                  <h3 class="sm:text-xs lg:text-lg">Product Designer</h3>
                   <img
                     src="assets/images/person1.png"
                     class="curve-form"
@@ -1506,12 +1512,12 @@
                     class="flex justify-between items-center lg:p-3"
                     style="margin-top: 10px"
                   >
-                    <h4 class="sm:text-[8px] lg:text-base">
-                      Antérieurement chez
+                    <h4 class="sm:text-xs lg:text-base">
+                      Antérieurement
                     </h4>
                     <img
                       src="assets/images/logo-google.png"
-                      class="sm:w-12 lg:w-32"
+                      class="sm:w-12 xl:w-32"
                     />
                   </div>
                 </div>
@@ -1611,7 +1617,7 @@
             <div
               class="w-full sm:w-2/2 lg:w-1/2 flex justify-center items-center"
             >
-              <div>
+              <div class="sm:m-5 xl:m-32">
                 <h1 class="font-Gelia sm:text-4xl lg:text-5xl" style="color: mediumpurple;">
                   Rejoignez
                 </h1>
@@ -1635,7 +1641,7 @@
                 </h2>
                 <br /><br />
                 <button
-                  class="flex justify-center items-center mb-4 w-[250px] h-[50px] sm:text-lg lg:text-2xl fill-button-form rounded-md px-1 text-center font-medium text-black duration-300 ease-in-out hover:bg-opacity-100"
+                  class="flex justify-center items-center mb-4 sm:w-screen lg:w-64 h-[50px] sm:text-lg lg:text-2xl fill-button-form rounded-lg px-1 text-center font-medium text-black duration-300 ease-in-out hover:bg-opacity-100"
                   style="background-color: #d9f777"
                 >
                   Je démarre
@@ -1658,12 +1664,13 @@
                 </button>
               </div>
             </div>
-            <div class="w-full sm:pt-10 lg:pt-0 sm:w-2/2 lg:w-1/2">
+            <div class="w-full flex justify-center items-center sm:pt-10 lg:pt-0 sm:w-2/2 lg:w-1/2">
               <img src="assets/images/talent-image.png" alt="talent" />
             </div>
           </div>
         </div>
 
+        <!-- ====== Footer Section Start -->
         <footer
           class="relative border-t border-[#8890A4] border-opacity-40 z-10 pt-20 lg:pt-[100px]"
           style="margin-top: 120px"
@@ -1924,7 +1931,6 @@
             </div>
           </div>
         </footer>
-        <!-- ====== Footer Section End -->
       </div>
 
       <!-- ====== Back To Top Start -->

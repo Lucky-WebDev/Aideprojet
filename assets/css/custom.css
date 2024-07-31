@@ -71,30 +71,30 @@
 
 .fill-button-form {
   height: 55px;
-  background-color: mediumpurple;
-  border: 1px solid mediumpurple;
+  background-color: #7971f5;
+  border: 1px solid #7971f5;
   border-radius: 20px;
-  font-size: 20px;
+  font-size: 18px;
   box-sizing: border-box;
 }
 
 .fill-button-form:hover {
   background-color: transparent;
-  border: 1px solid mediumpurple;
+  border: 1px solid #7971f5;
 }
 
 .outline-button-form {
   height: 55px;
   background-color: transparent;
-  border: 1px solid mediumpurple;
+  border: 1px solid #7971f5;
   border-radius: 20px;
-  font-size: 20px;
+  font-size: 18px;
   box-sizing: border-box;
 }
 
 .outline-button-form:hover {
-  background-color: mediumpurple;
-  border: 1px solid mediumpurple;
+  background-color: #7971f5;
+  border: 1px solid #7971f5;
 }
 
 .block-item {
@@ -291,7 +291,6 @@
 }
 
 .select select {
-  -webkit-appearance: none;
   padding: 0 40px 0 20px;
   border: 1px solid #ffffff4d;
   border-radius: 18px;
@@ -718,4 +717,32 @@ select:focus {
 
 .font-Gelia {
   font-family: Gelica;
+}
+
+.smooth-sizing {
+  width: 580px;
+}
+
+.interval {
+  margin-right: -192px;
+}
+
+@media only screen and (max-width: 1695px) {
+  .interval {
+    margin-right: -140px;
+  }
+
+  .smooth-sizing {
+    width: 530px;
+  }
+}
+
+@media only screen and (max-width: 1320px) {
+  .interval {
+    margin-right: -110px;
+  }
+
+  .smooth-sizing {
+    width: 480px;
+  }
 }
