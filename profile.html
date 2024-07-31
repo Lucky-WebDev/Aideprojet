@@ -31,7 +31,7 @@
         <div class="container">
           <div class="relative -mx-4 flex items-center justify-between">
             <div class="w-60 max-w-full px-4">
-              <a href="index.html" class="navbar-logo block w-full py-5">
+              <a href="index.html" class="navbar-logo block w-full">
                 <img
                   src="assets/images/logo.png"
                   alt="logo"
@@ -43,7 +43,7 @@
             <div class="flex w-full items-center justify-between px-4">
               <button
                 id="navbarToggler"
-                class="flex justify-center items-center absolute right-4 top-1/2 block -translate-y-1/2 rounded-lg px-3 py-[6px] lg:hidden"
+                class="flex justify-center items-center absolute right-4 top-1/2 -translate-y-1/2 rounded-lg px-3 py-[6px] lg:hidden"
               >
                 <div>
                   <span
@@ -54,7 +54,7 @@
                 </div>
                 <div>
                   <svg
-                    class="h-10 w-10 text-white text-red-500"
+                    class="h-10 w-10 text-white"
                     fill="none"
                     viewBox="0 0 24 24"
                     stroke="currentColor"
@@ -95,113 +95,507 @@
                       </svg>
                     </div>
                   </li>
-                  <div class="flex justify-between" style="width: 450px">
-                    <li class="submenu-item group relative">
-                      <a
-                        href="javascript:void(0)"
-                        class="relative mx-8 flex items-center justify-between py-2 text-base font-medium text-dark group-hover:text-primary dark:text-white lg:mr-0 lg:inline-flex lg:py-6 lg:pl-0 lg:text-white lg:group-hover:text-white lg:group-hover:opacity-70"
-                      >
-                      Formations
-                        <svg
-                          class="ml-2 fill-current"
-                          width="16"
-                          height="20"
-                          viewBox="0 0 16 20"
-                          fill="none"
-                          xmlns="http://www.w3.org/2000/svg"
+                  <div
+                    class="font-Gelia flex justify-between"
+                    style="width: 450px; margin-left: 20px"
+                  >
+                    <li class="submenu-item group relative flex items-center">
+                      <div class="dropdown">
+                        <div class="dropdown-item cursor-pointer">
+                          Formations
+                          <svg
+                            class="ml-2 fill-current"
+                            width="16"
+                            height="20"
+                            viewBox="0 0 16 20"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M7.99999 14.9C7.84999 14.9 7.72499 14.85 7.59999 14.75L1.84999 9.10005C1.62499 8.87505 1.62499 8.52505 1.84999 8.30005C2.07499 8.07505 2.42499 8.07505 2.64999 8.30005L7.99999 13.525L13.35 8.25005C13.575 8.02505 13.925 8.02505 14.15 8.25005C14.375 8.47505 14.375 8.82505 14.15 9.05005L8.39999 14.7C8.27499 14.825 8.14999 14.9 7.99999 14.9Z"
+                            />
+                          </svg>
+                        </div>
+                        <div
+                          class="font-Gelia dropdown-content"
+                          style="width: 780px"
                         >
-                          <path
-                            d="M7.99999 14.9C7.84999 14.9 7.72499 14.85 7.59999 14.75L1.84999 9.10005C1.62499 8.87505 1.62499 8.52505 1.84999 8.30005C2.07499 8.07505 2.42499 8.07505 2.64999 8.30005L7.99999 13.525L13.35 8.25005C13.575 8.02505 13.925 8.02505 14.15 8.25005C14.375 8.47505 14.375 8.82505 14.15 9.05005L8.39999 14.7C8.27499 14.825 8.14999 14.9 7.99999 14.9Z"
-                          />
-                        </svg>
-                      </a>
-                      <div
-                        class="submenu relative left-0 top-full hidden w-[250px] rounded-sm bg-white p-4 transition-[top] duration-300 group-hover:opacity-100 dark:bg-dark-2 lg:invisible lg:absolute lg:top-[110%] lg:block lg:opacity-0 lg:shadow-lg lg:group-hover:visible lg:group-hover:top-full"
-                      >
-                        <a
-                          href="404.html"
-                          class="block rounded px-4 py-[10px] text-sm text-body-color hover:text-primary dark:text-dark-6 dark:hover:text-primary"
-                        >
-                          404 Page
-                        </a>
-                        <a
-                          href="404.html"
-                          class="block rounded px-4 py-[10px] text-sm text-body-color hover:text-primary dark:text-dark-6 dark:hover:text-primary"
-                        >
-                          404 Page
-                        </a>
+                          <div
+                            class="flex justify-between items-center"
+                            style="height: 450px"
+                          >
+                            <div
+                              class="flex flex-col justify-between h-full mr-3"
+                            >
+                              <div
+                                class="dropdown-submenu-background3"
+                                style="width: 481px; height: 141px"
+                              >
+                                <div class="flex justify-between items-center">
+                                  <div style="font-size: 24px">Formations</div>
+                                  <div
+                                    class="flex justify-center items-center dropdown-title-arrow"
+                                  >
+                                    <svg
+                                      class="h-8 w-8 text-red-500"
+                                      width="24"
+                                      height="24"
+                                      viewBox="0 0 24 24"
+                                      stroke-width="2"
+                                      stroke="currentColor"
+                                      fill="none"
+                                      stroke-linecap="round"
+                                      stroke-linejoin="round"
+                                    >
+                                      <path stroke="none" d="M0 0h24v24H0z" />
+                                      <line x1="5" y1="12" x2="19" y2="12" />
+                                      <line x1="15" y1="16" x2="19" y2="12" />
+                                      <line x1="15" y1="8" x2="19" y2="12" />
+                                    </svg>
+                                  </div>
+                                </div>
+                                <div style="font-size: 16px; margin-top: 10px">
+                                  Découvrez notre gamme complète de services
+                                  digitaux et professionnels.
+                                </div>
+                              </div>
+                              <div
+                                id="development-item"
+                                class="development-item dropdown-subitem"
+                              >
+                                <div style="font-size: 24px">Developpement</div>
+                                <div class="dropdown-arrow">
+                                  <svg
+                                    class="h-8 w-8 text-red-500"
+                                    style="color: black"
+                                    width="24"
+                                    height="24"
+                                    viewBox="0 0 24 24"
+                                    stroke-width="2"
+                                    stroke="currentColor"
+                                    fill="none"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                  >
+                                    <path stroke="none" d="M0 0h24v24H0z" />
+                                    <line x1="5" y1="12" x2="19" y2="12" />
+                                    <line x1="15" y1="16" x2="19" y2="12" />
+                                    <line x1="15" y1="8" x2="19" y2="12" />
+                                  </svg>
+                                </div>
+                                <div
+                                  class="dropdown-image1"
+                                  style="pointer-events: none"
+                                ></div>
+                              </div>
+                              <div
+                                id="ux-ui-item"
+                                class="ux-ui-item dropdown-subitem"
+                              >
+                                <div style="font-size: 24px">UX/UI</div>
+                                <div class="dropdown-arrow">
+                                  <svg
+                                    class="h-8 w-8 text-red-500"
+                                    style="color: black"
+                                    width="24"
+                                    height="24"
+                                    viewBox="0 0 24 24"
+                                    stroke-width="2"
+                                    stroke="currentColor"
+                                    fill="none"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                  >
+                                    <path stroke="none" d="M0 0h24v24H0z" />
+                                    <line x1="5" y1="12" x2="19" y2="12" />
+                                    <line x1="15" y1="16" x2="19" y2="12" />
+                                    <line x1="15" y1="8" x2="19" y2="12" />
+                                  </svg>
+                                </div>
+                                <div class="dropdown-image1"></div>
+                              </div>
+                              <div
+                                id="marketing-digital-item"
+                                class="marketing-digital-item dropdown-subitem"
+                              >
+                                <div style="font-size: 24px">
+                                  Marketing Digital
+                                </div>
+                                <div class="dropdown-arrow">
+                                  <svg
+                                    class="h-8 w-8 text-red-500"
+                                    style="color: black"
+                                    width="24"
+                                    height="24"
+                                    viewBox="0 0 24 24"
+                                    stroke-width="2"
+                                    stroke="currentColor"
+                                    fill="none"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                  >
+                                    <path stroke="none" d="M0 0h24v24H0z" />
+                                    <line x1="5" y1="12" x2="19" y2="12" />
+                                    <line x1="15" y1="16" x2="19" y2="12" />
+                                    <line x1="15" y1="8" x2="19" y2="12" />
+                                  </svg>
+                                </div>
+                                <div class="dropdown-image1"></div>
+                              </div>
+                              <div
+                                id="cultural-digital-item"
+                                class="cultural-digital-item dropdown-subitem"
+                              >
+                                <div style="font-size: 24px">
+                                  Cultural digital
+                                </div>
+                                <div class="dropdown-arrow">
+                                  <svg
+                                    class="h-8 w-8 text-red-500"
+                                    style="color: black"
+                                    width="24"
+                                    height="24"
+                                    viewBox="0 0 24 24"
+                                    stroke-width="2"
+                                    stroke="currentColor"
+                                    fill="none"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                  >
+                                    <path stroke="none" d="M0 0h24v24H0z" />
+                                    <line x1="5" y1="12" x2="19" y2="12" />
+                                    <line x1="15" y1="16" x2="19" y2="12" />
+                                    <line x1="15" y1="8" x2="19" y2="12" />
+                                  </svg>
+                                </div>
+                                <div class="dropdown-image1"></div>
+                              </div>
+                            </div>
+                            <div class="dropdown-image1"></div>
+                          </div>
+                        </div>
                       </div>
                     </li>
                     <li class="submenu-item group relative">
-                      <a
-                        href="javascript:void(0)"
-                        class="relative mx-8 flex items-center justify-between py-2 text-base font-medium text-dark group-hover:text-primary dark:text-white lg:mr-0 lg:inline-flex lg:py-6 lg:pl-0 lg:text-white lg:group-hover:text-white lg:group-hover:opacity-70"
-                      >
-                        Recruter
-                        <svg
-                          class="ml-2 fill-current"
-                          width="16"
-                          height="20"
-                          viewBox="0 0 16 20"
-                          fill="none"
-                          xmlns="http://www.w3.org/2000/svg"
+                      <div class="dropdown">
+                        <div class="dropdown-item cursor-pointer">
+                          Recruters
+                          <svg
+                            class="ml-2 fill-current"
+                            width="16"
+                            height="20"
+                            viewBox="0 0 16 20"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M7.99999 14.9C7.84999 14.9 7.72499 14.85 7.59999 14.75L1.84999 9.10005C1.62499 8.87505 1.62499 8.52505 1.84999 8.30005C2.07499 8.07505 2.42499 8.07505 2.64999 8.30005L7.99999 13.525L13.35 8.25005C13.575 8.02505 13.925 8.02505 14.15 8.25005C14.375 8.47505 14.375 8.82505 14.15 9.05005L8.39999 14.7C8.27499 14.825 8.14999 14.9 7.99999 14.9Z"
+                            />
+                          </svg>
+                        </div>
+                        <div
+                          class="font-Gelia dropdown-content"
+                          style="right: -250px"
                         >
-                          <path
-                            d="M7.99999 14.9C7.84999 14.9 7.72499 14.85 7.59999 14.75L1.84999 9.10005C1.62499 8.87505 1.62499 8.52505 1.84999 8.30005C2.07499 8.07505 2.42499 8.07505 2.64999 8.30005L7.99999 13.525L13.35 8.25005C13.575 8.02505 13.925 8.02505 14.15 8.25005C14.375 8.47505 14.375 8.82505 14.15 9.05005L8.39999 14.7C8.27499 14.825 8.14999 14.9 7.99999 14.9Z"
-                          />
-                        </svg>
-                      </a>
-                      <div
-                        class="submenu relative left-0 top-full hidden w-[250px] rounded-sm bg-white p-4 transition-[top] duration-300 group-hover:opacity-100 dark:bg-dark-2 lg:invisible lg:absolute lg:top-[110%] lg:block lg:opacity-0 lg:shadow-lg lg:group-hover:visible lg:group-hover:top-full"
-                      >
-                        <a
-                          href="404.html"
-                          class="block rounded px-4 py-[10px] text-sm text-body-color hover:text-primary dark:text-dark-6 dark:hover:text-primary"
-                        >
-                          404 Page
-                        </a>
-                        <a
-                          href="404.html"
-                          class="block rounded px-4 py-[10px] text-sm text-body-color hover:text-primary dark:text-dark-6 dark:hover:text-primary"
-                        >
-                          404 Page
-                        </a>
+                          <div style="height: 415px">
+                            <div
+                              class="dropdown-submenu-background2"
+                              style="width: 451px; height: 141px"
+                            >
+                              <div class="flex justify-between items-center">
+                                <div style="font-size: 24px">Recruters</div>
+                                <div
+                                  class="flex justify-center items-center dropdown-title-arrow"
+                                >
+                                  <svg
+                                    class="h-8 w-8 text-red-500"
+                                    width="24"
+                                    height="24"
+                                    viewBox="0 0 24 24"
+                                    stroke-width="2"
+                                    stroke="currentColor"
+                                    fill="none"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                  >
+                                    <path stroke="none" d="M0 0h24v24H0z" />
+                                    <line x1="5" y1="12" x2="19" y2="12" />
+                                    <line x1="15" y1="16" x2="19" y2="12" />
+                                    <line x1="15" y1="8" x2="19" y2="12" />
+                                  </svg>
+                                </div>
+                              </div>
+                              <div style="font-size: 16px; margin-top: 10px">
+                                Découvrez notre gamme complète de services
+                                digitaux et professionnels.
+                              </div>
+                            </div>
+                            <div class="dropdown-subitem" style="width: 100%">
+                              <div style="font-size: 24px">Developers</div>
+                              <div class="dropdown-arrow">
+                                <svg
+                                  class="h-8 w-8 text-red-500"
+                                  style="color: black"
+                                  width="24"
+                                  height="24"
+                                  viewBox="0 0 24 24"
+                                  stroke-width="2"
+                                  stroke="currentColor"
+                                  fill="none"
+                                  stroke-linecap="round"
+                                  stroke-linejoin="round"
+                                >
+                                  <path stroke="none" d="M0 0h24v24H0z" />
+                                  <line x1="5" y1="12" x2="19" y2="12" />
+                                  <line x1="15" y1="16" x2="19" y2="12" />
+                                  <line x1="15" y1="8" x2="19" y2="12" />
+                                </svg>
+                              </div>
+                            </div>
+                            <div class="dropdown-subitem" style="width: 100%">
+                              <div style="font-size: 24px">Designers</div>
+                              <div class="dropdown-arrow">
+                                <svg
+                                  class="h-8 w-8 text-red-500"
+                                  style="color: black"
+                                  width="24"
+                                  height="24"
+                                  viewBox="0 0 24 24"
+                                  stroke-width="2"
+                                  stroke="currentColor"
+                                  fill="none"
+                                  stroke-linecap="round"
+                                  stroke-linejoin="round"
+                                >
+                                  <path stroke="none" d="M0 0h24v24H0z" />
+                                  <line x1="5" y1="12" x2="19" y2="12" />
+                                  <line x1="15" y1="16" x2="19" y2="12" />
+                                  <line x1="15" y1="8" x2="19" y2="12" />
+                                </svg>
+                              </div>
+                            </div>
+                            <div class="dropdown-subitem" style="width: 100%">
+                              <div style="font-size: 24px">Marketers</div>
+                              <div class="dropdown-arrow">
+                                <svg
+                                  class="h-8 w-8 text-red-500"
+                                  style="color: black"
+                                  width="24"
+                                  height="24"
+                                  viewBox="0 0 24 24"
+                                  stroke-width="2"
+                                  stroke="currentColor"
+                                  fill="none"
+                                  stroke-linecap="round"
+                                  stroke-linejoin="round"
+                                >
+                                  <path stroke="none" d="M0 0h24v24H0z" />
+                                  <line x1="5" y1="12" x2="19" y2="12" />
+                                  <line x1="15" y1="16" x2="19" y2="12" />
+                                  <line x1="15" y1="8" x2="19" y2="12" />
+                                </svg>
+                              </div>
+                            </div>
+                            <div class="dropdown-subitem" style="width: 100%">
+                              <div style="font-size: 24px">
+                                Developers without profile
+                              </div>
+                              <div class="dropdown-arrow">
+                                <svg
+                                  class="h-8 w-8 text-red-500"
+                                  style="color: black"
+                                  width="24"
+                                  height="24"
+                                  viewBox="0 0 24 24"
+                                  stroke-width="2"
+                                  stroke="currentColor"
+                                  fill="none"
+                                  stroke-linecap="round"
+                                  stroke-linejoin="round"
+                                >
+                                  <path stroke="none" d="M0 0h24v24H0z" />
+                                  <line x1="5" y1="12" x2="19" y2="12" />
+                                  <line x1="15" y1="16" x2="19" y2="12" />
+                                  <line x1="15" y1="8" x2="19" y2="12" />
+                                </svg>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
                       </div>
                     </li>
-                    <li class="submenu-item group relative">
-                      <a
-                        href="javascript:void(0)"
-                        class="relative mx-8 flex items-center justify-between py-2 text-base font-medium text-dark group-hover:text-primary dark:text-white lg:mr-0 lg:inline-flex lg:py-6 lg:pl-0 lg:text-white lg:group-hover:text-white lg:group-hover:opacity-70"
-                      >
-                        Services
-                        <svg
-                          class="ml-2 fill-current"
-                          width="16"
-                          height="20"
-                          viewBox="0 0 16 20"
-                          fill="none"
-                          xmlns="http://www.w3.org/2000/svg"
+                    <li class="submenu-item group relative flex items-center">
+                      <div class="dropdown">
+                        <div class="dropdown-item cursor-pointer">
+                          Services
+                          <svg
+                            class="ml-2 fill-current"
+                            width="16"
+                            height="20"
+                            viewBox="0 0 16 20"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M7.99999 14.9C7.84999 14.9 7.72499 14.85 7.59999 14.75L1.84999 9.10005C1.62499 8.87505 1.62499 8.52505 1.84999 8.30005C2.07499 8.07505 2.42499 8.07505 2.64999 8.30005L7.99999 13.525L13.35 8.25005C13.575 8.02505 13.925 8.02505 14.15 8.25005C14.375 8.47505 14.375 8.82505 14.15 9.05005L8.39999 14.7C8.27499 14.825 8.14999 14.9 7.99999 14.9Z"
+                            />
+                          </svg>
+                        </div>
+                        <div
+                          class="font-Gelia dropdown-content"
+                          style="width: 780px; right: -280px"
                         >
-                          <path
-                            d="M7.99999 14.9C7.84999 14.9 7.72499 14.85 7.59999 14.75L1.84999 9.10005C1.62499 8.87505 1.62499 8.52505 1.84999 8.30005C2.07499 8.07505 2.42499 8.07505 2.64999 8.30005L7.99999 13.525L13.35 8.25005C13.575 8.02505 13.925 8.02505 14.15 8.25005C14.375 8.47505 14.375 8.82505 14.15 9.05005L8.39999 14.7C8.27499 14.825 8.14999 14.9 7.99999 14.9Z"
-                          />
-                        </svg>
-                      </a>
-                      <div
-                        class="submenu relative left-0 top-full hidden w-[250px] rounded-sm bg-white p-4 transition-[top] duration-300 group-hover:opacity-100 dark:bg-dark-2 lg:invisible lg:absolute lg:top-[110%] lg:block lg:opacity-0 lg:shadow-lg lg:group-hover:visible lg:group-hover:top-full"
-                      >
-                        <a
-                          href="404.html"
-                          class="block rounded px-4 py-[10px] text-sm text-body-color hover:text-primary dark:text-dark-6 dark:hover:text-primary"
-                        >
-                          404 Page
-                        </a>
-                        <a
-                          href="404.html"
-                          class="block rounded px-4 py-[10px] text-sm text-body-color hover:text-primary dark:text-dark-6 dark:hover:text-primary"
-                        >
-                          404 Page
-                        </a>
+                          <div
+                            class="flex justify-between items-center"
+                            style="height: 450px"
+                          >
+                            <div
+                              class="flex flex-col justify-between h-full mr-3"
+                            >
+                              <div
+                                class="dropdown-submenu-background1"
+                                style="width: 451px; height: 141px"
+                              >
+                                <div class="flex justify-between items-center">
+                                  <div style="font-size: 24px">Services</div>
+                                  <div
+                                    class="flex justify-center items-center dropdown-title-arrow"
+                                  >
+                                    <svg
+                                      class="h-8 w-8"
+                                      width="24"
+                                      height="24"
+                                      viewBox="0 0 24 24"
+                                      stroke-width="2"
+                                      stroke="currentColor"
+                                      fill="none"
+                                      stroke-linecap="round"
+                                      stroke-linejoin="round"
+                                    >
+                                      <path stroke="none" d="M0 0h24v24H0z" />
+                                      <line x1="5" y1="12" x2="19" y2="12" />
+                                      <line x1="15" y1="16" x2="19" y2="12" />
+                                      <line x1="15" y1="8" x2="19" y2="12" />
+                                    </svg>
+                                  </div>
+                                </div>
+                                <div style="font-size: 16px; margin-top: 10px">
+                                  Découvrez notre gamme complète de services
+                                  digitaux et professionnels.
+                                </div>
+                              </div>
+                              <div
+                                id="site-web-item"
+                                class="site-web-item dropdown-subitem"
+                              >
+                                <div style="font-size: 24px">Site Web</div>
+                                <div class="dropdown-arrow">
+                                  <svg
+                                    class="h-8 w-8 text-red-500"
+                                    style="color: black"
+                                    width="24"
+                                    height="24"
+                                    viewBox="0 0 24 24"
+                                    stroke-width="2"
+                                    stroke="currentColor"
+                                    fill="none"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                  >
+                                    <path stroke="none" d="M0 0h24v24H0z" />
+                                    <line x1="5" y1="12" x2="19" y2="12" />
+                                    <line x1="15" y1="16" x2="19" y2="12" />
+                                    <line x1="15" y1="8" x2="19" y2="12" />
+                                  </svg>
+                                </div>
+                                <div
+                                  class="dropdown-image2"
+                                  style="pointer-events: none"
+                                ></div>
+                              </div>
+                              <div
+                                id="application-item"
+                                class="application-item dropdown-subitem"
+                              >
+                                <div style="font-size: 24px">
+                                  Application Mobile VI
+                                </div>
+                                <div class="dropdown-arrow">
+                                  <svg
+                                    class="h-8 w-8 text-red-500"
+                                    style="color: black"
+                                    width="24"
+                                    height="24"
+                                    viewBox="0 0 24 24"
+                                    stroke-width="2"
+                                    stroke="currentColor"
+                                    fill="none"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                  >
+                                    <path stroke="none" d="M0 0h24v24H0z" />
+                                    <line x1="5" y1="12" x2="19" y2="12" />
+                                    <line x1="15" y1="16" x2="19" y2="12" />
+                                    <line x1="15" y1="8" x2="19" y2="12" />
+                                  </svg>
+                                </div>
+                                <div class="dropdown-image2"></div>
+                              </div>
+                              <div
+                                id="sociaty-item"
+                                class="sociaty-item dropdown-subitem"
+                              >
+                                <div style="font-size: 24px">Sociaty</div>
+                                <div class="dropdown-arrow">
+                                  <svg
+                                    class="h-8 w-8 text-red-500"
+                                    style="color: black"
+                                    width="24"
+                                    height="24"
+                                    viewBox="0 0 24 24"
+                                    stroke-width="2"
+                                    stroke="currentColor"
+                                    fill="none"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                  >
+                                    <path stroke="none" d="M0 0h24v24H0z" />
+                                    <line x1="5" y1="12" x2="19" y2="12" />
+                                    <line x1="15" y1="16" x2="19" y2="12" />
+                                    <line x1="15" y1="8" x2="19" y2="12" />
+                                  </svg>
+                                </div>
+                                <div class="dropdown-image2"></div>
+                              </div>
+                              <div
+                                id="compatability-item"
+                                class="compatability-item dropdown-subitem"
+                              >
+                                <div style="font-size: 24px">Compatability</div>
+                                <div class="dropdown-arrow">
+                                  <svg
+                                    class="h-8 w-8 text-red-500"
+                                    style="color: black"
+                                    width="24"
+                                    height="24"
+                                    viewBox="0 0 24 24"
+                                    stroke-width="2"
+                                    stroke="currentColor"
+                                    fill="none"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                  >
+                                    <path stroke="none" d="M0 0h24v24H0z" />
+                                    <line x1="5" y1="12" x2="19" y2="12" />
+                                    <line x1="15" y1="16" x2="19" y2="12" />
+                                    <line x1="15" y1="8" x2="19" y2="12" />
+                                  </svg>
+                                </div>
+                                <div class="dropdown-image2"></div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
                       </div>
                     </li>
                   </div>
@@ -231,15 +625,15 @@
                       </a>
                       <a
                         href="#"
-                        class="fill-button-form w-[130px] px-6 mr-3 py-2 text-center font-medium text-white duration-300 ease-in-out hover:bg-opacity-100"
+                        class="fill-button-form w-[130px] px-6 mr-3 py-2 flex justify-center items-center font-medium text-white"
                       >
-                      Se connecter
+                        Developer
                       </a>
                       <a
                         href="#"
-                        class="outline-button-form px-6 w-[110px] mr-3 py-2 text-center font-medium text-white hover:opacity-70"
+                        class="outline-button-form px-[22px] w-[110px] py-2 flex justify-center items-center font-medium text-white"
                       >
-                       S’inscrire
+                        Service
                       </a>
                     </div>
                   </li>
@@ -296,10 +690,12 @@
                 "
               >
                 <div class="flex justify-between items-center">
-                  <h1 class="font-Gelia sm:text-2xl lg:text-5xl">Romain Leonard</h1>
+                  <h1 class="font-Gelia sm:text-2xl lg:text-5xl">
+                    Romain Leonard
+                  </h1>
                   <div class="flex justify-end items-center">
                     <svg
-                      class="h-8 w-8 text-red-500 text-white px-2 py-2 rounded-md mr-3 sm:w-8 sm:h-8 lg:w-10 lg:h-10"
+                      class="h-8 w-8 text-white px-2 py-2 rounded-md mr-3 sm:w-8 sm:h-8 lg:w-10 lg:h-10"
                       style="background-color: #253032"
                       width="24"
                       height="24"
@@ -318,7 +714,7 @@
                       <line x1="8.7" y1="13.3" x2="15.3" y2="16.7" />
                     </svg>
                     <svg
-                      class="h-8 w-8 text-red-500 text-black px-2 py-2 rounded-md sm:w-8 sm:h-8 lg:w-10 lg:h-10"
+                      class="h-8 w-8 text-black px-2 py-2 rounded-md sm:w-8 sm:h-8 lg:w-10 lg:h-10"
                       style="
                         width: 40px;
                         height: 40px;
@@ -346,14 +742,17 @@
                 </h2>
                 <br />
                 <h3 class="sm:text-base lg:text-xl">
-                  Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebu… Lire plus
+                  Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+                  diam nonumy eirmod tempor invidunt ut labore et dolore magna
+                  aliquyam erat, sed diam voluptua. At vero eos et accusam et
+                  justo duo dolores et ea rebu… Lire plus
                 </h3>
                 <br />
                 <button
                   class="fill-button-form text-center text-lg text-white duration-300 ease-in-out sm:flex sm:justify-center lg:block"
                   style="margin-bottom: 40px; height: 55px; width: 300px"
                 >
-                 Recruter maintenant
+                  Recruter maintenant
                 </button>
                 <div class="border-t border-[#8890A4] border-opacity-40"></div>
                 <div class="flex flex-wrap sm:mx-2 lg:mx-3 xl:mx-8 mt-8">
@@ -394,7 +793,9 @@
                 "
               >
                 <div>
-                  <h1 class="font-Gelia mb-4 sm:text-2xl lg:text-4xl">Compétences</h1>
+                  <h1 class="font-Gelia mb-4 sm:text-2xl lg:text-4xl">
+                    Compétences
+                  </h1>
                   <div class="flex flex-wrap mb-8">
                     <div class="flex items-center mr-3">
                       <svg
@@ -555,7 +956,9 @@
                   class="border-t border-[#8890A4] border-opacity-40 mb-4"
                 ></div>
                 <div>
-                  <h1 class="font-Gelia mb-4 sm:text-2xl lg:text-4xl">Langues</h1>
+                  <h1 class="font-Gelia mb-4 sm:text-2xl lg:text-4xl">
+                    Langues
+                  </h1>
                   <div class="flex flex-wrap">
                     <div class="flex items-center">
                       <svg
@@ -591,7 +994,9 @@
                   border-radius: 40px;
                 "
               >
-                <h1 class="font-Gelia mb-4 sm:text-2xl lg:text-4xl">Localisation</h1>
+                <h1 class="font-Gelia mb-4 sm:text-2xl lg:text-4xl">
+                  Localisation
+                </h1>
                 <div class="flex flex-wrap">
                   <div class="flex items-center">
                     <svg
@@ -670,9 +1075,9 @@
                       </div>
                       <br />
                       <div>
-                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, 
-                        sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, 
-                        sed diam voluptua.
+                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
+                        sed diam nonumy eirmod tempor invidunt ut labore et
+                        dolore magna aliquyam erat, sed diam voluptua.
                       </div>
                     </div>
                   </div>
@@ -718,8 +1123,7 @@
                       </div>
                       <br />
                       <div>
-                        Lorem ipsum dolor sit amet, 
-                        consetetur sadipscing elitr, 
+                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
                         sed diam nonumy eirmod tempor invidunt.
                       </div>
                     </div>
@@ -760,13 +1164,15 @@
                     <div
                       class="w-full sm:w-screen lg:w-2/3 p-3 sm:text-base lg:text-xl"
                     >
-                      <div>Professeur de Sécurité Informatique & Sécurité Web</div>
+                      <div>
+                        Professeur de Sécurité Informatique & Sécurité Web
+                      </div>
                       <div style="opacity: 0.5">
                         EDUCATION & E-LEARNING - Bordeaux
                       </div>
                       <br />
                       <div>
-                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, 
+                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
                         sed diam nonumy eirmod tempor invidunt.
                       </div>
                     </div>
@@ -779,7 +1185,6 @@
       </div>
 
       <div>
-        <!-- ====== Footer Section Start -->
         <footer
           class="relative border-t border-[#8890A4] border-opacity-40 z-10 pt-20 lg:pt-[100px]"
           style="margin-top: 120px"
@@ -800,21 +1205,21 @@
               </div>
               <div class="w-full px-4 sm:w-screen md:w-1/2 lg:w-3/12 xl:w-4/12">
                 <div class="mb-10 w-full">
-                  <h4 class="mb-9 text-lg font-semibold text-white">
+                  <h4 class="mb-9 text-2xl font-semibold text-white">
                     Centre d’aide
                   </h4>
                   <ul>
                     <li>
                       <button
-                        class="fill-button-form px-1 text-center font-medium text-white duration-300 ease-in-out hover:bg-opacity-100"
+                        class="fill-button-form px-1 text-xl text-center font-medium text-white duration-300 ease-in-out hover:bg-opacity-100"
                         style="width: 200px"
                       >
-                       Nous contacter
+                        Nous contacter
                       </button>
                     </li>
                     <li>
                       <button
-                        class="outline-button-form px-1 text-center font-medium text-white duration-300 ease-in-out hover:bg-opacity-100"
+                        class="outline-button-form px-1 text-xl text-center font-medium text-white duration-300 ease-in-out hover:bg-opacity-100"
                         style="margin-top: 20px; width: 200px"
                       >
                         FAQ
@@ -823,53 +1228,53 @@
                   </ul>
                 </div>
               </div>
-              <div class="w-full px-4 sm:w-screen md:w-1/2 lg:w-3/12 xl:w-3/12">
+              <div class="w-full px-4 sm:w-screen md:w-1/2 lg:w-3/12 xl:w-2/12">
                 <div class="mb-10 w-full">
-                  <h4 class="mb-9 text-lg font-semibold text-white">
+                  <h4 class="mb-9 text-2xl font-semibold text-white">
                     Naviguez
                   </h4>
                   <ul>
                     <li>
                       <div class="grid sm:h-16">
                         <select
-                          class="select-form appearance-none row-start-1 text-white col-start-1 focus:outline-none bg-transparent sm:h-12"
+                          class="select-form text-xl appearance-none row-start-1 text-white col-start-1 focus:outline-none bg-transparent sm:h-12"
                         >
                           <option>Formations</option>
-                          <option>No</option>
-                          <option>Maybe</option>
+                          <option>Formations</option>
+                          <option>Formations</option>
                         </select>
                       </div>
                     </li>
                     <li>
                       <div class="grid sm:h-16">
                         <select
-                          class="select-form appearance-none row-start-1 text-white col-start-1 focus:outline-none bg-transparent sm:h-12"
+                          class="select-form text-xl appearance-none row-start-1 text-white col-start-1 focus:outline-none bg-transparent sm:h-12"
                         >
                           <option>Recruter</option>
-                          <option>No</option>
-                          <option>Maybe</option>
+                          <option>Recruter</option>
+                          <option>Recruter</option>
                         </select>
                       </div>
                     </li>
                     <li>
                       <div class="grid sm:h-16">
                         <select
-                          class="select-form appearance-none row-start-1 text-white col-start-1 focus:outline-none bg-transparent sm:h-12"
+                          class="select-form text-xl appearance-none row-start-1 text-white col-start-1 focus:outline-none bg-transparent sm:h-12"
                         >
                           <option>Services digitaux</option>
-                          <option>No</option>
-                          <option>Maybe</option>
+                          <option>Services digitaux</option>
+                          <option>Services digitaux</option>
                         </select>
                       </div>
                     </li>
                     <li>
                       <div class="grid sm:h-16">
                         <select
-                          class="select-form appearance-none row-start-1 text-white col-start-1 focus:outline-none bg-transparent sm:h-12"
+                          class="select-form text-xl appearance-none row-start-1 text-white col-start-1 focus:outline-none bg-transparent sm:h-12"
                         >
                           <option>À propos</option>
-                          <option>No</option>
-                          <option>Maybe</option>
+                          <option>À propos</option>
+                          <option>À propos</option>
                         </select>
                       </div>
                     </li>
@@ -877,20 +1282,21 @@
                 </div>
               </div>
               <div
-                class="w-full px-4 sm:w-screen md:w-1/2 lg:w-3/12 xl:w-2/12 flex justify-center"
+                class="w-full px-4 sm:w-screen md:w-1/2 lg:w-3/12 xl:w-3/12 flex justify-center"
               >
-                <div class="mb-11 w-full">
-                  <h4 class="mb-11 text-lg font-semibold text-white">
+                <div class="mb-11 w-full sm:ml-0 lg:ml-24">
+                  <h4 class="mb-11 text-2xl font-semibold text-white">
                     Suivez-nous
                   </h4>
                   <ul>
                     <li>
                       <a
                         href="javascript:void(0)"
-                        class="mb-3 sm:mt-10 flex inline-block text-base text-gray-7 hover:text-primary"
+                        class="mb-3 sm:mt-10 flex text-xl text-gray-7 hover:text-primary"
                       >
                         <svg
                           class="h-8 w-8 text-red-500"
+                          style="margin-right: 10px"
                           width="24"
                           height="24"
                           viewBox="0 0 24 24"
@@ -911,10 +1317,11 @@
                     <li>
                       <a
                         href="javascript:void(0)"
-                        class="mb-3 sm:mt-10 flex inline-block text-base text-gray-7 hover:text-primary"
+                        class="mb-3 sm:mt-10 flex text-xl text-gray-7 hover:text-primary"
                       >
                         <svg
                           class="h-8 w-8 text-red-500"
+                          style="margin-right: 10px"
                           width="24"
                           height="24"
                           viewBox="0 0 24 24"
@@ -935,23 +1342,25 @@
                     <li>
                       <a
                         href="javascript:void(0)"
-                        class="mb-3 sm:mt-10 flex inline-block text-base text-gray-7 hover:text-primary"
+                        class="mb-3 sm:mt-10 flex text-xl text-gray-7 hover:text-primary"
                       >
                         <svg
                           class="h-8 w-8 text-red-500"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          style="margin-right: 10px"
                           width="24"
                           height="24"
-                          viewBox="0 0 24 24"
-                          stroke-width="2"
                           stroke="currentColor"
-                          fill="none"
+                          stroke-width="2"
                           stroke-linecap="round"
                           stroke-linejoin="round"
                         >
-                          <path stroke="none" d="M0 0h24v24H0z" />
                           <path
-                            d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3"
+                            d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"
                           />
+                          <rect x="2" y="9" width="4" height="12" />
+                          <circle cx="4" cy="4" r="2" />
                         </svg>
                         Linkedin
                       </a>
@@ -959,22 +1368,24 @@
                     <li>
                       <a
                         href="javascript:void(0)"
-                        class="mb-3 sm:mt-10 flex inline-block text-base text-gray-7 hover:text-primary"
+                        class="mb-3 sm:mt-10 flex text-xl text-gray-7 hover:text-primary"
                       >
                         <svg
                           class="h-8 w-8 text-red-500"
+                          style="margin-right: 10px"
                           width="24"
                           height="24"
                           viewBox="0 0 24 24"
-                          stroke-width="2"
-                          stroke="currentColor"
                           fill="none"
+                          stroke="currentColor"
+                          stroke-width="2"
                           stroke-linecap="round"
                           stroke-linejoin="round"
                         >
-                          <path stroke="none" d="M0 0h24v24H0z" />
+                          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                          <path d="M4 4l11.733 16h4.267l-11.733 -16z" />
                           <path
-                            d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3"
+                            d="M4 20l6.768 -6.768m2.46 -2.46l6.772 -6.772"
                           />
                         </svg>
                         Twitter
@@ -996,7 +1407,7 @@
                 >
                   <div class="my-1 flex justify-center md:justify-end">
                     <p class="text-base text-gray-7">
-                      © 2023 Aideprojet.
+                      © 2024 Aideprojet.
                       <a
                         href="https://tailgrids.com"
                         rel="nofollow noopner"

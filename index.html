@@ -124,7 +124,7 @@
                     >
                       <li class="submenu-item group relative flex items-center">
                         <div class="dropdown">
-                          <div class="dropdown-item">
+                          <div class="dropdown-item cursor-pointer">
                             Formations
                             <svg
                               class="ml-2 fill-current"
@@ -139,10 +139,13 @@
                               />
                             </svg>
                           </div>
-                          <div class="font-Gelia dropdown-content">
+                          <div
+                            class="font-Gelia dropdown-content"
+                            style="width: 780px"
+                          >
                             <div
-                              class="community flex justify-between items-center"
-                              style="height: 465px"
+                              class="flex justify-between items-center"
+                              style="height: 450px"
                             >
                               <div
                                 class="flex flex-col justify-between h-full mr-3"
@@ -162,7 +165,6 @@
                                     >
                                       <svg
                                         class="h-8 w-8 text-red-500"
-                                        style="color: black"
                                         width="24"
                                         height="24"
                                         viewBox="0 0 24 24"
@@ -186,7 +188,10 @@
                                     digitaux et professionnels.
                                   </div>
                                 </div>
-                                <div class="development-event dropdown-subitem">
+                                <div
+                                  id="development-item"
+                                  class="development-item dropdown-subitem"
+                                >
                                   <div style="font-size: 24px">
                                     Developpement
                                   </div>
@@ -209,8 +214,15 @@
                                       <line x1="15" y1="8" x2="19" y2="12" />
                                     </svg>
                                   </div>
+                                  <div
+                                    class="dropdown-image1"
+                                    style="pointer-events: none"
+                                  ></div>
                                 </div>
-                                <div class="dropdown-subitem">
+                                <div
+                                  id="ux-ui-item"
+                                  class="ux-ui-item dropdown-subitem"
+                                >
                                   <div style="font-size: 24px">UX/UI</div>
                                   <div class="dropdown-arrow">
                                     <svg
@@ -231,8 +243,12 @@
                                       <line x1="15" y1="8" x2="19" y2="12" />
                                     </svg>
                                   </div>
+                                  <div class="dropdown-image1"></div>
                                 </div>
-                                <div class="dropdown-subitem">
+                                <div
+                                  id="marketing-digital-item"
+                                  class="marketing-digital-item dropdown-subitem"
+                                >
                                   <div style="font-size: 24px">
                                     Marketing Digital
                                   </div>
@@ -255,8 +271,12 @@
                                       <line x1="15" y1="8" x2="19" y2="12" />
                                     </svg>
                                   </div>
+                                  <div class="dropdown-image1"></div>
                                 </div>
-                                <div class="dropdown-subitem">
+                                <div
+                                  id="cultural-digital-item"
+                                  class="cultural-digital-item dropdown-subitem"
+                                >
                                   <div style="font-size: 24px">
                                     Cultural digital
                                   </div>
@@ -279,23 +299,17 @@
                                       <line x1="15" y1="8" x2="19" y2="12" />
                                     </svg>
                                   </div>
+                                  <div class="dropdown-image1"></div>
                                 </div>
                               </div>
-                              <div
-                                class="dropdown-image1"
-                                style="
-                                  width: 280px;
-                                  height: inherit;
-                                  margin-left: -35px;
-                                "
-                              ></div>
+                              <div class="dropdown-image1"></div>
                             </div>
                           </div>
                         </div>
                       </li>
                       <li class="submenu-item group relative">
                         <div class="dropdown">
-                          <div class="dropdown-item">
+                          <div class="dropdown-item cursor-pointer">
                             Recruters
                             <svg
                               class="ml-2 fill-current"
@@ -314,7 +328,7 @@
                             class="font-Gelia dropdown-content"
                             style="right: -250px"
                           >
-                            <div style="height: 465px">
+                            <div style="height: 415px">
                               <div
                                 class="dropdown-submenu-background2"
                                 style="width: 451px; height: 141px"
@@ -326,7 +340,6 @@
                                   >
                                     <svg
                                       class="h-8 w-8 text-red-500"
-                                      style="color: black"
                                       width="24"
                                       height="24"
                                       viewBox="0 0 24 24"
@@ -348,7 +361,7 @@
                                   digitaux et professionnels.
                                 </div>
                               </div>
-                              <div class="dropdown-subitem">
+                              <div class="dropdown-subitem" style="width: 100%">
                                 <div style="font-size: 24px">Developers</div>
                                 <div class="dropdown-arrow">
                                   <svg
@@ -370,7 +383,7 @@
                                   </svg>
                                 </div>
                               </div>
-                              <div id="designer-event" class="dropdown-subitem">
+                              <div class="dropdown-subitem" style="width: 100%">
                                 <div style="font-size: 24px">Designers</div>
                                 <div class="dropdown-arrow">
                                   <svg
@@ -392,7 +405,7 @@
                                   </svg>
                                 </div>
                               </div>
-                              <div id="marketer-event" class="dropdown-subitem">
+                              <div class="dropdown-subitem" style="width: 100%">
                                 <div style="font-size: 24px">Marketers</div>
                                 <div class="dropdown-arrow">
                                   <svg
@@ -414,7 +427,7 @@
                                   </svg>
                                 </div>
                               </div>
-                              <div id="profile-event" class="dropdown-subitem">
+                              <div class="dropdown-subitem" style="width: 100%">
                                 <div style="font-size: 24px">
                                   Developers without profile
                                 </div>
@@ -442,9 +455,9 @@
                           </div>
                         </div>
                       </li>
-                      <li class="submenu-item group relative">
+                      <li class="submenu-item group relative flex items-center">
                         <div class="dropdown">
-                          <div class="dropdown-item">
+                          <div class="dropdown-item cursor-pointer">
                             Services
                             <svg
                               class="ml-2 fill-current"
@@ -461,11 +474,11 @@
                           </div>
                           <div
                             class="font-Gelia dropdown-content"
-                            style="right: -50px"
+                            style="width: 780px; right: -280px"
                           >
                             <div
                               class="flex justify-between items-center"
-                              style="height: 465px"
+                              style="height: 450px"
                             >
                               <div
                                 class="flex flex-col justify-between h-full mr-3"
@@ -482,8 +495,7 @@
                                       class="flex justify-center items-center dropdown-title-arrow"
                                     >
                                       <svg
-                                        class="h-8 w-8 text-red-500"
-                                        style="color: black"
+                                        class="h-8 w-8"
                                         width="24"
                                         height="24"
                                         viewBox="0 0 24 24"
@@ -507,7 +519,10 @@
                                     digitaux et professionnels.
                                   </div>
                                 </div>
-                                <div class="dropdown-subitem">
+                                <div
+                                  id="site-web-item"
+                                  class="site-web-item dropdown-subitem"
+                                >
                                   <div style="font-size: 24px">Site Web</div>
                                   <div class="dropdown-arrow">
                                     <svg
@@ -528,8 +543,15 @@
                                       <line x1="15" y1="8" x2="19" y2="12" />
                                     </svg>
                                   </div>
+                                  <div
+                                    class="dropdown-image2"
+                                    style="pointer-events: none"
+                                  ></div>
                                 </div>
-                                <div class="dropdown-subitem">
+                                <div
+                                  id="application-item"
+                                  class="application-item dropdown-subitem"
+                                >
                                   <div style="font-size: 24px">
                                     Application Mobile VI
                                   </div>
@@ -552,10 +574,40 @@
                                       <line x1="15" y1="8" x2="19" y2="12" />
                                     </svg>
                                   </div>
+                                  <div class="dropdown-image2"></div>
                                 </div>
-                                <div class="dropdown-subitem">
+                                <div
+                                  id="sociaty-item"
+                                  class="sociaty-item dropdown-subitem"
+                                >
+                                  <div style="font-size: 24px">Sociaty</div>
+                                  <div class="dropdown-arrow">
+                                    <svg
+                                      class="h-8 w-8 text-red-500"
+                                      style="color: black"
+                                      width="24"
+                                      height="24"
+                                      viewBox="0 0 24 24"
+                                      stroke-width="2"
+                                      stroke="currentColor"
+                                      fill="none"
+                                      stroke-linecap="round"
+                                      stroke-linejoin="round"
+                                    >
+                                      <path stroke="none" d="M0 0h24v24H0z" />
+                                      <line x1="5" y1="12" x2="19" y2="12" />
+                                      <line x1="15" y1="16" x2="19" y2="12" />
+                                      <line x1="15" y1="8" x2="19" y2="12" />
+                                    </svg>
+                                  </div>
+                                  <div class="dropdown-image2"></div>
+                                </div>
+                                <div
+                                  id="compatability-item"
+                                  class="compatability-item dropdown-subitem"
+                                >
                                   <div style="font-size: 24px">
-                                    Social website
+                                    Compatability
                                   </div>
                                   <div class="dropdown-arrow">
                                     <svg
@@ -576,36 +628,9 @@
                                       <line x1="15" y1="8" x2="19" y2="12" />
                                     </svg>
                                   </div>
-                                </div>
-                                <div class="dropdown-subitem">
-                                  <div style="font-size: 24px">
-                                    Hire developer
-                                  </div>
-                                  <div class="dropdown-arrow">
-                                    <svg
-                                      class="h-8 w-8 text-red-500"
-                                      style="color: black"
-                                      width="24"
-                                      height="24"
-                                      viewBox="0 0 24 24"
-                                      stroke-width="2"
-                                      stroke="currentColor"
-                                      fill="none"
-                                      stroke-linecap="round"
-                                      stroke-linejoin="round"
-                                    >
-                                      <path stroke="none" d="M0 0h24v24H0z" />
-                                      <line x1="5" y1="12" x2="19" y2="12" />
-                                      <line x1="15" y1="16" x2="19" y2="12" />
-                                      <line x1="15" y1="8" x2="19" y2="12" />
-                                    </svg>
-                                  </div>
+                                  <div class="dropdown-image2"></div>
                                 </div>
                               </div>
-                              <div
-                                class="sm:hidden xl:block dropdown-image"
-                                style="width: 280px; height: inherit"
-                              ></div>
                             </div>
                           </div>
                         </div>
@@ -1824,7 +1849,7 @@
               <div
                 class="w-full px-4 sm:w-screen md:w-1/2 lg:w-3/12 xl:w-3/12 flex justify-center"
               >
-                <div class="mb-11 w-full" style="margin-left: 100px">
+                <div class="mb-11 w-full sm:ml-0 lg:ml-24">
                   <h4 class="mb-11 text-2xl font-semibold text-white">
                     Suivez-nous
                   </h4>
@@ -1886,20 +1911,21 @@
                       >
                         <svg
                           class="h-8 w-8 text-red-500"
+                          viewBox="0 0 24 24"
+                          fill="none"
                           style="margin-right: 10px"
                           width="24"
                           height="24"
-                          viewBox="0 0 24 24"
-                          stroke-width="2"
                           stroke="currentColor"
-                          fill="none"
+                          stroke-width="2"
                           stroke-linecap="round"
                           stroke-linejoin="round"
                         >
-                          <path stroke="none" d="M0 0h24v24H0z" />
                           <path
-                            d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3"
+                            d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"
                           />
+                          <rect x="2" y="9" width="4" height="12" />
+                          <circle cx="4" cy="4" r="2" />
                         </svg>
                         Linkedin
                       </a>
@@ -1915,15 +1941,16 @@
                           width="24"
                           height="24"
                           viewBox="0 0 24 24"
-                          stroke-width="2"
-                          stroke="currentColor"
                           fill="none"
+                          stroke="currentColor"
+                          stroke-width="2"
                           stroke-linecap="round"
                           stroke-linejoin="round"
                         >
-                          <path stroke="none" d="M0 0h24v24H0z" />
+                          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                          <path d="M4 4l11.733 16h4.267l-11.733 -16z" />
                           <path
-                            d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3"
+                            d="M4 20l6.768 -6.768m2.46 -2.46l6.772 -6.772"
                           />
                         </svg>
                         Twitter

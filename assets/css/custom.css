@@ -420,25 +420,23 @@ select:focus {
 }
 
 .dropdown-content {
+  /* width: 800px; */
   display: none;
   position: absolute;
   color: white;
   background-color: #010f11;
   border: 1px solid #253032;
   border-radius: 30px;
-  min-width: 350px;
-  max-width: 800px;
+  /* min-width: 350px; */
+  /* max-width: 800px; */
   padding: 12px 16px;
   z-index: 1;
   padding-top: 30px;
 }
 
-.dropdown:hover .dropdown-content {
-  display: block;
-}
-
 .dropdown-item {
   color: white;
+  height: 50px;
   background-color: transparent;
   display: flex;
   justify-content: center;
@@ -447,14 +445,14 @@ select:focus {
 
 .dropdown-subitem {
   border: 1px solid transparent;
-  padding: 15px;
+  padding: 10px;
   border-radius: 35px;
   width: 430px;
-  height: 70px;
+  height: 65px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-top: 10px;
+  /* margin-top: 10px; */
 }
 
 .dropdown-arrow {
@@ -486,49 +484,128 @@ select:focus {
   align-items: center;
 }
 
-.community .dropdown-image1 {
-  background-image: url("../images/submenu/submenu-image4.png");
-  background-size: 301px 100%;
+.dropdown-image1 {
+  display: none;
+  background-image: url("../images/submenu/submenu-image5.png");
+  background-size: 280px 450px;
   background-repeat: no-repeat;
   border-radius: 20px;
+  /* transition: all 0.5s ease; */
+  position: absolute;
+  right: 20px;
+  top: 30px;
+  width: 280px;
+  height: 450px;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.development-item:not(hover) .dropdown-image1 {
+  display: block;
+  background-image: url("../images/submenu/submenu-image5.png");
+}
+
+/* .ux-ui-item:not(hover) .dropdown-image1 {
+  display: block;
+  background-image: url("../images/submenu/submenu-image5.png");
   transition: all 0.5s ease;
 }
 
-.community .development-event:hover .dropdown-image1 {
-  background-image: url("../images/submenu/submenu-image5.png") !important;
+.marketing-digital-item:not(hover) .dropdown-image1 {
+  display: block;
+  background-image: url("../images/submenu/submenu-image5.png");
+  transition: all 0.5s ease;
 }
 
-/* #development-event:hover .dropdown-image1 {
-  background-image: url("../images/submenu/submenu-image4.png");
-}
-
-#development-event:hover .dropdown-image1 {
-  background-image: url("../images/submenu/submenu-image4.png");
-}
-
-#development-event:hover .dropdown-image1 {
-  background-image: url("../images/submenu/submenu-image4.png");
+.cultural-digital-item:not(hover) .dropdown-image1 {
+  display: block;
+  background-image: url("../images/submenu/submenu-image5.png");
+  transition: all 0.5s ease;
 } */
 
-.dropdown-image {
-  background-image: url("../images/person1.png");
-  background-size: 301px 100%;
-  background-repeat: no-repeat;
-  border-radius: 20px;
+.development-item:hover .dropdown-image1 {
+  display: block;
+  background-image: url("../images/submenu/submenu-image4.png");
 }
 
-.dropdown-image {
-  background-image: url("../images/person1.png");
-  background-size: 301px 100%;
-  background-repeat: no-repeat;
-  border-radius: 20px;
+.ux-ui-item:hover .dropdown-image1 {
+  display: block;
+  background-image: url("../images/submenu/submenu-image1.png");
 }
 
-.dropdown-image {
-  background-image: url("../images/person1.png");
-  background-size: 301px 100%;
+.marketing-digital-item:hover .dropdown-image1 {
+  display: block;
+  background-image: url("../images/submenu/submenu-image6.png");
+}
+
+.cultural-digital-item:hover .dropdown-image1 {
+  display: block;
+  background-image: url("../images/submenu/submenu-image2.png");
+}
+
+.dropdown-image2 {
+  display: none;
+  background-image: url("../images/submenu/submenu-image3.png");
+  background-size: 280px 450px;
   background-repeat: no-repeat;
   border-radius: 20px;
+  /* transition: all 0.5s ease; */
+  position: absolute;
+  right: 20px;
+  top: 30px;
+  width: 280px;
+  height: 450px;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.site-web-item:not(hover) .dropdown-image2 {
+  display: block;
+  background-image: url("../images/submenu/submenu-image3.png");
+}
+
+/* .application-item:not(hover) .dropdown-image2 {
+  display: block;
+  background-image: url("../images/submenu/submenu-image5.png");
+  transition: all 0.5s ease;
+}
+
+.sociaty-item:not(hover) .dropdown-image2 {
+  display: block;
+  background-image: url("../images/submenu/submenu-image5.png");
+  transition: all 0.5s ease;
+}
+
+.compatability-item:not(hover) .dropdown-image2 {
+  display: block;
+  background-image: url("../images/submenu/submenu-image5.png");
+  transition: all 0.5s ease;
+} */
+
+.site-web-item:hover .dropdown-image2 {
+  display: block;
+  background-image: url("../images/submenu/submenu-image10.png");
+}
+
+.application-item:hover .dropdown-image2 {
+  display: block;
+  background-image: url("../images/submenu/submenu-image7.png");
+}
+
+.sociaty-item:hover .dropdown-image2 {
+  display: block;
+  background-image: url("../images/submenu/submenu-image9.png");
+  border: 1px solid #253032;
+  border-radius: 40px;
+}
+
+.compatability-item:hover .dropdown-image2 {
+  display: block;
+  background-image: url("../images/submenu/submenu-image8.png");
 }
 
 .dropdown-submenu-background1 {
@@ -568,6 +645,47 @@ select:focus {
   flex-direction: column;
   justify-content: center;
   align-items: unset;
+}
+
+.dropdown-submenu-background1:hover .dropdown-title-arrow {
+  position: relative;
+  animation-name: dropdown-icon;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+  background-color: black;
+  border: 1px solid black;
+  color: white;
+}
+
+.dropdown-submenu-background2:hover .dropdown-title-arrow {
+  position: relative;
+  animation-name: dropdown-icon;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+  background-color: black;
+  border: 1px solid black;
+  color: white;
+}
+
+.dropdown-submenu-background3:hover .dropdown-title-arrow {
+  position: relative;
+  animation-name: dropdown-icon;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+  background-color: black;
+  border: 1px solid black;
+  color: white;
+}
+
+@keyframes dropdown-icon {
+  0% {
+    left: 0px;
+    top: 0px;
+  }
+  100% {
+    left: 10px;
+    top: 0px;
+  }
 }
 
 @font-face {
