@@ -343,11 +343,11 @@ select:focus {
 
 .outline-block {
   padding: 10px;
-  background-color: #0f1b1d;
+  background-color: #0a1718;
   border: 1px solid #253032;
   border-radius: 20px;
 }
-
+/* 
 #wave {
   position: relative;
   height: 70px;
@@ -375,7 +375,7 @@ select:focus {
   background-color: #e0efe3;
   left: 0;
   top: 27px;
-}
+} */
 
 .submenu {
   width: 802px;
@@ -720,7 +720,7 @@ select:focus {
 }
 
 .smooth-sizing {
-  width: 580px;
+  width: 120px;
 }
 
 .interval {
@@ -733,7 +733,7 @@ select:focus {
   }
 
   .smooth-sizing {
-    width: 530px;
+    width: 100px;
   }
 }
 
@@ -743,6 +743,13 @@ select:focus {
   }
 
   .smooth-sizing {
-    width: 480px;
+    width: 70px;
   }
+}
+
+.curve-mask {
+  -webkit-mask-image: url("../images/curve.png");
+  mask-image: url("../images/curve.png");
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
 }
