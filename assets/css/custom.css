@@ -407,7 +407,7 @@ select:focus {
   height: 429px;
   margin-right: 12px;
   margin-top: 16px;
-  background-image: url("../images/profile.png");
+  background-image: url("../images/persons/person1.png");
   object-fit: fill;
   border-radius: 32px;
   border-color: #253032;

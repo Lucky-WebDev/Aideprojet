@@ -7,13 +7,6 @@
     $("#responsive-nav").toggleClass("active");
   });
 
-  // Fix cart dropdown from closing
-  $(".cart-dropdown").on("click", function (e) {
-    e.stopPropagation();
-  });
-
-  /////////////////////////////////////////
-
   // Products Slick
   $(".products-slick").each(function () {
     var $this = $(this),
@@ -88,8 +81,6 @@
       slidesToShow: 4,
       slidesToScroll: 1,
       infinite: true,
-      // centerMode: true,
-      // variableWidth: true,
       arrows: true,
       appendArrows: $nav ? $nav : false,
       responsive: [
@@ -117,10 +108,4 @@
       ],
     });
   });
-
-  // Product img zoom
-  var zoomMainProduct = document.getElementById("product-main-img");
-  if (zoomMainProduct) {
-    $("#product-main-img .product-preview").zoom();
-  }
 })(jQuery);
