@@ -22,6 +22,8 @@
       touchMove: false,
       variableWidth: true,
       arrows: true,
+      // arrows: true,
+      fade: true,
       appendArrows: $nav ? $nav : false,
       responsive: [
         {
