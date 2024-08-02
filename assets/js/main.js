@@ -41,6 +41,12 @@
         },
       ],
     });
+
+    console.log("INIT");
+    let first = document.querySelector(".slick-prev");
+    first.disabled = true;
+    first.style.opacity = 0.25;
+
     let max = "0px";
     let min_outline = "-50px";
     let med_outline = "-30px";

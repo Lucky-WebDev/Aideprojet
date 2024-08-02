@@ -2295,15 +2295,6 @@
       </div>
     </div>
 
-    <!-- <a
-      href="javascript:void(0)"
-      class="back-to-top fixed bottom-8 left-auto right-8 z-[999] hidden h-10 w-10 items-center justify-center rounded-md bg-primary text-white shadow-md transition duration-300 ease-in-out hover:bg-dark"
-    >
-      <span
-        class="mt-[6px] h-3 w-3 rotate-45 border-l border-t border-white"
-      ></span>
-    </a> -->
-
     <script src="assets/js/custom.js"></script>
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/js/slick.min.js"></script>
@@ -2372,6 +2363,29 @@
             nextElement2.style.borderRadius = "20px";
             lastElement1.style.borderRadius = "20px";
             lastElement2.style.borderRadius = "20px";
+          }
+        );
+
+        $(".products-slick").on(
+          "afterChange",
+          function (event, slick, currentSlide) {
+            console.log("afterChange currentslide", currentSlide);
+            let last = document.querySelector(".slick-prev");
+            let first = document.querySelector(".slick-next");
+            if (currentSlide === 0) {
+              last.disabled = true;
+              last.style.opacity = 0.25;
+            } else {
+              last.disabled = false;
+              last.style.opacity = 1;
+            }
+            if (currentSlide === 10) {
+              first.disabled = true;
+              first.style.opacity = 0.25;
+            } else {
+              first.disabled = false;
+              first.style.opacity = 1;
+            }
           }
         );
       });
