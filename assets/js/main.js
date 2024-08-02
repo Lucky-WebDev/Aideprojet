@@ -22,7 +22,6 @@
       touchMove: false,
       variableWidth: true,
       arrows: true,
-      // arrows: true,
       // fade: true,
       appendArrows: $nav ? $nav : false,
       responsive: [
@@ -42,8 +41,6 @@
         },
       ],
     });
-    let min = "50px";
-    let med = "30px";
     let max = "0px";
     let min_outline = "-50px";
     let med_outline = "-30px";

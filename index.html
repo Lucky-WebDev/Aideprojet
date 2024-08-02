@@ -2314,17 +2314,6 @@
         $(".products-slick").on(
           "beforeChange",
           function (event, slick, currentSlide, nextSlide) {
-            console.log("next-slide", nextSlide);
-
-            let nextIndex = currentSlide + 1; // assume moving right
-            if (
-              currentSlide - 1 == nextSlide ||
-              (nextSlide + 1 == slick.slideCount && currentSlide < nextSlide)
-            ) {
-              nextIndex = currentSlide - 1; // nope, moving left
-            }
-            $(`[data-slick-index="${nextIndex}"]`).addClass("slick-target");
-
             let min = "50px";
             let med = "30px";
             let max = "0px";
@@ -2362,20 +2351,7 @@
               startElement.style.outline = "none";
               endElement.style.outline = "none";
             }
-            // else {
-            //   let startElement = document.querySelector(
-            //     `[data-slick-index="${3}"]`
-            //   );
-            //   let endElement = document.querySelector(
-            //     `[data-slick-index="${-3}"]`
-            //   );
-            //   startElement.style.padding = min;
-            //   endElement.style.padding = min;
-            //   startElement.style.outlineOffset = min_outline;
-            //   endElement.style.outlineOffset = min_outline;
-            //   startElement.style.outline = "none";
-            //   endElement.style.outline = "none";
-            // }
+
             centerElement.style.padding = max;
             nextElement1.style.padding = "60px 30px 0px 30px";
             nextElement2.style.padding = "60px 30px 0px 30px";
@@ -2398,10 +2374,6 @@
             lastElement2.style.borderRadius = "20px";
           }
         );
-
-        slider.on("afterChange", () => {
-          $(".slick-slide").removeClass("slick-target");
-        });
       });
     </script>
   </body>
