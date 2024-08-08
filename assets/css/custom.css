@@ -676,6 +676,20 @@ select:focus {
   color: white;
 }
 
+.maintain1 {
+  display: flex;
+}
+
+.maintain1-leftside {
+  background-image: url("../images/Path 30697.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 40%;
+  height: 100%;
+  padding: 45px;
+  display: block;
+}
+
 @keyframes dropdown-icon {
   0% {
     left: 0px;
@@ -744,6 +758,17 @@ select:focus {
 
   .smooth-sizing {
     width: 70px;
+  }
+}
+
+@media only screen and (max-width: 1174px) {
+  .maintain1 {
+    display: block;
+    margin-bottom: 100px;
+  }
+
+  .maintain1-leftside {
+    display: none;
   }
 }
 
