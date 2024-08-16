@@ -91,6 +91,20 @@
   box-sizing: border-box;
 }
 
+.fill-button-form2 {
+  height: 55px;
+  background-color: #7971f5;
+  border-radius: 20px;
+  font-size: 18px;
+}
+
+.fill-button-form2:hover #button-text {
+  display: none;
+}
+.fill-button-form2:hover:before {
+  content: "Publier mon projet";
+}
+
 .outline-button-form {
   height: 55px;
   background-color: transparent;
@@ -717,7 +731,7 @@ select:focus {
   border: 1px solid #253032;
   border-radius: 24px;
   padding-right: 38px;
-  height: 75px;
+  height: 90px;
   margin: auto;
 }
 
@@ -756,7 +770,7 @@ select:focus {
 
 .admin-form {
   height: 100%;
-  background-color: #0a1718;
+  background-color: #0f1c1d;
   border: 1px solid #ffffff1a;
   border-radius: 20px;
 }
@@ -767,6 +781,10 @@ select:focus {
   background-size: cover;
   height: 310px;
   margin-top: -65px;
+}
+
+#admin-mark:hover {
+  color: #d9f777;
 }
 
 #admin-dropdownbar {
@@ -793,12 +811,12 @@ table {
 }
 
 thead {
-  background-color: #222f31 !important;
+  background-color: #222f31;
 }
 
 tbody {
   font-size: 20px;
-  background-color: #020f11;
+  background-color: #0a1718;
 }
 
 td {
@@ -808,7 +826,7 @@ td {
 }
 
 tbody tr:nth-child(even) {
-  background-color: #0a1718;
+  background-color: #0f1c1d;
 }
 
 @keyframes dropdown-icon {
