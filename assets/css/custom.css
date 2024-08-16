@@ -83,6 +83,14 @@
   border: 1px solid #7971f5;
 }
 
+.fill-button-form1 {
+  height: 55px;
+  background-color: #253032;
+  border-radius: 20px;
+  font-size: 18px;
+  box-sizing: border-box;
+}
+
 .outline-button-form {
   height: 55px;
   background-color: transparent;
@@ -189,6 +197,9 @@
   animation-name: example;
   animation-duration: 0.5s;
   animation-fill-mode: forwards;
+}
+
+.admin-retrun:hover {
 }
 
 @keyframes example {
@@ -676,18 +687,128 @@ select:focus {
   color: white;
 }
 
-.maintain1 {
+.maintain {
   display: flex;
+  min-height: 1000px;
 }
 
-.maintain1-leftside {
-  background-image: url("../images/Path 30697.svg");
+.maintain6 {
+  display: flex;
+  min-height: 840px;
+}
+
+.exit-button {
+  width: 24px;
+  height: 24px;
+  border-radius: 5px;
+  background-color: transparent;
+  border: 1px solid white;
+}
+
+.exit-button:hover {
+  width: 24px;
+  height: 24px;
+  border-radius: 5px;
+  background-color: white;
+  border: 1px solid black;
+}
+
+.block-maintain {
+  border: 1px solid #253032;
+  border-radius: 24px;
+  padding-right: 38px;
+  height: 75px;
+  margin: auto;
+}
+
+.block-maintain:hover {
+  border: 1px solid #ffffff;
+}
+
+.pre-maintain {
+  width: 90px;
+  height: 55px;
+  border: 1px solid #e5e7eb;
+  border-radius: 20px;
+  font-size: 18px;
+  box-sizing: border-box;
+}
+
+.pre-maintain:hover {
+  background-color: #e5e7eb;
+}
+
+#description1,
+#description3,
+#description4 {
+  border: 1px solid #ffffff99;
+  background-color: transparent;
+  border-radius: 16px;
+  height: 55px;
+}
+
+#description2 {
+  border: 1px solid #ffffff99;
+  background-color: transparent;
+  border-radius: 16px;
+  height: 136px;
+}
+
+.admin-form {
+  height: 100%;
+  background-color: #0a1718;
+  border: 1px solid #ffffff1a;
+  border-radius: 20px;
+}
+
+.admin-card1 {
+  background-image: url("../images/top-image.png");
   background-repeat: no-repeat;
   background-size: cover;
-  width: 40%;
-  height: 100%;
-  padding: 45px;
-  display: block;
+  height: 310px;
+  margin-top: -65px;
+}
+
+#admin-dropdownbar {
+  display: none;
+}
+
+#project {
+  background-color: #222f31;
+  border-radius: 23px;
+  border: 1px solid #d9f777;
+  color: #d9f777;
+}
+
+#payment {
+  background-color: #0a1718;
+  border-radius: 23px;
+  border: 1px solid #0a1718;
+  color: #ffffff99;
+}
+
+table {
+  border-collapse: separate;
+  border-spacing: 0;
+}
+
+thead {
+  background-color: #222f31 !important;
+}
+
+tbody {
+  font-size: 20px;
+  background-color: #020f11;
+}
+
+td {
+  border: solid 1px #394446;
+  /* border-style: none solid solid none; */
+  padding: 32px;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #0a1718;
 }
 
 @keyframes dropdown-icon {
@@ -761,13 +882,21 @@ select:focus {
   }
 }
 
-@media only screen and (max-width: 1174px) {
-  .maintain1 {
-    display: block;
-    margin-bottom: 100px;
+@media only screen and (max-width: 1023px) {
+  .fill-button-form1 {
+    background-color: #7971f5;
   }
 
-  .maintain1-leftside {
+  .maintain {
+    display: block;
+    min-height: 840px;
+  }
+
+  .maintain6 {
+    display: block;
+  }
+
+  .maintain-leftside {
     display: none;
   }
 }

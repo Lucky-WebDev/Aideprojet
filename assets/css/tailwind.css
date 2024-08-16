@@ -11956,6 +11956,11 @@ body {
   .sm\:-mt-8 {
     margin-top: -2rem;
   }
+
+  .sm\:-mt-80 {
+    margin-top: -20rem;
+  }
+
   .sm\:-mr-8 {
     margin-right: -2rem;
   }
@@ -17659,6 +17664,12 @@ body {
   }
   .sm\:w-5\/6 {
     width: 83.333333%;
+  }
+  .sm\:w-1\/7 {
+    width: 13.5417%;
+  }
+  .sm\:w-6\/7 {
+    width: 86.4583%;
   }
   .sm\:w-1\/12 {
     width: 8.333333%;
@@ -37391,6 +37402,7 @@ body {
       max-width: 1280px;
     }
   }
+
   .lg\:space-y-0 > :not(template) ~ :not(template) {
     --space-y-reverse: 0;
     margin-top: calc(0px * calc(1 - var(--space-y-reverse)));
@@ -54809,6 +54821,8 @@ body {
     animation: bounce 1s infinite;
   }
 }
+
+
 @media (min-width: 1280px) {
   .xl\:container {
     width: 100%;
@@ -72283,4 +72297,5 @@ body {
   .xl\:animate-bounce {
     animation: bounce 1s infinite;
   }
+
 }
