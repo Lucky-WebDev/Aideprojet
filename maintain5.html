@@ -25,7 +25,10 @@
   </head>
 
   <body>
-    <div class="relative sm:divide-y" style="background-color: #020f11">
+    <div
+      class="relative sm:divide-y sm:h-screen lg:h-full"
+      style="background-color: #020f11; min-height: 840px"
+    >
       <div class="maintain5 max-w-full sm:h-screen">
         <div
           class="flex flex-col justify-between items-center lg:w-7/12 sm:divide-y sm:divide-gray-800 lg:divide-y-0 sm:h-screen lg:h-full"
@@ -54,7 +57,10 @@
                   <div
                     class="sm:w-1/12 md:w-1/3 flex sm:justify-end md:justify-end items-center"
                   >
-                    <div class="exit-button flex justify-center items-center">
+                    <a
+                      href="maintain1.html"
+                      class="exit-button flex justify-center items-center"
+                    >
                       <svg
                         class="h-8 w-8 text-white sm:hover:text-black"
                         fill="none"
@@ -70,7 +76,7 @@
                           d="M6 18L18 6M6 6l12 12"
                         />
                       </svg>
-                    </div>
+                    </a>
                   </div>
                 </div>
 
@@ -91,25 +97,35 @@
             <div class="block justify-center">
               <div class="flex justify-center items-center">
                 <div
-                  class="sm:w-5/6 md:w-2/3 xl:w-1/2 sm:text-start lg:text-center"
+                  class="sm:w-11/12 md:w-2/3 xl:w-1/2 sm:text-start lg:text-center"
                 >
-                  <div class="text-white sm:my-5 lg:my-8">
+                  <div class="text-white sm:my-5">
                     <p class="font-Gelia sm:text-2xl lg:text-4xl">
                       Détails du projet
                     </p>
-                    <p class="font-Gelia sm:text-base" style="color: #ffffff99">
+                    <p
+                      class="sm:hidden md:block font-Gelia sm:text-base"
+                      style="color: #ffffff70"
+                    >
                       Précisez votre besoin pour mieux comprendre votre projet
+                    </p>
+                    <p
+                      class="sm:block md:hidden font-Gelia sm:text-base"
+                      style="color: #ffffff70"
+                    >
+                      Donnez une idée approximatif de votre projet
                     </p>
                   </div>
                 </div>
               </div>
-              <div class="flex justify-center">
-                <form action="" class="sm:w-5/6 md:w-2/3 xl:w-1/2">
+              <div class="flex justify-center sm:mb-2">
+                <form action="" class="sm:w-11/12 md:w-2/3 xl:w-1/2">
                   <input
                     type="text"
                     id="description1"
                     class="w-full sm:my-2 lg:my-4 sm:px-3 text-white"
                     placeholder="Nom du projet ou de votre entreprise"
+                    style="outline: none"
                   /><br /><br />
                   <p
                     class="flex justify-start items-center font-Gelia text-white lg:text-2xl"
@@ -121,6 +137,7 @@
                     id="description2"
                     class="w-full sm:mt-6 lg:mt-6 sm:px-3 sm:py-3 pt-4 text-white"
                     placeholder="Éclairez-nous sur votre projet : décrivez vos besoins, objectifs et idées clés pour une solution sur mesure."
+                    style="outline: none"
                   ></textarea>
                   <p class="text-xs sm:mt-2 lg:mt-2" style="color: #ffffff99">
                     Min. 100 caractères / Max. 400 caractères
@@ -131,51 +148,60 @@
                     id="description3"
                     class="w-full sm:my-1 lg:my-4 sm:px-3 text-white"
                     placeholder="Technologies Requises (facultatif)"
+                    style="outline: none"
                   /><br />
                   <input
                     type="text"
                     id="description4"
                     class="w-full sm:my-1 lg:my-4 sm:px-3 text-white"
                     placeholder="Exigences Spécifiques (facultatif)"
+                    style="outline: none"
                   /><br />
                 </form>
               </div>
             </div>
           </div>
-          <div class="flex w-full justify-center lg:w-1/2 sm:pt-8 sm:mb-10">
-            <div class="flex justify-between sm:w-5/6">
-              <a
-                href="maintain4.html"
-                class="pre-maintain flex justify-center items-center text-white sm:hover:text-black"
-              >
-                <svg
-                  class="h-4 w-4 text-gray-100"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
+          <div class="flex w-full justify-center sm:pt-8 sm:mb-6 lg:mb-6">
+            <div class="flex justify-between sm:w-11/12 md:w-2/3 xl:w-1/2">
+              <div class="flex sm:justify-start">
+                <a
+                  href="maintain4.html"
+                  class="pre-maintain flex justify-center items-center text-white sm:hover:text-black"
                 >
-                  <path
+                  <svg
+                    class="text-gray-100"
+                    width="50"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    stroke-width="1"
+                    stroke="currentColor"
+                    fill="none"
                     stroke-linecap="round"
                     stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M10 19l-7-7m0 0l7-7m-7 7h18"
-                  />
-                </svg>
-              </a>
-              <a
-                href="maintain6.html"
-                class="flex justify-center items-center text-white"
-                style="
-                  width: 200px;
-                  height: 55px;
-                  background-color: #253032;
-                  border-radius: 20px;
-                  font-size: 18px;
-                  box-sizing: border-box;
-                "
-              >
-                <p>Envoyer</p>
-              </a>
+                  >
+                    <path stroke="none" d="M0 0h24v24H0z" />
+                    <line x1="-10" y1="12" x2="20" y2="12" />
+                    <line x1="-10" y1="12" x2="0" y2="20" />
+                    <line x1="-10" y1="12" x2="0" y2="4" />
+                  </svg>
+                </a>
+              </div>
+              <div class="flex sm:justify-end">
+                <a
+                  href="maintain6.html"
+                  class="flex justify-center items-center text-white"
+                  style="
+                    width: 200px;
+                    height: 55px;
+                    background-color: #253032;
+                    border-radius: 20px;
+                    font-size: 18px;
+                    box-sizing: border-box;
+                  "
+                >
+                  <p>Envoyer</p>
+                </a>
+              </div>
             </div>
           </div>
         </div>
