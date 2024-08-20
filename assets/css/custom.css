@@ -971,7 +971,7 @@ tr td:first-child {
 
 @media only screen and (min-width: 1023px) {
   .maintain {
-    min-height: 840px;
+    min-height: 900px;
   }
 
   .maintain5,
@@ -1002,7 +1002,6 @@ tr td:first-child {
   justify-content: center;
   align-items: center;
   position: relative;
-  /* padding-left: 25px; */
   cursor: pointer;
   font-size: 22px;
   -webkit-user-select: none;
@@ -1067,4 +1066,12 @@ tr td:first-child {
   -webkit-transform: rotate(45deg);
   -ms-transform: rotate(45deg);
   transform: rotate(45deg);
+}
+
+.yellow {
+  display: block;
+}
+
+.purple {
+  display: none;
 }

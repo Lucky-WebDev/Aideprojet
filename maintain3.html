@@ -121,8 +121,14 @@
                   </div>
                 </div>
                 <img
-                  src="assets/images/maintain/carre-ligne.svg"
-                  style="width: 40px"
+                  class="yellow"
+                  src="assets/images/maintain/square-yellow.svg"
+                  style="width: 40px; height: 40px"
+                />
+                <img
+                  class="purple"
+                  src="assets/images/maintain/square-purple.svg"
+                  style="width: 40px; height: 40px"
                 />
               </div>
               <div
@@ -139,8 +145,14 @@
                   </div>
                 </div>
                 <img
-                  src="assets/images/maintain/cercle-fleches.svg"
-                  style="width: 40px"
+                  class="yellow"
+                  src="assets/images/maintain/recycle-yellow.svg"
+                  style="width: 40px; height: 40px"
+                />
+                <img
+                  class="purple"
+                  src="assets/images/maintain/recycle-purple.svg"
+                  style="width: 40px; height: 40px"
                 />
               </div>
               <div
@@ -157,8 +169,14 @@
                   </div>
                 </div>
                 <img
-                  src="assets/images/maintain/Group 32237.svg"
-                  style="width: 40px"
+                  class="yellow"
+                  src="assets/images/maintain/cursor-yellow.svg"
+                  style="width: 40px; height: 40px"
+                />
+                <img
+                  class="purple"
+                  src="assets/images/maintain/cursor-purple.svg"
+                  style="width: 40px; height: 40px"
                 />
               </div>
             </div>
@@ -249,19 +267,32 @@
 
   <script>
     const handleChecked = (element) => {
+      let yellow = element.querySelector(".yellow");
+      let purple = element.querySelector(".purple");
+
+      let none_style = "display:none; width: 40px; !important";
+      let block_style = "display:block; width: 40px; !important";
+
       document.querySelectorAll(".checkbox-form").forEach(function (e) {
         e.classList.remove("block-maintain-checked");
         e.classList.add("block-maintain");
+        e.querySelector(".yellow").setAttribute("style", block_style);
+        e.querySelector(".purple").setAttribute("style", none_style);
       });
+
       element.querySelectorAll("input").forEach(function (e) {
         if (e.checked === true) {
           e.checked = false;
           element.classList.add("block-maintain");
           element.classList.remove("block-maintain-checked");
+          yellow.setAttribute("style", block_style);
+          purple.setAttribute("style", none_style);
         } else {
           e.checked = true;
           element.classList.remove("block-maintain");
           element.classList.add("block-maintain-checked");
+          yellow.setAttribute("style", none_style);
+          purple.setAttribute("style", block_style);
         }
       });
     };

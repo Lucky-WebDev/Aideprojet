@@ -108,7 +108,7 @@
                 </div>
               </div>
               <div
-                class="block-maintain checkbox-form sm:w-6/7 md:w-1/2 lg:w-2/3 xl:w-1/2 flex justify-between items-center text-white mb-4 sm:p-3 lg:p-8"
+                class="block-maintain sm:w-6/7 md:w-1/2 lg:w-2/3 xl:w-1/2 flex justify-between items-center text-white mb-4 sm:p-3 lg:p-8"
                 onclick="handleChecked(this)"
               >
                 <div class="flex justify-center items-center">
@@ -123,12 +123,18 @@
                   </div>
                 </div>
                 <img
-                  src="assets/images/maintain/carre-ligne.svg"
-                  style="width: 40px"
+                  class="yellow"
+                  src="assets/images/maintain/square-yellow.svg"
+                  style="width: 40px; height: 40px"
+                />
+                <img
+                  class="purple"
+                  src="assets/images/maintain/square-purple.svg"
+                  style="width: 40px; height: 40px"
                 />
               </div>
               <div
-                class="block-maintain checkbox-form sm:w-6/7 md:w-1/2 lg:w-2/3 xl:w-1/2 flex justify-between items-center text-white mb-4 sm:p-3 lg:p-8"
+                class="block-maintain sm:w-6/7 md:w-1/2 lg:w-2/3 xl:w-1/2 flex justify-between items-center text-white mb-4 sm:p-3 lg:p-8"
                 onclick="handleChecked(this)"
               >
                 <div class="flex justify-center items-center">
@@ -143,12 +149,18 @@
                   </div>
                 </div>
                 <img
-                  src="assets/images/maintain/cercle-fleches.svg"
-                  style="width: 40px"
+                  class="yellow"
+                  src="assets/images/maintain/recycle-yellow.svg"
+                  style="width: 40px; height: 40px"
+                />
+                <img
+                  class="purple"
+                  src="assets/images/maintain/recycle-purple.svg"
+                  style="width: 40px; height: 40px"
                 />
               </div>
               <div
-                class="block-maintain checkbox-form sm:w-6/7 md:w-1/2 lg:w-2/3 xl:w-1/2 flex justify-between items-center text-white mb-4 sm:p-3 lg:p-8"
+                class="block-maintain sm:w-6/7 md:w-1/2 lg:w-2/3 xl:w-1/2 flex justify-between items-center text-white mb-4 sm:p-3 lg:p-8"
                 onclick="handleChecked(this)"
               >
                 <div class="flex justify-center items-center">
@@ -161,19 +173,29 @@
                   </div>
                 </div>
                 <img
-                  src="assets/images/maintain/Group 32237.svg"
-                  style="width: 40px"
+                  class="yellow"
+                  src="assets/images/maintain/cursor-yellow.svg"
+                  style="width: 40px; height: 40px"
+                />
+                <img
+                  class="purple"
+                  src="assets/images/maintain/cursor-purple.svg"
+                  style="width: 40px; height: 40px"
                 />
               </div>
               <div
                 class="block-maintain sm:w-6/7 md:w-1/2 lg:w-2/3 xl:w-1/2 flex justify-between items-center text-white sm:p-3 lg:p-8"
                 onclick="handleChecked(this)"
               >
-                <label class="checkbox-container">
-                  <input type="checkbox" />
-                  <span class="checkmark"></span>
-                </label>
-                <h1 class="font-Gelia sm:text-xl lg:text-xl">Autre</h1>
+                <div class="flex justify-center items-center">
+                  <label class="checkbox-container sm:mx-2">
+                    <input type="checkbox" />
+                    <span class="checkmark"></span>
+                  </label>
+                  <div class="block sm:pl-4 lg:pl-8">
+                    <h1 class="sm:text-base lg:text-xl">Autre</h1>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -264,15 +286,25 @@
 
   <script>
     const handleChecked = (element) => {
+      let yellow = element.querySelector(".yellow");
+      let purple = element.querySelector(".purple");
+
+      let none_style = "display:none; width: 40px; !important";
+      let block_style = "display:block; width: 40px; !important";
+
       element.querySelectorAll("input").forEach(function (e) {
         if (e.checked === true) {
           e.checked = false;
           element.classList.add("block-maintain");
           element.classList.remove("block-maintain-checked");
+          yellow.setAttribute("style", block_style);
+          purple.setAttribute("style", none_style);
         } else {
           e.checked = true;
           element.classList.remove("block-maintain");
           element.classList.add("block-maintain-checked");
+          yellow.setAttribute("style", none_style);
+          purple.setAttribute("style", block_style);
         }
       });
     };

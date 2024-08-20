@@ -117,8 +117,14 @@
               >
                 <div class="flex justify-center items-center">
                   <img
-                    src="assets/images/maintain/site-web-violet.svg"
-                    style="width: 55px"
+                    class="yellow"
+                    src="assets/images/maintain/tablet-yellow.svg"
+                    style="width: 40px; height: 40px"
+                  />
+                  <img
+                    class="purple"
+                    src="assets/images/maintain/tablet-purple.svg"
+                    style="width: 40px; height: 40px"
                   />
                   <div class="block sm:pl-5 lg:pl-8">
                     <h1 class="font-Gelia sm:text-xl lg:text-2xl">Site web</h1>
@@ -139,8 +145,14 @@
               >
                 <div class="flex justify-center items-center">
                   <img
-                    src="assets/images/maintain/app-mobile-0.svg"
-                    style="width: 55px"
+                    class="yellow"
+                    src="assets/images/maintain/mobile-yellow.svg"
+                    style="width: 40px; height: 40px"
+                  />
+                  <img
+                    class="purple"
+                    src="assets/images/maintain/mobile-purple.svg"
+                    style="width: 40px; height: 40px"
                   />
                   <div class="block sm:pl-5 lg:pl-8">
                     <h1 class="font-Gelia sm:text-xl lg:text-2xl">
@@ -163,8 +175,14 @@
               >
                 <div class="flex justify-center items-center">
                   <img
-                    src="assets/images/maintain/logiciel-0.svg"
-                    style="width: 55px"
+                    class="yellow"
+                    src="assets/images/maintain/logical-yellow.svg"
+                    style="width: 40px; height: 40px"
+                  />
+                  <img
+                    class="purple"
+                    src="assets/images/maintain/logical-purple.svg"
+                    style="width: 40px; height: 40px"
                   />
                   <div class="block sm:pl-5 lg:pl-8">
                     <h1 class="font-Gelia sm:text-xl lg:text-2xl">Logiciel</h1>
@@ -277,15 +295,25 @@
     // };
 
     const handleChecked = (element) => {
+      let yellow = element.querySelector(".yellow");
+      let purple = element.querySelector(".purple");
+
+      let none_style = "display:none; width: 40px; !important";
+      let block_style = "display:block; width: 40px; !important";
+
       element.querySelectorAll("input").forEach(function (e) {
         if (e.checked === true) {
           e.checked = false;
           element.classList.add("block-maintain");
           element.classList.remove("block-maintain-checked");
+          yellow.setAttribute("style", block_style);
+          purple.setAttribute("style", none_style);
         } else {
           e.checked = true;
           element.classList.remove("block-maintain");
           element.classList.add("block-maintain-checked");
+          yellow.setAttribute("style", none_style);
+          purple.setAttribute("style", block_style);
         }
       });
     };
