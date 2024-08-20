@@ -147,18 +147,6 @@
   background-image: url("../images/mobile-double.png");
 }
 
-.girl-image {
-  background-image: url("../images/girl.png");
-  background-repeat: no-repeat;
-  background-size: contain;
-}
-
-.man-image {
-  background-image: url("../images/man.png");
-  background-repeat: no-repeat;
-  background-size: contain;
-}
-
 .select-form {
   border-bottom: 1px solid #253032;
   height: 80px;
