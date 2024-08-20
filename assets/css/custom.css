@@ -736,6 +736,7 @@ select:focus {
   padding-right: 38px;
   height: 70px;
   margin: auto;
+  cursor: pointer;
 }
 
 .block-maintain:hover {
@@ -748,6 +749,7 @@ select:focus {
   padding-right: 38px;
   height: 70px;
   margin: auto;
+  cursor: pointer;
 }
 
 .pre-maintain {
@@ -963,7 +965,7 @@ tr td:first-child {
   }
 
   .maintain5 {
-    min-height: 950px;
+    min-height: 1000px;
   }
 
   .maintain4 {

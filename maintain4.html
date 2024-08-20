@@ -111,6 +111,7 @@
               </div>
               <div
                 class="block-maintain checkbox-form sm:w-6/7 md:w-1/2 lg:w-2/3 xl:w-1/2 flex justify-between items-center text-white mb-4 sm:p-4 lg:p-8"
+                onclick="handleChecked(this)"
               >
                 <div class="flex justify-center items-center">
                   <label class="checkbox-container">
@@ -125,6 +126,7 @@
               </div>
               <div
                 class="block-maintain checkbox-form sm:w-6/7 md:w-1/2 lg:w-2/3 xl:w-1/2 flex justify-between items-center text-white mb-4 sm:p-4 lg:p-8"
+                onclick="handleChecked(this)"
               >
                 <div class="flex justify-center items-center">
                   <label class="checkbox-container">
@@ -141,6 +143,7 @@
               </div>
               <div
                 class="block-maintain checkbox-form sm:w-6/7 md:w-1/2 lg:w-2/3 xl:w-1/2 flex justify-between items-center text-white mb-4 sm:p-4 lg:p-8"
+                onclick="handleChecked(this)"
               >
                 <div class="flex justify-center items-center">
                   <label class="checkbox-container">
@@ -155,6 +158,7 @@
               </div>
               <div
                 class="block-maintain checkbox-form sm:w-6/7 md:w-1/2 lg:w-2/3 xl:w-1/2 flex justify-between items-center text-white mb-4 sm:p-4 lg:p-8"
+                onclick="handleChecked(this)"
               >
                 <div class="flex justify-center items-center">
                   <label class="checkbox-container">
@@ -169,6 +173,7 @@
               </div>
               <div
                 class="block-maintain checkbox-form sm:w-6/7 md:w-1/2 lg:w-2/3 xl:w-1/2 flex justify-between items-center text-white mb-4 sm:p-4 lg:p-8"
+                onclick="handleChecked(this)"
               >
                 <div class="flex justify-center items-center">
                   <label class="checkbox-container">
@@ -183,6 +188,7 @@
               </div>
               <div
                 class="block-maintain checkbox-form sm:w-6/7 md:w-1/2 lg:w-2/3 xl:w-1/2 flex justify-between items-center text-white mb-4 sm:p-4 lg:p-8"
+                onclick="handleChecked(this)"
               >
                 <div class="flex justify-center items-center">
                   <label class="checkbox-container">
@@ -281,17 +287,21 @@
   </body>
 
   <script>
-    window.onload = function a() {
+    const handleChecked = (element) => {
       document.querySelectorAll(".checkbox-form").forEach(function (e) {
-        console.log(e.children);
-        if (e.children[0].children[0].children[0].checked === true) {
-          e.classList.remove("block-maintain");
-          e.classList.add("block-maintain-checked");
+        e.classList.remove("block-maintain-checked");
+        e.classList.add("block-maintain");
+      });
+      element.querySelectorAll("input").forEach(function (e) {
+        if (e.checked === true) {
+          e.checked = false;
+          element.classList.add("block-maintain");
+          element.classList.remove("block-maintain-checked");
         } else {
-          e.classList.add("block-maintain");
-          e.classList.remove("block-maintain-checked");
+          e.checked = true;
+          element.classList.remove("block-maintain");
+          element.classList.add("block-maintain-checked");
         }
-        e.onchange = a;
       });
     };
   </script>
