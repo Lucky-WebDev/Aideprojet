@@ -214,6 +214,8 @@
 }
 
 .admin-retrun:hover {
+  border: 1px solid white;
+  border-radius: 28px;
 }
 
 @keyframes example {
@@ -702,6 +704,7 @@ select:focus {
 }
 
 .maintain,
+.maintain5,
 .maintain4 {
   display: flex;
 }
@@ -737,6 +740,14 @@ select:focus {
 
 .block-maintain:hover {
   border: 1px solid #ffffff;
+}
+
+.block-maintain-checked {
+  border: 1px solid #7971f5;
+  border-radius: 24px;
+  padding-right: 38px;
+  height: 70px;
+  margin: auto;
 }
 
 .pre-maintain {
@@ -807,44 +818,44 @@ select:focus {
 
 table {
   border-collapse: separate;
-  border-spacing: 0;
-}
-
-thead {
-  background-color: #222f31;
-}
-
-tbody {
   font-size: 20px;
-  background-color: #0a1718;
+  background-color: #0f1c1d;
+  border-spacing: 0;
 }
 
 td {
   border: solid 1px #394446;
-  border-style: none solid solid none;
+  border-style: none;
   padding: 32px;
 }
 
-tbody tr:first-child td:first-child {
-  border-top-left-radius: 50px;
-}
-tbody tr:first-child td:last-child {
-  border-top-right-radius: 50px;
+tr:nth-child(even) {
+  background-color: #0a1718;
 }
 
-tbody tr:last-child td:first-child {
-  border-bottom-left-radius: 50px;
-}
-tbody tr:last-child td:last-child {
-  border-bottom-right-radius: 50px;
+tr:first-child {
+  background-color: #222f31;
 }
 
-tbody tr:first-child td {
+tr:first-child td:first-child {
+  border-top-left-radius: 24px;
+}
+tr:first-child td:last-child {
+  border-top-right-radius: 24px;
+}
+
+tr:last-child td:first-child {
+  border-bottom-left-radius: 24px;
+}
+tr:last-child td:last-child {
+  border-bottom-right-radius: 24px;
+}
+/* tr:first-child td {
   border-top-style: solid;
 }
-tbody tr td:first-child {
+tr td:first-child {
   border-left-style: solid;
-}
+} */
 
 @keyframes dropdown-icon {
   0% {
@@ -897,6 +908,10 @@ tbody tr td:first-child {
   margin-right: -192px;
 }
 
+.maintain-leftside-title {
+  width: 50%;
+}
+
 @media only screen and (max-width: 1695px) {
   .interval {
     margin-right: -140px;
@@ -915,6 +930,10 @@ tbody tr td:first-child {
   .smooth-sizing {
     width: 70px;
   }
+
+  .maintain-leftside-title {
+    width: 100%;
+  }
 }
 
 @media only screen and (max-width: 1023px) {
@@ -924,6 +943,7 @@ tbody tr td:first-child {
 
   .maintain,
   .maintain4,
+  .maintain5,
   .maintain6 {
     display: block;
   }
@@ -942,6 +962,10 @@ tbody tr td:first-child {
     min-height: 840px;
   }
 
+  .maintain5 {
+    min-height: 950px;
+  }
+
   .maintain4 {
     min-height: 1000px;
   }
@@ -957,4 +981,77 @@ tbody tr td:first-child {
   mask-image: url("../images/curve.png");
   -webkit-mask-repeat: no-repeat;
   mask-repeat: no-repeat;
+}
+
+/* Created by Brian */
+.checkbox-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  /* padding-left: 25px; */
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.checkbox-container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+  position: absolute;
+  height: 24px;
+  width: 24px;
+  background-color: transparent;
+  border: 1px solid #ffffff80;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* On mouse-over, add a grey background color */
+.checkbox-container:hover input ~ .checkmark {
+  background-color: transparent;
+}
+
+/* When the checkbox is checked, add a blue background */
+.checkbox-container input:checked ~ .checkmark {
+  background-color: #7971f5;
+  border: 1px solid #7971f5;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.checkbox-container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.checkbox-container .checkmark:after {
+  left: 9px;
+  top: 5px;
+  width: 6px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
 }
