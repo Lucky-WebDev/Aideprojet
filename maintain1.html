@@ -111,12 +111,13 @@
                 </div>
               </div>
               <div
-                class="block-maintain sm:w-3/4 md:w-1/2 lg:w-2/3 xl:w-1/2 flex justify-between items-center text-white mb-4 sm:p-5 lg:p-8"
+                id="checkbox"
+                class="block-maintain checkbox-form sm:w-3/4 md:w-1/2 lg:w-2/3 xl:w-1/2 flex justify-between items-center text-white mb-4 sm:p-5 lg:p-8"
                 style="height: 100px"
               >
                 <div class="flex justify-center items-center">
                   <img
-                    src="assets/images/maintain/site-web.svg"
+                    src="assets/images/maintain/site-web-violet.svg"
                     style="width: 55px"
                   />
                   <div class="block sm:pl-5 lg:pl-8">
@@ -132,18 +133,20 @@
                 </label>
               </div>
               <div
-                class="block-maintain sm:w-3/4 md:w-1/2 lg:w-2/3 xl:w-1/2 flex justify-between items-center text-white mb-4 sm:p-5 lg:p-8"
+                class="block-maintain checkbox-form sm:w-3/4 md:w-1/2 lg:w-2/3 xl:w-1/2 flex justify-between items-center text-white mb-4 sm:p-5 lg:p-8"
                 style="height: 100px"
               >
                 <div class="flex justify-center items-center">
                   <img
-                    src="assets/images/maintain/app-mobile.svg"
+                    src="assets/images/maintain/app-mobile-0.svg"
                     style="width: 55px"
                   />
                   <div class="block sm:pl-5 lg:pl-8">
-                    <h1 class="font-Gelia sm:text-xl lg:text-2xl">Site web</h1>
+                    <h1 class="font-Gelia sm:text-xl lg:text-2xl">
+                      App mobile
+                    </h1>
                     <p class="sm:text-xs lg:text-xl" style="color: #ffffff99">
-                      Site web, web app …
+                      Android, iOS
                     </p>
                   </div>
                 </div>
@@ -153,18 +156,18 @@
                 </label>
               </div>
               <div
-                class="block-maintain sm:w-3/4 md:w-1/2 lg:w-2/3 xl:w-1/2 flex justify-between items-center text-white mb-4 sm:p-5 lg:p-8"
+                class="block-maintain checkbox-form sm:w-3/4 md:w-1/2 lg:w-2/3 xl:w-1/2 flex justify-between items-center text-white mb-4 sm:p-5 lg:p-8"
                 style="height: 100px"
               >
                 <div class="flex justify-center items-center">
                   <img
-                    src="assets/images/maintain/logiciel.svg"
+                    src="assets/images/maintain/logiciel-0.svg"
                     style="width: 55px"
                   />
                   <div class="block sm:pl-5 lg:pl-8">
-                    <h1 class="font-Gelia sm:text-xl lg:text-2xl">Site web</h1>
+                    <h1 class="font-Gelia sm:text-xl lg:text-2xl">Logiciel</h1>
                     <p class="sm:text-xs lg:text-xl" style="color: #ffffff99">
-                      Site web, web app …
+                      Applicatifs, système
                     </p>
                   </div>
                 </div>
@@ -253,17 +256,15 @@
   </body>
 
   <script>
-    window.onload = function a() {
-      document.querySelectorAll(".checkbox-form").forEach(function (e) {
-        if (e.children[1].children[0].checked === true) {
-          e.classList.remove("block-maintain");
-          e.classList.add("block-maintain-checked");
-        } else {
-          e.classList.add("block-maintain");
-          e.classList.remove("block-maintain-checked");
-        }
-        e.onchange = a;
-      });
-    };
+    document.querySelectorAll(".checkbox-form").forEach(function (e) {
+      if (e.children[1].children[0].checked === true) {
+        e.classList.remove("block-maintain");
+        e.classList.add("block-maintain-checked");
+      } else {
+        e.classList.add("block-maintain");
+        e.classList.remove("block-maintain-checked");
+      }
+      e.onchange = a;
+    });
   </script>
 </html>

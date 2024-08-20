@@ -711,7 +711,6 @@ select:focus {
 
 .maintain6 {
   display: flex;
-  min-height: 840px;
 }
 
 .exit-button {
@@ -746,7 +745,7 @@ select:focus {
   border: 1px solid #7971f5;
   border-radius: 24px;
   padding-right: 38px;
-  height: 70px;
+  height: 80px;
   margin: auto;
 }
 
@@ -779,6 +778,20 @@ select:focus {
   height: 136px;
 }
 
+.main6-change:hover {
+  border-radius: 18px;
+  border: 1px solid #ffffff;
+  height: 55px;
+}
+
+.main6-change:hover #main6-content {
+  display: none;
+}
+
+.main6-change:hover:before {
+  content: "Aller dans mon compte";
+}
+
 .admin-form {
   height: 100%;
   background-color: #0f1c1d;
@@ -787,11 +800,12 @@ select:focus {
 }
 
 .admin-card1 {
-  background-image: url("../images/top-image.png");
+  background-image: url(../images/admin/card-background.png);
   background-repeat: no-repeat;
   background-size: cover;
   height: 310px;
-  margin-top: -65px;
+  margin-top: -40px;
+  border-radius: 0px 32px 32px 32px;
 }
 
 #admin-mark:hover {
@@ -948,10 +962,6 @@ tr td:first-child {
     display: block;
   }
 
-  .maintain6 {
-    display: block;
-  }
-
   .maintain-leftside {
     display: none;
   }
@@ -962,7 +972,8 @@ tr td:first-child {
     min-height: 840px;
   }
 
-  .maintain5 {
+  .maintain5,
+  .maintain6 {
     min-height: 950px;
   }
 

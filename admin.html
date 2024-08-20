@@ -57,24 +57,11 @@
                 onclick="action('table-item')"
               >
                 <div class="flex justify-center sm:w-1/4">
-                  <svg
-                    style="background-color: #ccea6c"
-                    class="h-5 w-5 text-red-500"
-                    width="20"
-                    height="20"
-                    viewBox="0 0 24 24"
-                    stroke-width="2"
-                    stroke="currentColor"
-                    fill="none"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  >
-                    <path stroke="none" d="M0 0h24v24H0z" />
-                    <rect x="4" y="4" width="6" height="6" rx="1" />
-                    <rect x="14" y="4" width="6" height="6" rx="1" />
-                    <rect x="4" y="14" width="6" height="6" rx="1" />
-                    <rect x="14" y="14" width="6" height="6" rx="1" />
-                  </svg>
+                  <img
+                    id="table-icon"
+                    src="assets/images/admin/table-icon.svg"
+                    style="height: 32px"
+                  />
                 </div>
                 <div class="admin-responsive flex justify-start sm:w-3/4">
                   <p class="text-white text-xl">Tableau de bord</p>
@@ -89,7 +76,8 @@
               >
                 <div class="flex justify-center sm:w-1/4">
                   <img
-                    src="assets/images/admin/prestataire-icone.svg"
+                    id="project-icon"
+                    src="assets/images/admin/project-icon0.svg"
                     style="height: 32px"
                   />
                 </div>
@@ -106,7 +94,8 @@
               >
                 <div class="flex justify-center sm:w-1/4">
                   <img
-                    src="assets/images/favoris-menu.svg"
+                    id="favourite-icon"
+                    src="assets/images/admin/favourite-icon0.svg"
                     style="height: 32px"
                   />
                 </div>
@@ -123,7 +112,8 @@
               >
                 <div class="flex justify-center sm:w-1/4">
                   <img
-                    src="assets/images/favoris-menu.svg"
+                    id="payment-icon"
+                    src="assets/images/admin/payment-icon0.svg"
                     style="height: 32px"
                   />
                 </div>
@@ -135,16 +125,15 @@
           </div>
           <div class="admin-responsive block sm:my-4">
             <div class="flex justify-center items-center">
-              <div class="relative block sm:w-5/6 sm:p-4">
-                <img
-                  src="assets/images/admin/Rectangle 17915.svg"
-                  style="
-                    position: absolute;
-                    border-radius: 16px;
-                    top: 1%;
-                    left: 1%;
-                  "
-                />
+              <div
+                class="block sm:w-5/6 sm:p-4"
+                style="
+                  background-image: url('assets/images/admin/Rectangle 17915.svg');
+                  border-radius: 16px;
+                  background-repeat: no-repeat;
+                  background-size: cover;
+                "
+              >
                 <div class="flex justify-between items-center sm:pt-4">
                   <p
                     class="font-Gelia flex justify-center items-center text-center text-white sm:text-lg"
@@ -405,15 +394,22 @@
                   class="block"
                   style="border-radius: 32px; background-color: #3bd783"
                 >
-                  <div
-                    class="sm:text-base lg:text-2xl text-black sm:pl-6 sm:py-4"
-                  >
-                    Groupe Breton
+                  <div class="flex items-center justify-start sm:pl-6 sm:py-4">
+                    <img
+                      src="assets/images/admin/card-mark.png"
+                      style="width: 25px; height: 25px"
+                    />
+
+                    <div class="sm:text-base text-black sm:pl-2">
+                      Groupe Breton
+                    </div>
                   </div>
                   <div class="admin-card1 block sm:divide-y sm:divide-gray">
                     <div class="sm:p-6">
                       <div class="flex justify-end">
                         <div class="flex justify-end items-center sm:w-1/4">
+                          <p class="text-end text-4xl">22·18</p>
+                          <p class="text-end text-4xl">22·18</p>
                           <p class="text-end text-4xl">22·18</p>
                         </div>
                       </div>
@@ -438,7 +434,7 @@
                       </p>
                       <p class="text-xs sm:py-2">Sous React Native</p>
                     </div>
-                    <div class="flex justify-between sm:px-6 sm:py-2">
+                    <div class="flex justify-between sm:px-6 sm:py-4">
                       <div class="relative sm:w-1/5">
                         <img
                           src="assets/images/persons/person2.png"
@@ -1481,10 +1477,30 @@
     var modal = document.getElementById("admin-dropdownbar");
 
     let all = [
-      { key: "table-item", value: "table-section", title: "Tableau de bord" },
-      { key: "project-item", value: "project-section", title: "Projets" },
-      { key: "favourite-item", value: "favourite-section", title: "Favoris" },
-      { key: "payment-item", value: "payment-section", title: "Paiements" },
+      {
+        key: "table-item",
+        value: "table-section",
+        title: "Tableau de bord",
+        icon: "table-icon",
+      },
+      {
+        key: "project-item",
+        value: "project-section",
+        title: "Projets",
+        icon: "project-icon",
+      },
+      {
+        key: "favourite-item",
+        value: "favourite-section",
+        title: "Favoris",
+        icon: "favourite-icon",
+      },
+      {
+        key: "payment-item",
+        value: "payment-section",
+        title: "Paiements",
+        icon: "payment-icon",
+      },
     ];
 
     const action = (id) => {
@@ -1492,14 +1508,17 @@
         let element = document.getElementById(item.value);
         let selectedItem = document.getElementById(item.key);
         let titleElement = document.getElementById("section-title");
+        let iconElement = document.getElementById(item.icon);
         if (item.key === id) {
           element.style.display = "block";
           selectedItem.style.borderRadius = "31px";
           selectedItem.style.border = "1px solid #FFFFFFCC";
           titleElement.innerText = item.title;
+          iconElement.src = "assets/images/admin/" + item.icon + ".svg";
         } else {
           element.style.display = "none";
           selectedItem.style.border = "none";
+          iconElement.src = "assets/images/admin/" + item.icon + "0.svg";
         }
       });
     };
