@@ -789,6 +789,21 @@ select:focus {
   border-radius: 20px;
 }
 
+.admin-card-form {
+  height: 100%;
+  background-color: #ffffff05;
+  border: 1px solid #253032;
+  border-radius: 20px;
+}
+
+.admin-footer-form {
+  height: 100%;
+  background-color: transparent; /* For browsers that do not support gradients */
+  background-image: linear-gradient(to right, #262f06, #020f11);
+  border: 1px solid #253032;
+  border-radius: 20px;
+}
+
 .admin-card1 {
   background-image: url(../images/admin/card-background.png);
   background-repeat: no-repeat;
@@ -819,18 +834,35 @@ select:focus {
   border: 1px solid #0a1718;
   color: #ffffff99;
 }
-
+/* 
 table {
   border-collapse: separate;
+  border: solid #394446 1px;
+  border-radius: 6px;
   font-size: 20px;
   background-color: #0f1c1d;
-  border-spacing: 0;
 }
 
 td {
   border: solid 1px #394446;
   border-style: none;
   padding: 32px;
+}
+
+th {
+  border: solid 1px #394446;
+  border-style: none;
+  padding: 32px;
+}
+
+td,
+th {
+  border: 1px solid #394446;
+}
+
+th {
+  background-color: #253032;
+  border-top: none;
 }
 
 tr:nth-child(even) {
@@ -853,7 +885,44 @@ tr:last-child td:first-child {
 }
 tr:last-child td:last-child {
   border-bottom-right-radius: 24px;
+} */
+
+table {
+  border: solid #394446 1px;
+  border-collapse: collapse;
+  width: 100%;
+  border-radius: 15px;
+  font-size: 20px;
+  box-shadow: 0 0 0 1px #394446;
+  /* add this */
+  overflow: hidden;
 }
+
+tr:nth-child(even) {
+  background-color: #ffffff05;
+}
+
+td {
+  border: solid 1px #394446;
+  border-style: none;
+  padding: 32px;
+}
+
+th {
+  border: solid 1px #394446;
+  border-style: none;
+  padding: 32px;
+}
+
+td,
+th {
+  border: solid #394446 1px;
+}
+
+th {
+  background-color: #253032;
+}
+
 /* tr:first-child td {
   border-top-style: solid;
 }
@@ -1062,4 +1131,11 @@ tr td:first-child {
 
 .purple {
   display: none;
+}
+
+.admin-badge {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  margin-right: 10px;
 }

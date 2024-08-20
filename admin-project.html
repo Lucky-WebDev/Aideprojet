@@ -26,10 +26,24 @@
 
   <body>
     <div
-      class="block sm:h-full text-white z-10"
+      class="relative block sm:h-full text-white z-10"
       style="background-color: #020f11; min-width: 900px"
     >
-      <div class="flex justify-center items-center z-10">
+      <img
+        class="sm:hidden lg:block"
+        src="assets/images/forme-details-formations@2x.png"
+        style="
+          position: absolute;
+          width: 23%;
+          top: 140px;
+          right: 5%;
+          z-index: -1;
+        "
+      />
+      <div
+        class="flex justify-center items-center z-10"
+        style="position: fixed; width: 100%; z-index: 1000"
+      >
         <div
           class="flex items-center admin-form w-full sm:m-5 sm:p-8"
           style="border-radius: 32px; height: 110px"
@@ -189,7 +203,10 @@
         </div>
       </div>
       <div class="flex justify-center items-center">
-        <div class="sm:block lg:flex justify-between sm:w-6/7 sm:mt-5 z-10">
+        <div
+          class="sm:block lg:flex justify-between sm:w-6/7 sm:mt-5 z-10"
+          style="margin-top: 180px"
+        >
           <div
             class="flex flex-col justify-center w-full lg:w-2/3 sm:p-10 sm:mb-24 sm:h-full"
             style="
@@ -199,7 +216,7 @@
             "
           >
             <div
-              class="flex justify-start items-center sm:w-2/5 sm:mb-8"
+              class="flex justify-start items-center sm:w-2/2 md:w-2/4 lg:w-6/12 xl:w-6/12 sm:mb-8"
               style="
                 background-color: #222f31;
                 border: 2px solid #222f31;
@@ -219,20 +236,29 @@
                 Historique de paiements
               </div>
             </div>
-            <div id="project-open" class="flex flex-col justify-center w-full">
-              <p class="font-Gelia text-white text-4xl sm:my-3">Mon projet</p>
-              <p class="text-white text-2xl sm:my-3">
+            <div
+              id="project-open"
+              class="flex flex-col sm:mt-5 justify-center w-full"
+            >
+              <p class="font-Gelia text-white text-4xl sm:my-1">Mon projet</p>
+              <p class="text-white text-2xl sm:my-10">
                 Application mobile puissante pour la gestion de vos équipes,
                 avec des fonctionnalités avancées et une interface intuitive,
                 optimisant la collaboration et la productivité à distance.
               </p>
               <div class="text-white w-full">
                 <table class="w-full">
-                  <tr class="text-2xl w-full">
-                    <td class="font-Gelia sm:w-1/4">Fonctionnalité</td>
-                    <td class="font-Gelia sm:w-3/5">Description</td>
-                    <td class="font-Gelia text-center sm:w-1/6">Jours</td>
-                  </tr>
+                  <thead>
+                    <tr class="text-2xl w-full">
+                      <th class="font-Gelia sm:text-left sm:w-1/4">
+                        Fonctionnalité
+                      </th>
+                      <th class="font-Gelia sm:text-left sm:w-3/5">
+                        Description
+                      </th>
+                      <th class="font-Gelia sm:text-center sm:w-1/6">Jours</th>
+                    </tr>
+                  </thead>
                   <tr>
                     <td class="sm:w-1/4">Tableau de Bord Centralisé</td>
                     <td class="sm:w-3/5">
@@ -345,17 +371,16 @@
               class="flex flex-col justify-center w-full"
               style="display: none"
             >
-              <p class="font-Gelia text-white text-4xl sm:my-3">
+              <p class="font-Gelia text-white text-4xl sm:my-4">
                 Mode de paiement
               </p>
               <div
                 class="admin-form flex justify-between items-center sm:my-3 sm:p-8"
-                style="background-color: #253032"
               >
                 <div class="flex items-center sm:w-1/2">
                   <img
-                    src="assets/images/developpement.png"
-                    style="width: 49px; height: 16px"
+                    src="assets/images/admin/visa-card.png"
+                    style="width: 65px; height: 40px"
                   />
                   <div class="block sm:ml-6">
                     <p class="text-2xl">VISA - 5432</p>
@@ -380,8 +405,8 @@
                   Calendrier des prélèvements
                 </p>
                 <div
-                  class="admin-form flex flex-col justify-between w-full sm:divide-y sm:divide-white-300"
-                  style="background-color: #0a1718"
+                  class="admin-form flex flex-col justify-between w-full"
+                  style="background-color: #0a1718; border: 1px solid #253032"
                 >
                   <div>
                     <div
@@ -392,35 +417,47 @@
                           Prochaine échéance
                         </p>
                         <div class="flex items-center w-full">
-                          <p class="text-4xl" style="color: #fdac70">·&nbsp</p>
+                          <div
+                            class="admin-badge"
+                            style="background-color: #fdac7099"
+                          ></div>
                           <p class="text-2xl">12 juillet 2024</p>
                         </div>
                       </div>
                       <p class="font-bond text-2xl">5 250 €</p>
                     </div>
                   </div>
+                  <hr style="border: 1px solid #ffffff33" />
                   <div>
                     <div
                       class="flex justify-between w-full items-center sm:p-8"
                     >
                       <div class="flex items-center">
-                        <p class="text-4xl" style="color: #fdac7099">·&nbsp</p>
+                        <div
+                          class="admin-badge"
+                          style="background-color: #fdac70"
+                        ></div>
                         <p class="text-2xl">12 août 2024</p>
                       </div>
                       <p class="font-bond text-2xl">5 250 €</p>
                     </div>
                   </div>
+                  <hr style="border: 1px solid #ffffff33" />
                   <div>
                     <div
                       class="flex justify-between w-full items-center sm:p-8"
                     >
                       <div class="flex items-center">
-                        <p class="text-4xl" style="color: #fdac7099">·&nbsp</p>
+                        <div
+                          class="admin-badge"
+                          style="background-color: #fdac70"
+                        ></div>
                         <p class="text-2xl">12 septembre 2024</p>
                       </div>
                       <p class="font-bond text-2xl">5 250 €</p>
                     </div>
                   </div>
+                  <hr style="border: 1px solid #ffffff33" />
                   <div>
                     <div
                       class="flex justify-between w-full items-center sm:p-8"
@@ -470,15 +507,13 @@
               </div>
               <div
                 class="admin-form flex flex-col justify-between itmes-center sm:my-6"
-                style="background-color: #253032"
               >
                 <p class="font-Gelia text-2xl sm:p-8">Détails de l’achat</p>
-                <div
-                  class="admin-form flex flex-col justify-between w-full sm:divide-y sm:divide-white-300"
-                >
+                <div class="admin-form flex flex-col justify-between w-full">
                   <div>
                     <div
                       class="flex justify-between w-full items-center sm:p-8"
+                      style="background-color: #0a1718; border-radius: 20px"
                     >
                       <div class="block sm:w-1/3">
                         <p class="text-base">Effectué le</p>
@@ -502,7 +537,7 @@
           </div>
           <div class="w-full lg:w-1/3 lg:ml-6">
             <div class="flex flex-col sm:justify-between text-white z-10">
-              <div class="admin-form flex flex-col sm:p-10">
+              <div class="admin-form flex flex-col sm:p-2 lg:p-4 xl:p-8">
                 <div class="flex flex-col sm:divide-y sm:divide-gray-800">
                   <div class="flex flex-col">
                     <p class="text-base">Duration de prestation</p>
@@ -511,7 +546,11 @@
                     </p>
                     <div
                       class="w-full sm:my-10 sm:py-6"
-                      style="border-radius: 24px; background-color: #322d80"
+                      style="
+                        border-radius: 24px;
+                        background-image: url('assets/images/admin/admin-block.png');
+                        background-size: cover;
+                      "
                     >
                       <div
                         class="flex flex-col w-full sm:divide-y sm:divide-white-300"
@@ -528,8 +567,8 @@
                                 <svg
                                   class="h-16 w-16"
                                   style="color: #ffffff99"
-                                  width="16"
-                                  height="16"
+                                  width="20"
+                                  height="20"
                                   viewBox="0 0 24 24"
                                   stroke-width="2"
                                   stroke="currentColor"
@@ -550,9 +589,12 @@
                                   <line x1="4" y1="11" x2="20" y2="11" />
                                   <rect x="8" y="15" width="2" height="2" />
                                 </svg>
-                                <p class="text-base" style="color: #ffffff99">
+                                <div
+                                  class="text-base"
+                                  style="color: #ffffff99; margin-left: 5px"
+                                >
                                   Dans 11 jours · 12 juillet
-                                </p>
+                                </div>
                               </div>
                               <div
                                 class="flex justify-end font-bold text-2xl sm:w-1/4"
@@ -590,9 +632,13 @@
                   </div>
                 </div>
               </div>
-              <div class="admin-form flex flex-col sm:my-5 sm:p-10">
-                <p class="font-Gelia text-3xl">Vos experts</p>
-                <div class="admin-form w-full sm:my-2">
+              <div
+                class="admin-form flex flex-col sm:my-5 sm:p-2 lg:p-4 xl:p-8"
+              >
+                <p class="font-Gelia text-3xl" style="margin-bottom: 20px">
+                  Vos experts
+                </p>
+                <div class="admin-card-form w-full sm:my-4">
                   <div class="flex justify-between items-center">
                     <div class="flex items-center sm:w-2/3">
                       <img
@@ -637,7 +683,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="admin-form w-full sm:my-2">
+                <div class="admin-card-form w-full sm:my-2">
                   <div class="flex justify-between items-center">
                     <div class="flex items-center sm:w-2/3">
                       <img
@@ -681,11 +727,13 @@
                   </div>
                 </div>
               </div>
-              <div class="admin-form flex flex-col sm:p-10 sm:mb-10">
+              <div
+                class="admin-footer-form flex flex-col sm:p-2 lg:p-4 xl:p-8 sm:mb-10"
+              >
                 <img
                   class="sm:my-3"
-                  src="assets/images/developpement.png"
-                  style="width: 85px; height: 50px"
+                  src="assets/images/admin/admin-card.png"
+                  style="width: 85px; height: 60px"
                 />
                 <p class="font-Gelia text-2xl sm:my-3">
                   Une question au sujet de votre paiement ?
@@ -694,7 +742,12 @@
                   <p class="text-base">
                     Nous vous invitons à consulter notre&nbsp
                   </p>
-                  <p class="text-base" style="color: #d9f777">FAQ</p>
+                  <p
+                    class="text-base"
+                    style="color: #d9f777; text-decoration: underline"
+                  >
+                    FAQ
+                  </p>
                 </div>
               </div>
             </div>
@@ -702,18 +755,6 @@
         </div>
       </div>
     </div>
-    <img
-      class="sm:hidden lg:block"
-      src="assets/images/forme-details-formations@2x.png"
-      style="
-        position: absolute;
-        width: 23%;
-        height: 59%;
-        top: 12%;
-        right: 5%;
-        z-index: 9;
-      "
-    />
   </body>
   <script>
     var bar = document.getElementById("admin-dropdown");
