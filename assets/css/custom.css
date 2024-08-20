@@ -704,6 +704,7 @@ select:focus {
 }
 
 .maintain,
+.maintain5,
 .maintain4 {
   display: flex;
 }
@@ -739,6 +740,14 @@ select:focus {
 
 .block-maintain:hover {
   border: 1px solid #ffffff;
+}
+
+.block-maintain-checked {
+  border: 1px solid #7971f5;
+  border-radius: 24px;
+  padding-right: 38px;
+  height: 70px;
+  margin: auto;
 }
 
 .pre-maintain {
@@ -899,6 +908,10 @@ tr td:first-child {
   margin-right: -192px;
 }
 
+.maintain-leftside-title {
+  width: 50%;
+}
+
 @media only screen and (max-width: 1695px) {
   .interval {
     margin-right: -140px;
@@ -917,6 +930,10 @@ tr td:first-child {
   .smooth-sizing {
     width: 70px;
   }
+
+  .maintain-leftside-title {
+    width: 100%;
+  }
 }
 
 @media only screen and (max-width: 1023px) {
@@ -926,6 +943,7 @@ tr td:first-child {
 
   .maintain,
   .maintain4,
+  .maintain5,
   .maintain6 {
     display: block;
   }
@@ -944,6 +962,10 @@ tr td:first-child {
     min-height: 840px;
   }
 
+  .maintain5 {
+    min-height: 950px;
+  }
+
   .maintain4 {
     min-height: 1000px;
   }
@@ -959,4 +981,77 @@ tr td:first-child {
   mask-image: url("../images/curve.png");
   -webkit-mask-repeat: no-repeat;
   mask-repeat: no-repeat;
+}
+
+/* Created by Brian */
+.checkbox-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  /* padding-left: 25px; */
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.checkbox-container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+  position: absolute;
+  height: 24px;
+  width: 24px;
+  background-color: transparent;
+  border: 1px solid #ffffff80;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* On mouse-over, add a grey background color */
+.checkbox-container:hover input ~ .checkmark {
+  background-color: transparent;
+}
+
+/* When the checkbox is checked, add a blue background */
+.checkbox-container input:checked ~ .checkmark {
+  background-color: #7971f5;
+  border: 1px solid #7971f5;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.checkbox-container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.checkbox-container .checkmark:after {
+  left: 9px;
+  top: 5px;
+  width: 6px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
 }

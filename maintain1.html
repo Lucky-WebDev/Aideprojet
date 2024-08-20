@@ -111,8 +111,13 @@
                 </div>
               </div>
               <div
+<<<<<<< HEAD
                 class="block-maintain sm:w-3/4 md:w-1/2 lg:w-2/3 xl:w-1/2 flex justify-between items-center text-white mb-4 sm:p-5 lg:p-8"
                 style="height: 100px"
+=======
+                class="block-maintain checkbox-form sm:w-3/4 md:w-1/2 lg:w-2/3 xl:w-1/2 flex justify-between items-center text-white mb-4 sm:p-5 lg:p-8"
+                style="height: 110px"
+>>>>>>> 1107ed01b3025986bf89744ced3960c313791b45
               >
                 <div class="flex justify-center items-center">
                   <img
@@ -126,22 +131,19 @@
                     </p>
                   </div>
                 </div>
-                <svg
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="1"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                >
-                  <rect x="3" y="3" width="18" height="18" rx="6" ry="6" />
-                </svg>
+                <label class="checkbox-container" style="margin-right: 10px">
+                  <input type="checkbox" />
+                  <span class="checkmark"></span>
+                </label>
               </div>
               <div
+<<<<<<< HEAD
                 class="block-maintain sm:w-3/4 md:w-1/2 lg:w-2/3 xl:w-1/2 flex justify-between items-center text-white mb-4 sm:p-5 lg:p-8"
                 style="height: 100px"
+=======
+                class="block-maintain checkbox-form sm:w-3/4 md:w-1/2 lg:w-2/3 xl:w-1/2 flex justify-between items-center text-white mb-4 sm:p-5 lg:p-8"
+                style="height: 110px"
+>>>>>>> 1107ed01b3025986bf89744ced3960c313791b45
               >
                 <div class="flex justify-center items-center">
                   <img
@@ -149,30 +151,25 @@
                     style="width: 55px"
                   />
                   <div class="block sm:pl-5 lg:pl-8">
-                    <h1 class="font-Gelia sm:text-xl lg:text-2xl">
-                      App mobile
-                    </h1>
+                    <h1 class="font-Gelia sm:text-xl lg:text-2xl">Site web</h1>
                     <p class="sm:text-xs lg:text-xl" style="color: #ffffff99">
-                      Android, iOS
+                      Site web, web app …
                     </p>
                   </div>
                 </div>
-                <svg
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="1"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                >
-                  <rect x="3" y="3" width="18" height="18" rx="6" ry="6" />
-                </svg>
+                <label class="checkbox-container" style="margin-right: 10px">
+                  <input type="checkbox" />
+                  <span class="checkmark"></span>
+                </label>
               </div>
               <div
+<<<<<<< HEAD
                 class="block-maintain sm:w-3/4 md:w-1/2 lg:w-2/3 xl:w-1/2 flex justify-between items-center text-white mb-4 sm:p-5 lg:p-8"
                 style="height: 100px"
+=======
+                class="block-maintain checkbox-form sm:w-3/4 md:w-1/2 lg:w-2/3 xl:w-1/2 flex justify-between items-center text-white mb-4 sm:p-5 lg:p-8"
+                style="height: 110px"
+>>>>>>> 1107ed01b3025986bf89744ced3960c313791b45
               >
                 <div class="flex justify-center items-center">
                   <img
@@ -180,24 +177,16 @@
                     style="width: 55px"
                   />
                   <div class="block sm:pl-5 lg:pl-8">
-                    <h1 class="font-Gelia sm:text-xl lg:text-2xl">Logiciel</h1>
+                    <h1 class="font-Gelia sm:text-xl lg:text-2xl">Site web</h1>
                     <p class="sm:text-xs lg:text-xl" style="color: #ffffff99">
-                      Applicatifs, système
+                      Site web, web app …
                     </p>
                   </div>
                 </div>
-                <svg
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="1"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                >
-                  <rect x="3" y="3" width="18" height="18" rx="6" ry="6" />
-                </svg>
+                <label class="checkbox-container" style="margin-right: 10px">
+                  <input type="checkbox" />
+                  <span class="checkmark"></span>
+                </label>
               </div>
               <div
                 class="block-maintain sm:w-3/4 md:w-1/2 lg:w-2/3 xl:w-1/2 flex justify-between items-center text-white sm:p-5 lg:p-8"
@@ -258,12 +247,17 @@
             "
           />
           <div
-            class="flex justify-center w-full"
-            style="height: 10%; position: absolute; top: 72%; z-index: 2"
+            class="flex justify-center"
+            style="
+              height: 10%;
+              position: absolute;
+              top: 72%;
+              z-index: 2;
+              width: 100%;
+            "
           >
             <p
-              class="font-Gelia text-white text-center lg:text-4xl"
-              style="width: 50%"
+              class="maintain-leftside-title font-Gelia text-white text-center lg:text-4xl"
             >
               Recruter un profil pour l’avenir de votre projet
             </p>
@@ -272,4 +266,19 @@
       </div>
     </div>
   </body>
+
+  <script>
+    window.onload = function a() {
+      document.querySelectorAll(".checkbox-form").forEach(function (e) {
+        if (e.children[1].children[0].checked === true) {
+          e.classList.remove("block-maintain");
+          e.classList.add("block-maintain-checked");
+        } else {
+          e.classList.add("block-maintain");
+          e.classList.remove("block-maintain-checked");
+        }
+        e.onchange = a;
+      });
+    };
+  </script>
 </html>
