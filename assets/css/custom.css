@@ -782,25 +782,25 @@ select:focus {
   content: "Aller dans mon compte";
 }
 
+.notification-title {
+  margin-top: 10px;
+}
+
+.admin-notification {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.admin-notification:hover {
+  border: 1px solid white;
+  border-radius: 16px;
+}
+
 .admin-form {
   height: 100%;
   background-color: #0f1c1d;
   border: 1px solid #ffffff1a;
-  border-radius: 20px;
-}
-
-.admin-card-form {
-  height: 100%;
-  background-color: #ffffff05;
-  border: 1px solid #253032;
-  border-radius: 20px;
-}
-
-.admin-footer-form {
-  height: 100%;
-  background-color: transparent; /* For browsers that do not support gradients */
-  background-image: linear-gradient(to right, #262f06, #020f11);
-  border: 1px solid #253032;
   border-radius: 20px;
 }
 
@@ -809,7 +809,25 @@ select:focus {
   background-repeat: no-repeat;
   background-size: cover;
   height: 310px;
-  margin-top: -40px;
+  margin-top: -55px;
+  border-radius: 0px 32px 32px 32px;
+}
+
+.admin-card-active {
+  background-image: url(../images/admin/card-background-active.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 310px;
+  margin-top: -55px;
+  border-radius: 0px 32px 32px 32px;
+}
+
+.admin-card-disable {
+  background-image: url(../images/admin/card-background-disable.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 310px;
+  margin-top: -55px;
   border-radius: 0px 32px 32px 32px;
 }
 
@@ -841,6 +859,7 @@ table {
   border-radius: 6px;
   font-size: 20px;
   background-color: #0f1c1d;
+  border-spacing: 0;
 }
 
 td {
@@ -985,6 +1004,34 @@ tr td:first-child {
   width: 50%;
 }
 
+@media only screen and (min-width: 1850px) {
+  .admin-page {
+    height: 100vh;
+    min-height: 950px;
+  }
+  .admin-card {
+    width: 30%;
+  }
+  #profile-card {
+    width: 23%;
+  }
+}
+
+@media only screen and (max-width: 1850px) {
+  .admin-page {
+    min-height: 1200px;
+    height: 100vh;
+  }
+
+  .admin-card {
+    width: 30%;
+    margin-bottom: 30px;
+  }
+  #profile-card {
+    width: 30%;
+  }
+}
+
 @media only screen and (max-width: 1695px) {
   .interval {
     margin-right: -140px;
@@ -993,15 +1040,37 @@ tr td:first-child {
   .smooth-sizing {
     width: 100px;
   }
+
+  .admin-card {
+    width: 30%;
+  }
+
+  .admin-page {
+    min-height: 1300px;
+    height: 100vh;
+  }
 }
 
-@media only screen and (max-width: 1320px) {
+@media only screen and (max-width: 1370px) {
   .interval {
     margin-right: -110px;
   }
 
   .smooth-sizing {
     width: 70px;
+  }
+
+  .sidebar-faq {
+    width: 90% !important;
+  }
+
+  .admin-card {
+    width: 45%;
+    margin-bottom: 10px;
+  }
+
+  #profile-card {
+    width: 47%;
   }
 
   .maintain-leftside-title {
@@ -1013,6 +1082,11 @@ tr td:first-child {
   .fill-button-form1 {
     background-color: #7971f5;
   }
+  /* 
+  .admin-card {
+    width: 100%;
+    margin-bottom: 30px;
+  } */
 
   .maintain,
   .maintain4,
@@ -1041,9 +1115,49 @@ tr td:first-child {
   }
 }
 
-@media only screen and (max-width: 1600px) {
+@media only screen and (max-width: 800px) {
+  .sidebar {
+    display: none;
+  }
+
+  .admin-header {
+    width: 100% !important;
+    left: 3px;
+  }
+}
+
+.sidebar {
+  min-width: 170px;
+}
+
+.sidebar-faq {
+  width: 50%;
+}
+
+.admin-header {
+  border-radius: 32px;
+  height: 110px;
+  position: fixed;
+  width: 80%;
+  right: 10px;
+  z-index: 1000;
+}
+
+@media only screen and (max-width: 1300px) {
   .admin-responsive {
     display: none !important;
+  }
+
+  /* .sidebar {
+    width: 20% !important;
+  } */
+
+  .header-logo {
+    display: none !important;
+  }
+
+  .notification-title {
+    margin-top: 20px;
   }
 }
 .curve-mask {
