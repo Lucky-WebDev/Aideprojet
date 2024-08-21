@@ -26,12 +26,19 @@
       appendArrows: $nav ? $nav : false,
       responsive: [
         {
-          breakpoint: 991,
+          breakpoint: 1300,
           settings: {
             slidesToShow: 3,
             slidesToScroll: 1,
           },
         },
+        // {
+        //   breakpoint: 991,
+        //   settings: {
+        //     slidesToShow: 3,
+        //     slidesToScroll: 1,
+        //   },
+        // },
         {
           breakpoint: 450,
           settings: {
@@ -42,7 +49,6 @@
       ],
     });
 
-    console.log("INIT");
     let first = document.querySelector(".slick-prev");
     first.disabled = true;
     first.style.opacity = 0.25;
@@ -57,10 +63,10 @@
     let lastElement1 = document.querySelector(`[data-slick-index="2"]`);
     let lastElement2 = document.querySelector(`[data-slick-index="-2"]`);
     centerElement.style.padding = max;
-    nextElement1.style.padding = "60px 30px 0px 30px";
-    nextElement2.style.padding = "60px 30px 0px 30px";
-    lastElement1.style.padding = "100px 100px 0px 0px";
-    lastElement2.style.padding = "100px 0px 0px 100px";
+    nextElement1.style.padding = "48px 24px 0px 24px";
+    nextElement2.style.padding = "48px 24px 0px 24px";
+    lastElement1.style.padding = "97px 97px 0px 0px";
+    lastElement2.style.padding = "97px 0px 0px 97px";
     centerElement.style.outlineOffset = max_outline;
     nextElement1.style.outlineOffset = med_outline;
     nextElement2.style.outlineOffset = med_outline;
