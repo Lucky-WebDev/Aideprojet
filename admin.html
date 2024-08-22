@@ -44,11 +44,11 @@
             >
               <img src="assets/images/Group 33188.svg" style="height: 32px" />
             </div>
-            <div class="flex justify-center items-center">
+            <div class="flex justify-center items-center sm:px-2">
               <div
                 id="table-item"
-                class="flex justify-center items-center cursor-pointer sm:w-4/5 sm:p-3"
-                style="border: 1px solid #ffffffcc; border-radius: 31px"
+                class="flex justify-center items-center cursor-pointer w-full sm:p-3"
+                style="border: 0.5px solid #ffffffcc; border-radius: 31px"
                 onclick="action('table-item')"
               >
                 <div class="flex justify-center sm:w-1/4">
@@ -63,10 +63,10 @@
                 </div>
               </div>
             </div>
-            <div class="flex justify-center items-center sm:my-4">
+            <div class="flex justify-center items-center sm:my-4 sm:px-2">
               <div
                 id="project-item"
-                class="flex justify-center items-center cursor-pointer sm:w-4/5 sm:p-3"
+                class="flex justify-center items-center cursor-pointer w-full sm:p-3"
                 onclick="action('project-item')"
               >
                 <div class="flex justify-center sm:w-1/4">
@@ -81,10 +81,10 @@
                 </div>
               </div>
             </div>
-            <div class="flex justify-center items-center sm:my-4">
+            <div class="flex justify-center items-center sm:my-4 sm:px-2">
               <div
                 id="favourite-item"
-                class="flex justify-center items-center cursor-pointer sm:w-4/5 sm:p-3"
+                class="flex justify-center items-center cursor-pointer w-full sm:p-3"
                 onclick="action('favourite-item')"
               >
                 <div class="flex justify-center sm:w-1/4">
@@ -99,10 +99,10 @@
                 </div>
               </div>
             </div>
-            <div class="flex justify-center items-center sm:my-4">
+            <div class="flex justify-center items-center sm:my-4 sm:px-2">
               <div
                 id="payment-item"
-                class="flex justify-center items-center cursor-pointer sm:w-4/5 sm:p-3"
+                class="flex justify-center items-center cursor-pointer w-full sm:p-3"
                 onclick="action('payment-item')"
               >
                 <div class="flex justify-center sm:w-1/4">
@@ -118,7 +118,7 @@
               </div>
             </div>
           </div>
-          <!-- <div
+          <div
             id="favourite"
             class="cursor-pointer"
             style="
@@ -135,7 +135,7 @@
               src="assets/images/admin/favourite-mark.svg"
               style="width: 40px; height: 40px; display: none"
             />
-          </div> -->
+          </div>
           <div class="block sm:my-4">
             <div class="flex justify-center items-center">
               <div
@@ -1869,7 +1869,7 @@
         if (item.key === id) {
           element.style.display = "block";
           selectedItem.style.borderRadius = "31px";
-          selectedItem.style.border = "1px solid #FFFFFFCC";
+          selectedItem.style.border = "0.5px solid #FFFFFFCC";
           titleElement.innerText = item.title;
           iconElement.src = "assets/images/admin/" + item.icon + ".svg";
         } else {

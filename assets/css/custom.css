@@ -1016,6 +1016,26 @@ tr td:first-child {
   width: 50%;
 }
 
+.admin-footer-form {
+  background-image: linear-gradient(to right, #262f06, #020f11);
+  border-radius: 24px;
+  border: 1px solid #253032;
+}
+
+.admin-card-form {
+  border: 1px solid #253032;
+  border-radius: 24px;
+  background: #ffffff05 0% 0% no-repeat padding-box;
+}
+
+.responsive-1024 {
+  margin-top: 0px;
+}
+
+#navbarToggler {
+  padding-top: 55px;
+}
+
 @media only screen and (min-width: 1650px) {
   .admin-page {
     height: 100vh;
@@ -1033,7 +1053,7 @@ tr td:first-child {
 @media only screen and (max-width: 1650px) {
   .admin-page {
     height: 100vh;
-    min-height: 1100px;
+    min-height: 900px;
   }
 
   .interval {
@@ -1045,10 +1065,14 @@ tr td:first-child {
   }
 }
 
-@media only screen and (max-width: 1005px) {
+@media only screen and (max-width: 1024px) {
   .admin-page {
     min-height: 1300px;
     height: 100vh;
+  }
+
+  .responsive-1024 {
+    margin-top: 50px;
   }
 }
 
