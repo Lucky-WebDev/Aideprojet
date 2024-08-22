@@ -372,7 +372,7 @@ select:focus {
   background-size: cover;
   width: 267px;
   height: 27px;
-  margin-top: 27px;
+  margin-top: 87px;
   left: 0px;
   top: 0px;
 }
@@ -393,7 +393,7 @@ select:focus {
 }
 
 .outline-block {
-  padding: 16px;
+  padding: 10px;
   background-color: #0a1718;
   border: 1px solid #253032;
   border-radius: 20px;
@@ -741,7 +741,7 @@ select:focus {
 .exit-button {
   width: 24px;
   height: 24px;
-  border-radius: 5px;
+  border-radius: 8px;
   background-color: transparent;
   border: 1px solid white;
 }
@@ -758,7 +758,7 @@ select:focus {
   border: 1px solid #253032;
   border-radius: 24px;
   padding-right: 38px;
-  height: 80px;
+  height: 72px;
   margin: auto;
   cursor: pointer;
 }
@@ -777,7 +777,7 @@ select:focus {
 }
 
 .pre-maintain {
-  width: 90px;
+  width: 86px;
   height: 55px;
   border: 1px solid #e5e7eb;
   border-radius: 20px;
