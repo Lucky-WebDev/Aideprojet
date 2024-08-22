@@ -1,3 +1,8 @@
+html,
+body {
+  height: 100%;
+}
+
 .initial-background {
   background-color: #020f11;
 }
@@ -22,7 +27,13 @@
   padding-top: 10px;
   padding-bottom: 10px;
   width: 100%;
-  height: 75px;
+  height: 80px;
+}
+
+.profile-card {
+  background-color: #0a1718;
+  border: 1px solid #253032;
+  border-radius: 30px;
 }
 
 .menu-form {
@@ -809,7 +820,7 @@ select:focus {
   background-image: url(../images/admin/card-background.png);
   background-repeat: no-repeat;
   background-size: cover;
-  height: 310px;
+  /* height: 310px; */
   margin-top: -55px;
   border-radius: 0px 32px 32px 32px;
 }
@@ -818,7 +829,7 @@ select:focus {
   background-image: url(../images/admin/card-background-active.png);
   background-repeat: no-repeat;
   background-size: cover;
-  height: 310px;
+  /* height: 310px; */
   margin-top: -55px;
   border-radius: 0px 32px 32px 32px;
 }
@@ -827,7 +838,7 @@ select:focus {
   background-image: url(../images/admin/card-background-disable.png);
   background-repeat: no-repeat;
   background-size: cover;
-  height: 310px;
+  /* height: 310px; */
   margin-top: -55px;
   border-radius: 0px 32px 32px 32px;
 }
@@ -1005,35 +1016,26 @@ tr td:first-child {
   width: 50%;
 }
 
-@media only screen and (min-width: 1850px) {
+@media only screen and (min-width: 1650px) {
   .admin-page {
     height: 100vh;
-    min-height: 950px;
-  }
-  .admin-card {
-    width: 30%;
-  }
-  #profile-card {
-    width: 23%;
+    min-height: 1300px;
   }
 }
 
 @media only screen and (max-width: 1850px) {
-  .admin-page {
-    min-height: 1200px;
+  /* .admin-page {
+    min-height: 1000px;
     height: 100vh;
-  }
-
-  .admin-card {
-    width: 30%;
-    margin-bottom: 30px;
-  }
-  #profile-card {
-    width: 30%;
-  }
+  } */
 }
 
-@media only screen and (max-width: 1695px) {
+@media only screen and (max-width: 1650px) {
+  .admin-page {
+    height: 100vh;
+    min-height: 1100px;
+  }
+
   .interval {
     margin-right: -140px;
   }
@@ -1041,14 +1043,19 @@ tr td:first-child {
   .smooth-sizing {
     width: 100px;
   }
+}
 
-  .admin-card {
-    width: 30%;
-  }
-
+@media only screen and (max-width: 1005px) {
   .admin-page {
     min-height: 1300px;
     height: 100vh;
+  }
+}
+
+@media only screen and (max-width: 705px) {
+  .admin-page {
+    /* min-height: 1900px; */
+    height: auto;
   }
 }
 
@@ -1116,31 +1123,25 @@ tr td:first-child {
   }
 }
 
-@media only screen and (max-width: 800px) {
-  .sidebar {
-    display: none;
-  }
-
-  .admin-header {
-    width: 100% !important;
-    left: 3px;
-  }
-}
-
 .sidebar {
-  min-width: 170px;
+  min-width: 327px;
+  width: 327px;
 }
 
 .sidebar-faq {
   width: 50%;
 }
 
+.sidebar-tab {
+  border: 1px solid #ffffffcc;
+  border-radius: 31px;
+  box-sizing: border-box;
+}
+
 .admin-header {
   border-radius: 32px;
   height: 110px;
-  position: fixed;
-  width: 80%;
-  right: 10px;
+  width: 100%;
   z-index: 1000;
 }
 
@@ -1149,9 +1150,10 @@ tr td:first-child {
     display: none !important;
   }
 
-  /* .sidebar {
-    width: 20% !important;
-  } */
+  .sidebar {
+    min-width: 170px;
+    width: 170px !important;
+  }
 
   .header-logo {
     display: none !important;

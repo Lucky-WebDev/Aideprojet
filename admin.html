@@ -25,10 +25,10 @@
   </head>
 
   <body>
-    <div class="admin-page flex" style="background-color: #020f11">
-      <div class="sidebar sm:p-5 lg:w-1/5">
+    <div class="relative admin-page flex" style="background-color: #020f11">
+      <div class="sidebar sm:p-5">
         <div class="flex flex-col justify-between admin-form relative">
-          <div class="block">
+          <div>
             <div class="flex sm:justify-center items-center sm:pt-8">
               <a href="index.html">
                 <img
@@ -48,11 +48,7 @@
               <div
                 id="table-item"
                 class="flex justify-center items-center cursor-pointer sm:w-4/5 sm:p-3"
-                style="
-                  border: 1px solid #ffffffcc;
-                  border-radius: 31px;
-                  box-sizing: border-box;
-                "
+                style="border: 1px solid #ffffffcc; border-radius: 31px"
                 onclick="action('table-item')"
               >
                 <div class="flex justify-center sm:w-1/4">
@@ -122,7 +118,7 @@
               </div>
             </div>
           </div>
-          <div
+          <!-- <div
             id="favourite"
             class="cursor-pointer"
             style="
@@ -139,7 +135,7 @@
               src="assets/images/admin/favourite-mark.svg"
               style="width: 40px; height: 40px; display: none"
             />
-          </div>
+          </div> -->
           <div class="block sm:my-4">
             <div class="flex justify-center items-center">
               <div
@@ -266,11 +262,12 @@
           </div>
         </div>
       </div>
-      <div class="sm:p-5 lg:w-4/5">
-        <div class="flex flex-wrap">
-          <div
-            class="admin-header sm:w-2/2 flex items-center admin-form sm:p-8"
-          >
+      <div
+        class="sm:pt-5 w-full"
+        style="background-color: #020f11; background-size: auto"
+      >
+        <div class="w-full flex flex-wrap sm:pr-5">
+          <div class="admin-header flex items-center admin-form sm:p-8">
             <div class="flex justify-between items-center w-full">
               <div>
                 <p
@@ -448,8 +445,12 @@
               </div>
             </div>
           </div>
-          <div class="w-full sm:w-2/2 flex justify-center text-white sm:mt-32">
-            <div id="table-section" style="display: block" class="sm:w-11/12">
+          <div class="w-full flex justify-center text-white sm:mt-5">
+            <div
+              id="table-section"
+              style="display: block"
+              class="sm:w-11/12 sm:mb-20"
+            >
               <h1 class="font-Gelia text-4xl sm:px-2">Projets</h1>
               <div class="flex flex-wrap justify-between items-center sm:mt-5">
                 <div class="w-full sm:w-2/2 lg:w-6/12 xl:w-4/12">
@@ -519,7 +520,7 @@
                           </p>
                           <p class="text-xs sm:py-2">Sous React Native</p>
                         </div>
-                        <hr />
+                        <hr style="border: 0.5px solid #253032" />
                         <div class="flex justify-between sm:px-6 sm:py-4">
                           <div class="relative sm:w-1/5">
                             <img
@@ -627,7 +628,7 @@
                           </p>
                           <p class="text-xs sm:py-2">SEO/SEA</p>
                         </div>
-                        <hr />
+                        <hr style="border: 0.5px solid #253032" />
                         <div class="flex justify-between sm:px-6 sm:py-4">
                           <div class="relative sm:w-1/5">
                             <img
@@ -723,7 +724,7 @@
                             Design App mobile de Géstion d’équipes
                           </p>
                         </div>
-                        <hr />
+                        <hr style="border: 0.5px solid #253032" />
                         <div class="flex justify-between sm:px-6 sm:py-4">
                           <div class="relative sm:w-1/5">
                             <img
@@ -755,9 +756,13 @@
                 </div>
               </div>
             </div>
-            <div id="project-section" style="display: none" class="sm:w-11/12">
+            <div
+              id="project-section"
+              style="display: none"
+              class="sm:w-11/12 sm:mb-20"
+            >
               <div
-                class="flex justify-start items-center sm:w-2/2 lg:w-2/5 sm:p-1 sm:mt-8"
+                class="flex justify-start items-center sm:w-2/2 lg:w-2/5 sm:p-1"
                 style="
                   background-color: #0a1718;
                   height: 54px;
@@ -786,7 +791,9 @@
                 </div>
               </div>
               <div id="activity-section" class="block">
-                <div class="flex flex-wrap sm:mt-5">
+                <div
+                  class="flex flex-wrap justify-between items-center sm:mt-5"
+                >
                   <div class="w-full sm:w-2/2 lg:w-6/12 xl:w-4/12 sm:p-2">
                     <a
                       href="admin-project.html"
@@ -853,7 +860,7 @@
                           </p>
                           <p class="text-xs sm:py-2">Sous React Native</p>
                         </div>
-                        <hr />
+                        <hr style="border: 0.5px solid #253032" />
                         <div class="flex justify-between sm:px-6 sm:py-4">
                           <div class="relative sm:w-1/5">
                             <img
@@ -959,7 +966,7 @@
                           </p>
                           <p class="text-xs sm:py-2">SEO/SEA</p>
                         </div>
-                        <hr />
+                        <hr style="border: 0.5px solid #253032" />
                         <div class="flex justify-between sm:px-6 sm:py-4">
                           <div class="relative sm:w-1/5">
                             <img
@@ -1053,7 +1060,7 @@
                             Design App mobile de Géstion d’équipes
                           </p>
                         </div>
-                        <hr />
+                        <hr style="border: 0.5px solid #253032" />
                         <div class="flex justify-between sm:px-6 sm:py-4">
                           <div class="relative sm:w-1/5">
                             <img
@@ -1085,7 +1092,9 @@
                 </div>
               </div>
               <div id="achieve-section" class="hidden">
-                <div class="flex flex-wrap sm:mt-5">
+                <div
+                  class="flex flex-wrap justify-between items-center sm:mt-5"
+                >
                   <div class="w-full sm:w-2/2 lg:w-6/12 xl:w-4/12 sm:p-2">
                     <a
                       href="admin-project.html"
@@ -1114,19 +1123,19 @@
                             >
                               <p
                                 class="flex justify-center items-center text-end text-4xl sm:w-2/5"
-                                style="color: #9a9fa0"
+                                style="color: white"
                               >
                                 16
                               </p>
                               <p
                                 class="flex justify-center items-center text-end text-4xl sm:w-1/5"
-                                style="color: #9a9fa0"
+                                style="color: white"
                               >
                                 ·
                               </p>
                               <p
                                 class="flex justify-center items-centertext-end text-4xl sm:w-2/5"
-                                style="color: #9a9fa0"
+                                style="color: white"
                               >
                                 18
                               </p>
@@ -1159,7 +1168,7 @@
                             Drupal 10
                           </p>
                         </div>
-                        <hr />
+                        <hr style="border: 0.5px solid #253032" />
                         <div
                           class="relative flex justify-between items-center w-full sm:px-6 sm:py-4"
                         >
@@ -1238,19 +1247,19 @@
                             >
                               <p
                                 class="flex justify-center items-center text-end text-4xl sm:w-2/5"
-                                style="color: #9a9fa0"
+                                style="color: white"
                               >
                                 22
                               </p>
                               <p
                                 class="flex justify-center items-center text-end text-4xl sm:w-1/5"
-                                style="color: #9a9fa0"
+                                style="color: white"
                               >
                                 ·
                               </p>
                               <p
                                 class="flex justify-center items-centertext-end text-4xl sm:w-2/5"
-                                style="color: #9a9fa0"
+                                style="color: white"
                               >
                                 18
                               </p>
@@ -1283,7 +1292,7 @@
                             Sous React Native
                           </p>
                         </div>
-                        <hr />
+                        <hr style="border: 0.5px solid #253032" />
                         <div
                           class="relative flex justify-between items-center w-full sm:px-6 sm:py-4"
                         >
@@ -1362,19 +1371,19 @@
                             >
                               <p
                                 class="flex justify-center items-center text-end text-4xl sm:w-2/5"
-                                style="color: #9a9fa0"
+                                style="color: white"
                               >
                                 22
                               </p>
                               <p
                                 class="flex justify-center items-center text-end text-4xl sm:w-1/5"
-                                style="color: #9a9fa0"
+                                style="color: white"
                               >
                                 ·
                               </p>
                               <p
                                 class="flex justify-center items-centertext-end text-4xl sm:w-2/5"
-                                style="color: #9a9fa0"
+                                style="color: white"
                               >
                                 4
                               </p>
@@ -1404,7 +1413,7 @@
                             Design App mobile de Géstion d’équipes
                           </p>
                         </div>
-                        <hr />
+                        <hr style="border: 0.5px solid #253032" />
                         <div class="flex justify-between sm:px-6 sm:py-4">
                           <div class="relative sm:w-1/5">
                             <img
@@ -1439,158 +1448,198 @@
             <div
               id="favourite-section"
               style="display: none"
-              class="flex flex-col sm:mt-5"
+              class="sm:w-11/12 sm:mb-20"
             >
               <div class="flex flex-wrap justify-between">
-                <div
-                  id="profile-card"
-                  class="admin-form flex-col text-white sm:m-2 sm:p-6"
-                >
-                  <div class="flex justify-between items-center w-full">
-                    <p class="font-Gelia text-3xl">Romain</p>
-                    <div class="flex justify-center items-center">
+                <div class="w-full sm:w-2/2 lg:w-2/4 xl:w-1/4 sm:p-1 lg:p-3">
+                  <div class="mb-10 wow fadeInUp group" data-wow-delay=".1s">
+                    <div class="text-white sm:p-3 xl:p-5 profile-card">
+                      <div class="flex justify-between items-center">
+                        <a href="./profile.html">
+                          <h2 class="font-Gelia sm:text-base lg:text-3xl">
+                            Nicolas
+                          </h2>
+                        </a>
+                        <svg
+                          class="h-8 w-8 text-red-500"
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          stroke-width="2"
+                          stroke="currentColor"
+                          fill="none"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        >
+                          <path stroke="none" d="M0 0h24v24H0z" />
+                          <path
+                            d="M9 4h6a2 2 0 0 1 2 2v14l-5-3l-5 3v-14a2 2 0 0 1 2 -2"
+                          />
+                        </svg>
+                      </div>
+                      <h3 class="sm:text-xs lg:text-lg">Product Designer</h3>
                       <img
-                        src="assets/images/admin/favourite-icon.svg"
-                        style="height: 24px"
+                        src="assets/images/persons/person10.png"
+                        style="border-radius: 20px; margin-top: 10px"
                       />
-                    </div>
-                  </div>
-                  <p class="text-base" style="color: #ffffff99">
-                    Lead développeur
-                  </p>
-                  <div class="flex justify-center items-center sm:my-5">
-                    <img
-                      src="assets/images/persons/person7.png"
-                      style="
-                        border-radius: 32px 32px 0px 0px;
-                        width: 100%;
-                        height: 233px;
-                      "
-                    />
-                  </div>
-                  <div class="flex justify-between items-center w-full">
-                    <p class="text-xs" style="color: #ffffff99">
-                      Antérieurement chez
-                    </p>
-                    <div class="flex justify-center items-center">
                       <img
-                        src="assets/images/logo-google.png"
-                        style="height: 28px"
+                        src="assets/images/curve.png"
+                        style="margin-top: -10px; width: 100%"
                       />
-                    </div>
-                  </div>
-                </div>
-                <div
-                  id="profile-card"
-                  class="admin-form flex-col text-white sm:m-2 sm:p-6"
-                >
-                  <div class="flex justify-between items-center w-full">
-                    <p class="font-Gelia text-3xl">Justine</p>
-                    <div class="flex justify-center items-center">
-                      <img
-                        src="assets/images/admin/favourite-icon.svg"
-                        style="height: 24px"
-                      />
-                    </div>
-                  </div>
-                  <p class="text-base" style="color: #ffffff99">
-                    Product Designer
-                  </p>
-                  <div class="flex justify-center items-center sm:my-5">
-                    <img
-                      src="assets/images/persons/person8.png"
-                      style="
-                        border-radius: 32px 32px 0px 0px;
-                        width: 100%;
-                        height: 233px;
-                      "
-                    />
-                  </div>
-                  <div class="flex justify-between items-center w-full">
-                    <p class="text-xs" style="color: #ffffff99">
-                      Product Designer
-                    </p>
-                    <div class="flex justify-center items-center">
-                      <img
-                        src="assets/images/logo-google.png"
-                        style="height: 28px"
-                      />
+                      <div
+                        class="flex justify-between items-center sm:px-2 md:px-3 lg:px-4 xl:px-5"
+                        style="margin-top: 10px"
+                      >
+                        <h4 class="sm:text-xs lg:text-base">Antérieurement</h4>
+                        <img
+                          src="assets/images/logo-google.png"
+                          class="smooth-sizing"
+                        />
+                      </div>
                     </div>
                   </div>
                 </div>
-                <div
-                  id="profile-card"
-                  class="admin-form flex-col text-white sm:m-2 sm:p-6"
-                >
-                  <div class="flex justify-between items-center w-full">
-                    <p class="font-Gelia text-3xl">Joel</p>
-                    <div class="flex justify-center items-center">
+                <div class="w-full sm:w-2/2 lg:w-2/4 xl:w-1/4 sm:p-1 lg:p-3">
+                  <div class="mb-10 wow fadeInUp group" data-wow-delay=".1s">
+                    <div class="text-white sm:p-3 xl:p-5 profile-card">
+                      <div class="flex justify-between items-center">
+                        <a href="./profile.html">
+                          <h2 class="font-Gelia sm:text-base lg:text-3xl">
+                            Nicolas
+                          </h2>
+                        </a>
+                        <svg
+                          class="h-8 w-8 text-red-500"
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          stroke-width="2"
+                          stroke="currentColor"
+                          fill="none"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        >
+                          <path stroke="none" d="M0 0h24v24H0z" />
+                          <path
+                            d="M9 4h6a2 2 0 0 1 2 2v14l-5-3l-5 3v-14a2 2 0 0 1 2 -2"
+                          />
+                        </svg>
+                      </div>
+                      <h3 class="sm:text-xs lg:text-lg">Product Designer</h3>
                       <img
-                        src="assets/images/admin/favourite-icon.svg"
-                        style="height: 24px"
+                        src="assets/images/persons/person10.png"
+                        style="border-radius: 20px; margin-top: 10px"
                       />
-                    </div>
-                  </div>
-                  <p class="text-base" style="color: #ffffff99">
-                    Head of UX design
-                  </p>
-                  <div class="flex justify-center items-center sm:my-5">
-                    <img
-                      src="assets/images/persons/person9.png"
-                      style="
-                        border-radius: 32px 32px 0px 0px;
-                        width: 100%;
-                        height: 233px;
-                      "
-                    />
-                  </div>
-                  <div class="flex justify-between items-center w-full">
-                    <p class="text-xs" style="color: #ffffff99">
-                      Antérieurement chez
-                    </p>
-                    <div class="flex justify-center items-center">
                       <img
-                        src="assets/images/logo-google.png"
-                        style="height: 28px"
+                        src="assets/images/curve.png"
+                        style="margin-top: -10px; width: 100%"
                       />
+                      <div
+                        class="flex justify-between items-center sm:px-2 md:px-3 lg:px-4 xl:px-5"
+                        style="margin-top: 10px"
+                      >
+                        <h4 class="sm:text-xs lg:text-base">Antérieurement</h4>
+                        <img
+                          src="assets/images/logo-google.png"
+                          class="smooth-sizing"
+                        />
+                      </div>
                     </div>
                   </div>
                 </div>
-                <div
-                  id="profile-card"
-                  class="admin-form flex-col text-white sm:m-2 sm:p-6"
-                >
-                  <div class="flex justify-between items-center w-full">
-                    <p class="font-Gelia text-3xl">Julien</p>
-                    <div class="flex justify-center items-center">
+                <div class="w-full sm:w-2/2 lg:w-2/4 xl:w-1/4 sm:p-1 lg:p-3">
+                  <div class="mb-10 wow fadeInUp group" data-wow-delay=".1s">
+                    <div class="text-white sm:p-3 xl:p-5 profile-card">
+                      <div class="flex justify-between items-center">
+                        <a href="./profile.html">
+                          <h2 class="font-Gelia sm:text-base lg:text-3xl">
+                            Nicolas
+                          </h2>
+                        </a>
+                        <svg
+                          class="h-8 w-8 text-red-500"
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          stroke-width="2"
+                          stroke="currentColor"
+                          fill="none"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        >
+                          <path stroke="none" d="M0 0h24v24H0z" />
+                          <path
+                            d="M9 4h6a2 2 0 0 1 2 2v14l-5-3l-5 3v-14a2 2 0 0 1 2 -2"
+                          />
+                        </svg>
+                      </div>
+                      <h3 class="sm:text-xs lg:text-lg">Product Designer</h3>
                       <img
-                        src="assets/images/admin/favourite-icon.svg"
-                        style="height: 24px"
+                        src="assets/images/persons/person10.png"
+                        style="border-radius: 20px; margin-top: 10px"
                       />
+                      <img
+                        src="assets/images/curve.png"
+                        style="margin-top: -10px; width: 100%"
+                      />
+                      <div
+                        class="flex justify-between items-center sm:px-2 md:px-3 lg:px-4 xl:px-5"
+                        style="margin-top: 10px"
+                      >
+                        <h4 class="sm:text-xs lg:text-base">Antérieurement</h4>
+                        <img
+                          src="assets/images/logo-google.png"
+                          class="smooth-sizing"
+                        />
+                      </div>
                     </div>
                   </div>
-                  <p class="text-base" style="color: #ffffff99">
-                    Ingénieur informatique
-                  </p>
-                  <div class="flex justify-center items-center sm:my-5">
-                    <img
-                      src="assets/images/persons/person2.png"
-                      style="
-                        border-radius: 32px 32px 0px 0px;
-                        width: 100%;
-                        height: 233px;
-                      "
-                    />
-                  </div>
-                  <div class="flex justify-between items-center w-full">
-                    <p class="text-xs" style="color: #ffffff99">
-                      Antérieurement chez
-                    </p>
-                    <div class="flex justify-center items-center">
+                </div>
+                <div class="w-full sm:w-2/2 lg:w-2/4 xl:w-1/4 sm:p-1 lg:p-3">
+                  <div class="mb-10 wow fadeInUp group" data-wow-delay=".1s">
+                    <div class="text-white sm:p-3 xl:p-5 profile-card">
+                      <div class="flex justify-between items-center">
+                        <a href="./profile.html">
+                          <h2 class="font-Gelia sm:text-base lg:text-3xl">
+                            Nicolas
+                          </h2>
+                        </a>
+                        <svg
+                          class="h-8 w-8 text-red-500"
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          stroke-width="2"
+                          stroke="currentColor"
+                          fill="none"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        >
+                          <path stroke="none" d="M0 0h24v24H0z" />
+                          <path
+                            d="M9 4h6a2 2 0 0 1 2 2v14l-5-3l-5 3v-14a2 2 0 0 1 2 -2"
+                          />
+                        </svg>
+                      </div>
+                      <h3 class="sm:text-xs lg:text-lg">Product Designer</h3>
                       <img
-                        src="assets/images/logo-google.png"
-                        style="height: 28px"
+                        src="assets/images/persons/person10.png"
+                        style="border-radius: 20px; margin-top: 10px"
                       />
+                      <img
+                        src="assets/images/curve.png"
+                        style="margin-top: -10px; width: 100%"
+                      />
+                      <div
+                        class="flex justify-between items-center sm:px-2 md:px-3 lg:px-4 xl:px-5"
+                        style="margin-top: 10px"
+                      >
+                        <h4 class="sm:text-xs lg:text-base">Antérieurement</h4>
+                        <img
+                          src="assets/images/logo-google.png"
+                          class="smooth-sizing"
+                        />
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -1603,10 +1652,12 @@
                 </button>
               </div>
             </div>
-            <div id="payment-section" style="display: none" class="sm:w-5/6">
-              <div
-                class="admin-form flex flex-col justify-between itmes-center sm:my-6"
-              >
+            <div
+              id="payment-section"
+              style="display: none"
+              class="sm:w-11/12 sm:mb-20"
+            >
+              <div class="flex flex-col justify-between itmes-center sm:my-6">
                 <div class="flex justify-between items-center w-full">
                   <p class="font-Gelia text-2xl sm:w-1/6 sm:p-8 sm:mr-3">
                     Date
