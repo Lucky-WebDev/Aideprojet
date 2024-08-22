@@ -845,7 +845,7 @@ select:focus {
   background-image: url(../images/admin/card-background.png);
   background-repeat: no-repeat;
   background-size: cover;
-  /* height: 310px; */
+  height: 348px;
   margin-top: -55px;
   border-radius: 0px 32px 32px 32px;
 }
@@ -854,7 +854,7 @@ select:focus {
   background-image: url(../images/admin/card-background-active.png);
   background-repeat: no-repeat;
   background-size: cover;
-  /* height: 310px; */
+  height: 348px;
   margin-top: -55px;
   border-radius: 0px 32px 32px 32px;
 }
@@ -863,7 +863,7 @@ select:focus {
   background-image: url(../images/admin/card-background-disable.png);
   background-repeat: no-repeat;
   background-size: cover;
-  /* height: 310px; */
+  height: 348px;
   margin-top: -55px;
   border-radius: 0px 32px 32px 32px;
 }
@@ -1061,6 +1061,10 @@ tr td:first-child {
   padding-top: 55px;
 }
 
+.admin-card {
+  height: 348px;
+}
+
 @media only screen and (min-width: 1650px) {
   .admin-page {
     height: 100vh;
@@ -1119,11 +1123,6 @@ tr td:first-child {
 
   .sidebar-faq {
     width: 90% !important;
-  }
-
-  .admin-card {
-    width: 45%;
-    margin-bottom: 10px;
   }
 
   #profile-card {
