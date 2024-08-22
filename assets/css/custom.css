@@ -393,7 +393,7 @@ select:focus {
 }
 
 .outline-block {
-  padding: 10px;
+  padding: 16px;
   background-color: #0a1718;
   border: 1px solid #253032;
   border-radius: 20px;
@@ -1030,7 +1030,8 @@ tr td:first-child {
 }
 
 .smooth-sizing {
-  width: 120px;
+  width: 100px;
+  height: 30px;
 }
 
 .interval {
