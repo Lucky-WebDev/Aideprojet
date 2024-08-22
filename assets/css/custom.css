@@ -1030,8 +1030,8 @@ tr td:first-child {
 }
 
 .smooth-sizing {
-  width: 100px;
-  height: 30px;
+  width: 94px;
+  height: 25px;
 }
 
 .interval {
@@ -1064,6 +1064,12 @@ tr td:first-child {
 
 .admin-card {
   height: 348px;
+}
+
+.bottom-slick-slider {
+  position: absolute;
+  right: 25px;
+  top: 90px;
 }
 
 @media only screen and (min-width: 1650px) {
@@ -1131,6 +1137,14 @@ tr td:first-child {
   }
 
   .maintain-leftside-title {
+    width: 100%;
+  }
+
+  .bottom-slick-slider {
+    position: static;
+    right: 0;
+    top: 0;
+    bottom: -520px;
     width: 100%;
   }
 }
