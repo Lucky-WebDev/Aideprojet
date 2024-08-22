@@ -2335,8 +2335,15 @@
             lastElement2.querySelector(".smooth-sizing").style.display =
               "block";
 
-            lastElement1.querySelector("h4").style.fontSize = "12px";
+            if (window.innerWidth < 1000) {
+              nextElement1.querySelector("h4").style.fontSize = "10px";
+              nextElement2.querySelector("h4").style.fontSize = "10px";
+            }
+            centerElement.querySelector("h4").style.fontSize = "16px";
+            nextElement2.querySelector("h4").style.fontSize = "14px";
+            nextElement1.querySelector("h4").style.fontSize = "14px";
             lastElement2.querySelector("h4").style.fontSize = "12px";
+            lastElement1.querySelector("h4").style.fontSize = "12px";
 
             centerElement.style.padding = max;
             // In the case of Mobile

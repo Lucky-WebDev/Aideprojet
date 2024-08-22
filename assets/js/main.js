@@ -88,8 +88,6 @@
     startElement.querySelector(".smooth-sizing").style.display = "none";
     endElement.querySelector(".smooth-sizing").style.display = "none";
 
-    nextElement1.querySelector("h4").style.fontSize = "14px";
-    nextElement2.querySelector("h4").style.fontSize = "14px";
     lastElement1.querySelector("h4").style.fontSize = "12px";
     lastElement2.querySelector("h4").style.fontSize = "12px";
 
