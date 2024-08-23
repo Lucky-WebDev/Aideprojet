@@ -377,6 +377,12 @@ select:focus {
   top: 0px;
 }
 
+.profile-image {
+  border-radius: 40px 40px 0 0;
+  height: 458px;
+  width: 100%;
+}
+
 .four-background {
   background-image: url("../images/mask4.png");
   background-repeat: no-repeat;
@@ -1132,7 +1138,7 @@ tr td:first-child {
   }
 
   .responsive-1024 {
-    margin-top: 50px;
+    margin-top: 10px;
   }
 }
 
@@ -1164,6 +1170,10 @@ tr td:first-child {
     width: 100%;
   }
 
+  .admin-page {
+    height: auto;
+  }
+
   .bottom-slick-slider {
     position: static;
     right: 0;
@@ -1192,6 +1202,34 @@ tr td:first-child {
 
   .maintain-leftside {
     display: none;
+  }
+
+  .menu-form {
+    margin-top: 75px;
+  }
+
+  .menu-two-form {
+    margin-top: 20px;
+  }
+
+  .menu-three-form {
+    margin-top: 0px;
+  }
+
+  .profile-image {
+    height: 292px !important;
+  }
+
+  .sticky-header {
+    height: 50px !important;
+  }
+
+  .header-logo {
+    width: 106px !important;
+    height: 36px !important;
+  }
+  .respon-logo {
+    margin-left: 20px;
   }
 }
 
@@ -1240,10 +1278,6 @@ tr td:first-child {
   .sidebar {
     min-width: 170px;
     width: 170px !important;
-  }
-
-  .header-logo {
-    display: none !important;
   }
 
   .notification-title {
